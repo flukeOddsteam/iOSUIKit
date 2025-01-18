@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsSelectionRadioViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="navigationBarView" destination="uQa-Lj-fW4" id="b3e-jH-LzA"/>
+                <outlet property="radioLabel1" destination="lk4-Mn-0L3" id="6yy-9a-luM"/>
+                <outlet property="radioLabel2" destination="WhV-a1-kSt" id="QDD-qd-hRI"/>
+                <outlet property="radioLabel3" destination="hDU-Zm-wDP" id="NGw-Kn-H4i"/>
+                <outlet property="radioLabel4" destination="CDF-rw-iJY" id="Yqz-5j-gqf"/>
+                <outlet property="radioLabelView" destination="3Z8-1X-Quv" id="U2I-em-z3h"/>
+                <outlet property="selectionRadio1" destination="Hi8-96-Onq" id="MJX-0H-PL8"/>
+                <outlet property="selectionRadio10" destination="DeE-zB-0cX" id="7En-O0-YHH"/>
+                <outlet property="selectionRadio11" destination="8Ak-TA-Ind" id="74c-aZ-DsL"/>
+                <outlet property="selectionRadio12" destination="GzG-yL-hPW" id="0ZB-8P-Wfa"/>
+                <outlet property="selectionRadio2" destination="FnK-NG-R9h" id="Lpv-mw-g5f"/>
+                <outlet property="selectionRadio3" destination="z5q-aT-Euo" id="L4V-ro-ga4"/>
+                <outlet property="selectionRadio4" destination="JbS-Ws-0YA" id="LPy-HA-Rfo"/>
+                <outlet property="selectionRadio5" destination="Jyv-Ia-aPp" id="0Zz-pg-hNu"/>
+                <outlet property="selectionRadio6" destination="Kr2-0m-tEW" id="aJs-r3-2xh"/>
+                <outlet property="selectionRadio7" destination="Ow5-ui-IFu" id="EHw-uq-PVr"/>
+                <outlet property="selectionRadio8" destination="m0V-LN-Un3" id="XDu-m3-Jp4"/>
+                <outlet property="selectionRadio9" destination="ytA-bh-f4v" id="kHC-Ok-DMH"/>
+                <outlet property="selectionView10" destination="GAQ-Zh-DqU" id="awY-6l-iXg"/>
+                <outlet property="selectionView11" destination="Jiw-zo-YUV" id="CcD-x2-ptJ"/>
+                <outlet property="selectionView12" destination="h6n-5V-Fec" id="2c0-dd-tZ9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQa-Lj-fW4" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="q0g-dm-sFk"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fy-yH-RTH">
+                    <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eNt-JB-g6x">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1424"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="uFG-vf-CQY">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="0.0" text="Radio / Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lk4-Mn-0L3">
+                                            <rect key="frame" x="16" y="10" width="382" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="lk4-Mn-0L3" secondAttribute="bottom" constant="8" id="4w9-Ll-uuK"/>
+                                        <constraint firstItem="lk4-Mn-0L3" firstAttribute="leading" secondItem="uFG-vf-CQY" secondAttribute="leading" constant="16" id="Wh5-Da-A2Q"/>
+                                        <constraint firstItem="lk4-Mn-0L3" firstAttribute="top" secondItem="uFG-vf-CQY" secondAttribute="top" constant="10" id="hDe-78-QR2"/>
+                                        <constraint firstAttribute="trailing" secondItem="lk4-Mn-0L3" secondAttribute="trailing" constant="16" id="qsK-KO-tlg"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bl8-iC-nxl">
+                                    <rect key="frame" x="0.0" y="48" width="414" height="80"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L8p-X3-xVr">
+                                            <rect key="frame" x="16" y="8" width="382" height="64"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="191" placeholderIntrinsicHeight="24" translatesAutoresizingMaskIntoConstraints="NO" id="Hi8-96-Onq" customClass="DSSelectionRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="191" height="64"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="191" placeholderIntrinsicHeight="24" translatesAutoresizingMaskIntoConstraints="NO" id="FnK-NG-R9h" customClass="DSSelectionRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="191" y="0.0" width="191" height="64"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Hi8-96-Onq" firstAttribute="top" secondItem="L8p-X3-xVr" secondAttribute="top" id="1pH-ty-iVq"/>
+                                                <constraint firstAttribute="bottom" secondItem="FnK-NG-R9h" secondAttribute="bottom" id="7jw-Ve-Jwf"/>
+                                                <constraint firstItem="FnK-NG-R9h" firstAttribute="top" secondItem="L8p-X3-xVr" secondAttribute="top" id="Stb-4N-0uA"/>
+                                                <constraint firstAttribute="bottom" secondItem="Hi8-96-Onq" secondAttribute="bottom" id="ltY-9w-9hh"/>
+                                                <constraint firstItem="Hi8-96-Onq" firstAttribute="leading" secondItem="L8p-X3-xVr" secondAttribute="leading" id="myO-4u-Nix"/>
+                                                <constraint firstAttribute="trailing" secondItem="FnK-NG-R9h" secondAttribute="trailing" id="nOd-DU-gvS"/>
+                                                <constraint firstItem="FnK-NG-R9h" firstAttribute="width" secondItem="Hi8-96-Onq" secondAttribute="width" id="yBV-HZ-t9i"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="L8p-X3-xVr" secondAttribute="trailing" constant="16" id="9mO-ap-wrI"/>
+                                        <constraint firstAttribute="bottom" secondItem="L8p-X3-xVr" secondAttribute="bottom" constant="8" id="Jts-V0-OBg"/>
+                                        <constraint firstItem="L8p-X3-xVr" firstAttribute="top" secondItem="Bl8-iC-nxl" secondAttribute="top" constant="8" id="MDY-EK-1GS"/>
+                                        <constraint firstItem="L8p-X3-xVr" firstAttribute="leading" secondItem="Bl8-iC-nxl" secondAttribute="leading" constant="16" id="j4m-XO-BCT"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="80" translatesAutoresizingMaskIntoConstraints="NO" id="dqh-1T-9tg">
+                                    <rect key="frame" x="0.0" y="128" width="414" height="80"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z5q-aT-Euo" customClass="DSSelectionRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="8" width="382" height="64"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="z5q-aT-Euo" firstAttribute="top" secondItem="dqh-1T-9tg" secondAttribute="top" constant="8" id="Hqf-T3-hEx"/>
+                                        <constraint firstAttribute="trailing" secondItem="z5q-aT-Euo" secondAttribute="trailing" constant="16" id="aai-L5-hXh"/>
+                                        <constraint firstAttribute="bottom" secondItem="z5q-aT-Euo" secondAttribute="bottom" constant="8" id="emN-IU-lhm"/>
+                                        <constraint firstItem="z5q-aT-Euo" firstAttribute="leading" secondItem="dqh-1T-9tg" secondAttribute="leading" constant="16" id="zTa-HA-wc3"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="56" translatesAutoresizingMaskIntoConstraints="NO" id="FHf-Iz-qnN">
+                                    <rect key="frame" x="0.0" y="208" width="414" height="56"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radio / Label / Button Small Ghost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhV-a1-kSt">
+                                            <rect key="frame" x="16" y="24" width="382" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="WhV-a1-kSt" firstAttribute="top" secondItem="FHf-Iz-qnN" secondAttribute="top" constant="24" id="ML9-79-EDG"/>
+                                        <constraint firstAttribute="trailing" secondItem="WhV-a1-kSt" secondAttribute="trailing" constant="16" id="e7J-mR-V1M"/>
+                                        <constraint firstAttribute="bottom" secondItem="WhV-a1-kSt" secondAttribute="bottom" constant="8" id="yrR-FD-NPO"/>
+                                        <constraint firstItem="WhV-a1-kSt" firstAttribute="leading" secondItem="FHf-Iz-qnN" secondAttribute="leading" constant="16" id="zhq-gu-mUo"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="80" translatesAutoresizingMaskIntoConstraints="NO" id="xSd-We-8XD">
+                                    <rect key="frame" x="0.0" y="264" width="414" height="80"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="80" translatesAutoresizingMaskIntoConstraints="NO" id="JbS-Ws-0YA" userLabel="Selection Radio View4" customClass="DSSelectionRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="0.0" width="382" height="80"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="JbS-Ws-0YA" secondAttribute="bottom" id="GTU-Hi-zqM"/>
+                                        <constraint firstItem="JbS-Ws-0YA" firstAttribute="top" secondItem="xSd-We-8XD" secondAttribute="top" id="MP4-C7-xch"/>
+                                        <constraint firstAttribute="trailing" secondItem="JbS-Ws-0YA" secondAttribute="trailing" constant="16" id="Q6L-MY-TXE"/>
+                                        <constraint firstItem="JbS-Ws-0YA" firstAttribute="leading" secondItem="xSd-We-8XD" secondAttribute="leading" constant="16" id="XAx-gp-eB3"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="80" translatesAutoresizingMaskIntoConstraints="NO" id="z0A-kg-KKW">
+                                    <rect key="frame" x="0.0" y="344" width="414" height="80"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="80" translatesAutoresizingMaskIntoConstraints="NO" id="Jyv-Ia-aPp" userLabel="Selection Radio View5" customClass="DSSelectionRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="0.0" width="382" height="80"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="Jyv-Ia-aPp" firstAttribute="leading" secondItem="z0A-kg-KKW" secondAttribute="leading" constant="16" id="0ID-Ta-vry"/>
+                                        <constraint firstAttribute="trailing" secondItem="Jyv-Ia-aPp" secondAttribute="trailing" constant="16" id="P18-zH-w7d"/>
+                                        <constraint firstItem="Jyv-Ia-aPp" firstAttribute="top" secondItem="z0A-kg-KKW" secondAttribute="top" id="YuU-Ss-dYH"/>
+                                        <constraint firstAttribute="bottom" secondItem="Jyv-Ia-aPp" secondAttribute="bottom" id="zuF-Li-u5X"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="80" translatesAutoresizingMaskIntoConstraints="NO" id="ekm-Ow-M7D">
+                                    <rect key="frame" x="0.0" y="424" width="414" height="80"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="80" translatesAutoresizingMaskIntoConstraints="NO" id="Kr2-0m-tEW" userLabel="Selection Radio View6" customClass="DSSelectionRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="0.0" width="382" height="80"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Kr2-0m-tEW" secondAttribute="trailing" constant="16" id="AgE-7x-Efx"/>
+                                        <constraint firstItem="Kr2-0m-tEW" firstAttribute="leading" secondItem="ekm-Ow-M7D" secondAttribute="leading" constant="16" id="KLK-xv-use"/>
+                                        <constraint firstItem="Kr2-0m-tEW" firstAttribute="top" secondItem="ekm-Ow-M7D" secondAttribute="top" id="bPf-4o-mUk"/>
+                                        <constraint firstAttribute="bottom" secondItem="Kr2-0m-tEW" secondAttribute="bottom" id="zib-hp-B5P"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="72" translatesAutoresizingMaskIntoConstraints="NO" id="YKU-Cd-Ony" userLabel="View">
+                                    <rect key="frame" x="0.0" y="504" width="414" height="72"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long Label Test case / On Light " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDU-Zm-wDP">
+                                            <rect key="frame" x="16" y="24" width="382" height="32"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="hDU-Zm-wDP" firstAttribute="top" secondItem="YKU-Cd-Ony" secondAttribute="top" constant="24" id="KJ9-4J-Kpv"/>
+                                        <constraint firstAttribute="bottom" secondItem="hDU-Zm-wDP" secondAttribute="bottom" constant="16" id="b0x-py-mDo"/>
+                                        <constraint firstItem="hDU-Zm-wDP" firstAttribute="leading" secondItem="YKU-Cd-Ony" secondAttribute="leading" constant="16" id="g5g-B3-YJ4"/>
+                                        <constraint firstAttribute="trailing" secondItem="hDU-Zm-wDP" secondAttribute="trailing" constant="16" id="rch-2d-cGc"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="DtR-Kz-57J">
+                                    <rect key="frame" x="0.0" y="576" width="414" height="128"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="Ow5-ui-IFu" userLabel="Selection Radio View7" customClass="DSSelectionRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="0.0" width="382" height="128"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="Ow5-ui-IFu" firstAttribute="top" secondItem="DtR-Kz-57J" secondAttribute="top" id="7Wx-5X-Dc2"/>
+                                        <constraint firstItem="Ow5-ui-IFu" firstAttribute="leading" secondItem="DtR-Kz-57J" secondAttribute="leading" constant="16" id="Ja5-Mc-Qb1"/>
+                                        <constraint firstAttribute="bottom" secondItem="Ow5-ui-IFu" secondAttribute="bottom" id="M5i-Ww-0UE"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ow5-ui-IFu" secondAttribute="trailing" constant="16" id="i87-Ed-j0c"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="QSH-Gs-n9r">
+                                    <rect key="frame" x="0.0" y="704" width="414" height="128"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="m0V-LN-Un3" userLabel="Selection Radio View8" customClass="DSSelectionRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="0.0" width="382" height="128"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="m0V-LN-Un3" firstAttribute="top" secondItem="QSH-Gs-n9r" secondAttribute="top" id="BLD-Cu-ZxG"/>
+                                        <constraint firstItem="m0V-LN-Un3" firstAttribute="leading" secondItem="QSH-Gs-n9r" secondAttribute="leading" constant="16" id="OIs-0D-x2T"/>
+                                        <constraint firstAttribute="bottom" secondItem="m0V-LN-Un3" secondAttribute="bottom" id="rKK-XC-H05"/>
+                                        <constraint firstAttribute="trailing" secondItem="m0V-LN-Un3" secondAttribute="trailing" constant="16" id="y52-eX-xMr"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="rQV-cI-6za">
+                                    <rect key="frame" x="0.0" y="832" width="414" height="136"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="ytA-bh-f4v" userLabel="Selection Radio View9" customClass="DSSelectionRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="0.0" width="382" height="128"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="ytA-bh-f4v" firstAttribute="leading" secondItem="rQV-cI-6za" secondAttribute="leading" constant="16" id="9rf-b1-i7I"/>
+                                        <constraint firstAttribute="bottom" secondItem="ytA-bh-f4v" secondAttribute="bottom" constant="8" id="E9u-0I-KVA"/>
+                                        <constraint firstAttribute="trailing" secondItem="ytA-bh-f4v" secondAttribute="trailing" constant="16" id="OuI-AI-fcj"/>
+                                        <constraint firstItem="ytA-bh-f4v" firstAttribute="top" secondItem="rQV-cI-6za" secondAttribute="top" id="Zlx-45-X2C"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="72" translatesAutoresizingMaskIntoConstraints="NO" id="3Z8-1X-Quv" userLabel="View">
+                                    <rect key="frame" x="0.0" y="968" width="414" height="72"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long Label Test case / On ComponentSummary " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDF-rw-iJY">
+                                            <rect key="frame" x="16" y="16" width="382" height="40"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="CDF-rw-iJY" secondAttribute="bottom" constant="16" id="PxO-IT-Bsz"/>
+                                        <constraint firstItem="CDF-rw-iJY" firstAttribute="leading" secondItem="3Z8-1X-Quv" secondAttribute="leading" constant="16" id="kyN-er-iZq"/>
+                                        <constraint firstAttribute="trailing" secondItem="CDF-rw-iJY" secondAttribute="trailing" constant="16" id="qew-7F-wYE"/>
+                                        <constraint firstItem="CDF-rw-iJY" firstAttribute="top" secondItem="3Z8-1X-Quv" secondAttribute="top" constant="16" id="qqE-q9-RaE"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="GAQ-Zh-DqU">
+                                    <rect key="frame" x="0.0" y="1040" width="414" height="128"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="DeE-zB-0cX" userLabel="Selection Radio View10" customClass="DSSelectionRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="0.0" width="382" height="128"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="DeE-zB-0cX" firstAttribute="leading" secondItem="GAQ-Zh-DqU" secondAttribute="leading" constant="16" id="Ucb-wh-Dw0"/>
+                                        <constraint firstAttribute="trailing" secondItem="DeE-zB-0cX" secondAttribute="trailing" constant="16" id="YCA-4p-cqk"/>
+                                        <constraint firstItem="DeE-zB-0cX" firstAttribute="top" secondItem="GAQ-Zh-DqU" secondAttribute="top" id="wWx-Db-bpi"/>
+                                        <constraint firstAttribute="bottom" secondItem="DeE-zB-0cX" secondAttribute="bottom" id="yjT-El-DFD"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="Jiw-zo-YUV">
+                                    <rect key="frame" x="0.0" y="1168" width="414" height="128"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="8Ak-TA-Ind" userLabel="Selection Radio View11" customClass="DSSelectionRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="0.0" width="382" height="128"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="8Ak-TA-Ind" firstAttribute="top" secondItem="Jiw-zo-YUV" secondAttribute="top" id="JI1-Fi-56u"/>
+                                        <constraint firstAttribute="trailing" secondItem="8Ak-TA-Ind" secondAttribute="trailing" constant="16" id="PzG-mb-cwy"/>
+                                        <constraint firstAttribute="bottom" secondItem="8Ak-TA-Ind" secondAttribute="bottom" id="Xkx-J8-n8c"/>
+                                        <constraint firstItem="8Ak-TA-Ind" firstAttribute="leading" secondItem="Jiw-zo-YUV" secondAttribute="leading" constant="16" id="ybr-1O-r3c"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="h6n-5V-Fec">
+                                    <rect key="frame" x="0.0" y="1296" width="414" height="128"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="GzG-yL-hPW" userLabel="Selection Radio View12" customClass="DSSelectionRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="0.0" width="382" height="128"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="GzG-yL-hPW" firstAttribute="top" secondItem="h6n-5V-Fec" secondAttribute="top" id="I0Y-dR-iOf"/>
+                                        <constraint firstAttribute="trailing" secondItem="GzG-yL-hPW" secondAttribute="trailing" constant="16" id="IIH-5G-9kD"/>
+                                        <constraint firstItem="GzG-yL-hPW" firstAttribute="leading" secondItem="h6n-5V-Fec" secondAttribute="leading" constant="16" id="SYU-gu-Sy2"/>
+                                        <constraint firstAttribute="bottom" secondItem="GzG-yL-hPW" secondAttribute="bottom" id="afX-1X-zXn"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="eNt-JB-g6x" firstAttribute="width" secondItem="4Fy-yH-RTH" secondAttribute="width" id="3V0-Zc-NV1"/>
+                        <constraint firstItem="eNt-JB-g6x" firstAttribute="leading" secondItem="4Fy-yH-RTH" secondAttribute="leading" id="8Wf-Hy-xUd"/>
+                        <constraint firstItem="eNt-JB-g6x" firstAttribute="top" secondItem="4Fy-yH-RTH" secondAttribute="top" id="bv9-wZ-beL"/>
+                        <constraint firstAttribute="bottom" secondItem="eNt-JB-g6x" secondAttribute="bottom" id="k4R-1W-zUB"/>
+                        <constraint firstAttribute="trailing" secondItem="eNt-JB-g6x" secondAttribute="trailing" id="rU7-SK-gAx"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="RBV-rx-Q9W"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="uQa-Lj-fW4" firstAttribute="leading" secondItem="RBV-rx-Q9W" secondAttribute="leading" id="CYq-Ce-Iim"/>
+                <constraint firstItem="RBV-rx-Q9W" firstAttribute="trailing" secondItem="4Fy-yH-RTH" secondAttribute="trailing" id="LvP-91-bAr"/>
+                <constraint firstItem="uQa-Lj-fW4" firstAttribute="top" secondItem="RBV-rx-Q9W" secondAttribute="top" id="Mge-1w-psd"/>
+                <constraint firstAttribute="trailing" secondItem="uQa-Lj-fW4" secondAttribute="trailing" id="jvZ-3z-NtQ"/>
+                <constraint firstItem="RBV-rx-Q9W" firstAttribute="bottom" secondItem="4Fy-yH-RTH" secondAttribute="bottom" id="mCt-xs-9Yy"/>
+                <constraint firstItem="4Fy-yH-RTH" firstAttribute="leading" secondItem="RBV-rx-Q9W" secondAttribute="leading" id="qap-QY-4ao"/>
+                <constraint firstItem="4Fy-yH-RTH" firstAttribute="top" secondItem="uQa-Lj-fW4" secondAttribute="bottom" id="s1C-m7-Fm8"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="78"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsToastViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="navigationBarView" destination="Isz-aG-2rq" id="sSE-PS-XRe"/>
+                <outlet property="toastButton" destination="Ado-pU-B6s" id="xCx-cF-hIs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="Ado-pU-B6s" customClass="DSPrimaryButton" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="16" y="786" width="382" height="60"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <action selector="toastButtonDidTapped:" destination="-1" eventType="touchUpInside" id="Hxj-OJ-7Sc"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Isz-aG-2rq" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="wYa-G2-I7Q"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Isz-aG-2rq" secondAttribute="trailing" id="3Au-8K-DZF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ado-pU-B6s" secondAttribute="bottom" constant="16" id="8H1-xk-l1u"/>
+                <constraint firstItem="Isz-aG-2rq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GCa-6f-JzW"/>
+                <constraint firstItem="Ado-pU-B6s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="H3X-Lr-VFp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ado-pU-B6s" secondAttribute="trailing" constant="16" id="PC3-6z-wcb"/>
+                <constraint firstItem="Isz-aG-2rq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="pK4-kW-pHy"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="104"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

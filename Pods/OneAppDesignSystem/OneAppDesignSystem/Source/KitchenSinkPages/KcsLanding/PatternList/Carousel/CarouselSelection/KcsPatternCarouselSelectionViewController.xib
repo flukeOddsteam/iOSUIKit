@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsPatternCarouselSelectionViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="listAction" destination="QZB-Rr-jJj" id="XdX-X3-v5I"/>
+                <outlet property="navBar" destination="udF-JK-H9q" id="xNW-m9-d5Q"/>
+                <outlet property="view" destination="VCO-fE-Owy" id="wzf-d7-8Rf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="VCO-fE-Owy">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZB-Rr-jJj" customClass="DSListActionView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="udF-JK-H9q" customClass="DSNavBar" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="umS-Fy-afv"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="umS-Fy-afv" firstAttribute="bottom" secondItem="QZB-Rr-jJj" secondAttribute="bottom" id="AMt-Zk-qgd"/>
+                <constraint firstItem="QZB-Rr-jJj" firstAttribute="top" secondItem="udF-JK-H9q" secondAttribute="bottom" id="Ehd-uj-Ryn"/>
+                <constraint firstItem="umS-Fy-afv" firstAttribute="trailing" secondItem="udF-JK-H9q" secondAttribute="trailing" id="dJa-XQ-K8R"/>
+                <constraint firstItem="QZB-Rr-jJj" firstAttribute="leading" secondItem="umS-Fy-afv" secondAttribute="leading" id="f7z-jS-xuA"/>
+                <constraint firstItem="udF-JK-H9q" firstAttribute="leading" secondItem="umS-Fy-afv" secondAttribute="leading" id="mOe-JS-rq5"/>
+                <constraint firstItem="umS-Fy-afv" firstAttribute="trailing" secondItem="QZB-Rr-jJj" secondAttribute="trailing" id="pzZ-9d-bSy"/>
+                <constraint firstItem="udF-JK-H9q" firstAttribute="top" secondItem="umS-Fy-afv" secondAttribute="top" id="vDR-Gm-Wt0"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ekachon-Regular.ttf">
+            <string>Ekachon-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsAvatarViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="imageEntityAvatar" destination="oIh-B0-Tu4" id="njq-Jd-zWi"/>
+                <outlet property="imageProfileAvatar" destination="MhI-D5-mka" id="hfM-bd-PIi"/>
+                <outlet property="label1" destination="qXF-GW-ezP" id="2Tm-Bi-2ch"/>
+                <outlet property="label2" destination="1Mk-S2-azF" id="dp6-xg-DbW"/>
+                <outlet property="logoEntityAvatar" destination="oVP-1T-Tcj" id="fpe-2W-dmE"/>
+                <outlet property="navigationBarView" destination="76E-jn-XOf" id="0zz-03-mzZ"/>
+                <outlet property="noImageEntityAvatar" destination="XGq-Gg-Zge" id="Fbo-Sc-0xY"/>
+                <outlet property="noImageProfileAvatar" destination="Pke-dI-7MI" id="4XC-TJ-3Nw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76E-jn-XOf" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="7RH-1K-kk6"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avatar / Entity " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXF-GW-ezP">
+                    <rect key="frame" x="16" y="132" width="110" height="23.666666666666657"/>
+                    <fontDescription key="fontDescription" name="Ekachon-Regular" family="Ekachon" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avatar / Profile " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mk-S2-azF">
+                    <rect key="frame" x="16" y="355.66666666666669" width="115" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGq-Gg-Zge" customClass="DSAvatar" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="16" y="171.66666666666666" width="40" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="VUa-Zj-ysu"/>
+                        <constraint firstAttribute="height" constant="40" id="hYo-0Y-rpe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oIh-B0-Tu4" customClass="DSAvatar" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="16" y="227.66666666666666" width="40" height="39.999999999999972"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Gbu-jV-y8d"/>
+                        <constraint firstAttribute="width" constant="40" id="mow-5W-GGh"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oVP-1T-Tcj" customClass="DSAvatar" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="16" y="283.66666666666669" width="40" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="YHa-5O-r5F"/>
+                        <constraint firstAttribute="width" constant="40" id="g2Q-IT-4yI"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pke-dI-7MI" customClass="DSAvatar" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="16" y="392.66666666666669" width="40" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Mty-GX-690"/>
+                        <constraint firstAttribute="width" constant="40" id="bv6-gt-OSG"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MhI-D5-mka" customClass="DSAvatar" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="16" y="448.66666666666669" width="40" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6ig-yB-b5a"/>
+                        <constraint firstAttribute="width" constant="40" id="MNX-hU-boN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Pke-dI-7MI" firstAttribute="top" secondItem="1Mk-S2-azF" secondAttribute="bottom" constant="16" id="3hL-7t-yur"/>
+                <constraint firstItem="1Mk-S2-azF" firstAttribute="top" secondItem="oVP-1T-Tcj" secondAttribute="bottom" constant="32" id="6at-lw-Akj"/>
+                <constraint firstItem="qXF-GW-ezP" firstAttribute="top" secondItem="76E-jn-XOf" secondAttribute="bottom" constant="23" id="7mt-Mb-cN2"/>
+                <constraint firstItem="oIh-B0-Tu4" firstAttribute="top" secondItem="XGq-Gg-Zge" secondAttribute="bottom" constant="16" id="9UJ-Ay-9Tl"/>
+                <constraint firstItem="1Mk-S2-azF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="AuF-3U-Frl"/>
+                <constraint firstItem="Pke-dI-7MI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="FUg-qi-Z5H"/>
+                <constraint firstItem="qXF-GW-ezP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="KwZ-28-Y4y"/>
+                <constraint firstItem="76E-jn-XOf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="OoS-DP-dNY"/>
+                <constraint firstItem="oVP-1T-Tcj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="SI6-km-T4G"/>
+                <constraint firstItem="oIh-B0-Tu4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="U0W-O0-8n9"/>
+                <constraint firstItem="XGq-Gg-Zge" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="fYG-7Z-JMj"/>
+                <constraint firstItem="76E-jn-XOf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nPw-lz-NYJ"/>
+                <constraint firstItem="XGq-Gg-Zge" firstAttribute="top" secondItem="qXF-GW-ezP" secondAttribute="bottom" constant="16" id="ph4-ia-Lmd"/>
+                <constraint firstItem="MhI-D5-mka" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="pxO-hy-4ww"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="76E-jn-XOf" secondAttribute="trailing" id="tV9-xO-yq1"/>
+                <constraint firstItem="MhI-D5-mka" firstAttribute="top" secondItem="Pke-dI-7MI" secondAttribute="bottom" constant="16" id="xdK-Pr-L3m"/>
+                <constraint firstItem="oVP-1T-Tcj" firstAttribute="top" secondItem="oIh-B0-Tu4" secondAttribute="bottom" constant="16" id="y8O-t2-M7Y"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

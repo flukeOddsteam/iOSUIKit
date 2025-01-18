@@ -1,0 +1,12 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Signature Curve / Arc curve 01">
+<g id="Mask">
+<mask id="mask0_827_112" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+<rect id="Mask_2" width="100" height="100" fill="white"/>
+</mask>
+<g mask="url(#mask0_827_112)">
+<path id="Mask_3" fill-rule="evenodd" clip-rule="evenodd" d="M151.125 -0.59996C151.125 27.1799 128.571 49.7001 100.75 49.7001C72.9286 49.7001 50.3749 27.1799 50.3749 -0.59996V-50.9H100.75V-101.2H50.3749V-151.5H0V-0.59996C0 54.9598 45.1073 100 100.75 100C156.393 100 201.5 54.9598 201.5 -0.59996H151.125Z" fill="#0050F0"/>
+</g>
+</g>
+</g>
+</svg>

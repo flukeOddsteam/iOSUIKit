@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HorizontalStickyButtonView" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="ghostButton" destination="mmc-XI-zLV" id="hU0-Mq-G4Y"/>
+                <outlet property="primaryButton" destination="NEF-tf-fdy" id="iIU-Mm-t5D"/>
+                <outlet property="secondaryButton" destination="GTL-5T-Nrf" id="geR-HD-ZsV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="504" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mCN-1v-FDP">
+                    <rect key="frame" x="0.0" y="0.0" width="504" height="140"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTL-5T-Nrf" customClass="DSSecondaryButton" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="164.5" height="140"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onPressedSecondaryButton:" destination="-1" eventType="touchUpInside" id="gPy-Zj-OtU"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmc-XI-zLV" customClass="DSGhostButton" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="172.5" y="0.0" width="164.5" height="140"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onPressedGhostButton:" destination="-1" eventType="touchUpInside" id="DgZ-jg-y8a"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEF-tf-fdy" customClass="DSPrimaryButton" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="345" y="0.0" width="159" height="140"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onPressedPrimaryButton:" destination="-1" eventType="touchUpInside" id="ySG-ha-D4j"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="NEF-tf-fdy" firstAttribute="width" secondItem="GTL-5T-Nrf" secondAttribute="width" multiplier="0.967742" id="VEi-zf-iqw"/>
+                        <constraint firstItem="mmc-XI-zLV" firstAttribute="width" secondItem="GTL-5T-Nrf" secondAttribute="width" id="cB5-Om-I4i"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mCN-1v-FDP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="knd-hz-aIn"/>
+                <constraint firstAttribute="bottom" secondItem="mCN-1v-FDP" secondAttribute="bottom" id="l95-xU-osl"/>
+                <constraint firstAttribute="trailing" secondItem="mCN-1v-FDP" secondAttribute="trailing" id="mm5-Ow-eaq"/>
+                <constraint firstItem="mCN-1v-FDP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="reD-bK-0VJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="202.89855072463769" y="282.58928571428572"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSTextFieldDatePicker" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="clickableIcon" destination="50r-RU-zIP" id="H9d-kF-GUN"/>
+                <outlet property="contentView" destination="7vd-qc-kTo" id="WBO-rB-lYw"/>
+                <outlet property="helperTextView" destination="CAv-bV-QcR" id="S2k-yJ-Y1f"/>
+                <outlet property="label" destination="dqb-IT-MyV" id="Fuk-jZ-yFV"/>
+                <outlet property="textField" destination="V6j-q7-cTI" id="IT7-XQ-Eu9"/>
+                <outlet property="textFieldContentView" destination="6NS-RX-Lx2" id="I72-Hd-D0J"/>
+                <outlet property="transparentButton" destination="ARO-mI-VHD" id="y17-TM-iIq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="131"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="noV-BM-G4b">
+                    <rect key="frame" x="0.0" y="0.0" width="395" height="131"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7vd-qc-kTo" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="395" height="131"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="J6T-nR-Nkt">
+                                    <rect key="frame" x="0.0" y="0.0" width="395" height="131"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6NS-RX-Lx2" userLabel="Text Field Content View">
+                                            <rect key="frame" x="0.0" y="35.666666666666657" width="351" height="60"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V6j-q7-cTI" userLabel="text field" customClass="UITextFieldPadding" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="351" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="Ksc-ah-SHu"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqb-IT-MyV">
+                                                    <rect key="frame" x="12" y="30.000000000000007" width="327" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="dqb-IT-MyV" firstAttribute="centerY" secondItem="6NS-RX-Lx2" secondAttribute="centerY" placeholder="YES" id="8eM-kP-iOv"/>
+                                                <constraint firstAttribute="trailing" secondItem="V6j-q7-cTI" secondAttribute="trailing" id="Qx8-AA-jwr"/>
+                                                <constraint firstItem="dqb-IT-MyV" firstAttribute="leading" secondItem="6NS-RX-Lx2" secondAttribute="leading" constant="12" id="Vz0-wk-AHO"/>
+                                                <constraint firstAttribute="bottom" secondItem="V6j-q7-cTI" secondAttribute="bottom" id="apr-3V-iwq"/>
+                                                <constraint firstItem="V6j-q7-cTI" firstAttribute="top" secondItem="6NS-RX-Lx2" secondAttribute="top" id="uWE-Cr-Dz7"/>
+                                                <constraint firstAttribute="trailing" secondItem="dqb-IT-MyV" secondAttribute="trailing" constant="12" id="vvj-hD-vWw"/>
+                                                <constraint firstItem="V6j-q7-cTI" firstAttribute="leading" secondItem="6NS-RX-Lx2" secondAttribute="leading" id="xVk-34-HPJ"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50r-RU-zIP" customClass="DSClickableIconBadge" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="351" y="18.333333333333336" width="44" height="94.333333333333314"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="44" id="QSS-bb-pDF"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            <connections>
+                                                <action selector="pressClickAbleIcon:" destination="-1" eventType="touchUpInside" id="fKi-u2-xPn"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="9lI-ul-ehY"/>
+                                <constraint firstAttribute="bottom" secondItem="J6T-nR-Nkt" secondAttribute="bottom" id="BFh-mI-u9X"/>
+                                <constraint firstAttribute="trailing" secondItem="J6T-nR-Nkt" secondAttribute="trailing" id="G2q-aA-fYU"/>
+                                <constraint firstItem="J6T-nR-Nkt" firstAttribute="leading" secondItem="7vd-qc-kTo" secondAttribute="leading" id="InP-fY-uLo"/>
+                                <constraint firstItem="J6T-nR-Nkt" firstAttribute="top" secondItem="7vd-qc-kTo" secondAttribute="top" id="hB3-tH-80e"/>
+                            </constraints>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CAv-bV-QcR" customClass="DSHelperTextView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="395" height="0.0"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARO-mI-VHD" userLabel="Transparent Button">
+                    <rect key="frame" x="0.0" y="0.0" width="395" height="131"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title=""/>
+                    <connections>
+                        <action selector="pressedTransparentButton:" destination="-1" eventType="touchUpInside" id="iRj-0D-H2t"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ARO-mI-VHD" secondAttribute="trailing" id="2KJ-Hb-BgT"/>
+                <constraint firstItem="noV-BM-G4b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5v8-ZQ-duE"/>
+                <constraint firstItem="ARO-mI-VHD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6GH-Im-Oss"/>
+                <constraint firstAttribute="bottom" secondItem="noV-BM-G4b" secondAttribute="bottom" id="Mjq-jr-j67"/>
+                <constraint firstAttribute="trailing" secondItem="noV-BM-G4b" secondAttribute="trailing" id="oKJ-Yp-itp"/>
+                <constraint firstItem="noV-BM-G4b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qS3-i8-qLW"/>
+                <constraint firstItem="ARO-mI-VHD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qpS-zK-ecH"/>
+                <constraint firstAttribute="bottom" secondItem="ARO-mI-VHD" secondAttribute="bottom" id="yRi-ae-DMH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="56.153846153846153" y="-152.48815165876778"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

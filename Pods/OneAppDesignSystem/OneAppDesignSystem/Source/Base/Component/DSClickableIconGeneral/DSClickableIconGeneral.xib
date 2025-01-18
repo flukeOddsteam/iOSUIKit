@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSClickableIconGeneral" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="NdZ-r3-hWa" id="vPm-UC-5s8"/>
+                <outlet property="iconImageView" destination="OnF-MO-XLa" id="dVc-Tk-6tX"/>
+                <outlet property="titleLabel" destination="6ns-KS-lp0" id="bYv-fQ-dzt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="111" height="162"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NdZ-r3-hWa">
+                    <rect key="frame" x="31.666666666666671" y="0.0" width="48" height="48"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OnF-MO-XLa">
+                            <rect key="frame" x="11.999999999999996" y="12" width="24.000000000000004" height="24"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="1Dv-SH-aAe"/>
+                        <constraint firstAttribute="trailing" secondItem="OnF-MO-XLa" secondAttribute="trailing" constant="12" id="RIm-uS-wCz"/>
+                        <constraint firstItem="OnF-MO-XLa" firstAttribute="top" secondItem="NdZ-r3-hWa" secondAttribute="top" constant="12" id="VkS-gE-SFO"/>
+                        <constraint firstAttribute="bottom" secondItem="OnF-MO-XLa" secondAttribute="bottom" constant="12" id="dU1-B6-gsK"/>
+                        <constraint firstAttribute="width" constant="48" id="fa7-fD-k9S"/>
+                        <constraint firstItem="OnF-MO-XLa" firstAttribute="leading" secondItem="NdZ-r3-hWa" secondAttribute="leading" constant="12" id="wri-Tr-Xcg"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ns-KS-lp0">
+                    <rect key="frame" x="35" y="56.000000000000007" width="41.333333333333343" height="20.333333333333336"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6ns-KS-lp0" secondAttribute="bottom" id="9j4-7c-1t7"/>
+                <constraint firstItem="NdZ-r3-hWa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" id="HaH-VS-rzk"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6ns-KS-lp0" secondAttribute="trailing" id="Uz7-pP-k0N"/>
+                <constraint firstItem="NdZ-r3-hWa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VJc-k5-xb4"/>
+                <constraint firstItem="NdZ-r3-hWa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gnd-1Z-nS6"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NdZ-r3-hWa" secondAttribute="trailing" id="hor-IP-XjP"/>
+                <constraint firstItem="6ns-KS-lp0" firstAttribute="centerX" secondItem="NdZ-r3-hWa" secondAttribute="centerX" id="soH-jy-jqA"/>
+                <constraint firstItem="6ns-KS-lp0" firstAttribute="top" secondItem="NdZ-r3-hWa" secondAttribute="bottom" constant="8" id="ulh-H8-Pxi"/>
+                <constraint firstItem="6ns-KS-lp0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" id="uq9-Mu-Y9Z"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="354.96183206106866" y="263.38028169014086"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

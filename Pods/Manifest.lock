@@ -1,0 +1,35 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.16)
+  - Kingfisher (7.12.0)
+  - lottie-ios (3.4.4)
+  - OneAppDesignSystem (11.5.0):
+    - OneAppDesignSystem/Lib (= 11.5.0)
+  - OneAppDesignSystem/Lib (11.5.0):
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - lottie-ios (= 3.4.4)
+    - PanModal
+  - PanModal (1.2.7)
+
+DEPENDENCIES:
+  - OneAppDesignSystem (= 11.5.0)
+
+SPEC REPOS:
+  https://bitbucket.org/ttbbank/one_oneapp-designsystem-ios-private-pods.git:
+    - OneAppDesignSystem
+  https://github.com/CocoaPods/Specs:
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - lottie-ios
+    - PanModal
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
+  Kingfisher: 53a10ea35051a436b5fb626ca2dd8f3144d755e9
+  lottie-ios: 8f97d3271e155c2d688875c29cd3c74908aef5f8
+  OneAppDesignSystem: 403464c1cc7b8e535cae283630e8ccc7f8dc06a2
+  PanModal: 3e16ead1a907fb06f4df3f13492fd00149fa4974
+
+PODFILE CHECKSUM: 74701295c3a468d828a683f2425a90bd292ed2b1
+
+COCOAPODS: 1.15.2

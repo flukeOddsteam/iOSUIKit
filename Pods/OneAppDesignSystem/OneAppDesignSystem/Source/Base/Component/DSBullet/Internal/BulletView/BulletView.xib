@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21225"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BulletView" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="circleHeightConstraint" destination="ayW-t7-SKm" id="7Fj-vc-6vO"/>
+                <outlet property="circleView" destination="3PF-Y6-ZMf" id="jHb-yc-LaF"/>
+                <outlet property="circleWidthConstraint" destination="U6y-Yj-sSN" id="dLO-i9-txn"/>
+                <outlet property="contentView" destination="2YY-c5-C0U" id="8F4-PC-fA8"/>
+                <outlet property="contentViewHeightConstraint" destination="QbE-Cm-imu" id="TTD-5T-0hT"/>
+                <outlet property="contentViewWidthConstraint" destination="9C4-Ln-Oyh" id="dxL-5n-IB9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YY-c5-C0U">
+                    <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3PF-Y6-ZMf">
+                            <rect key="frame" x="9" y="9" width="6" height="6"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="6" id="U6y-Yj-sSN"/>
+                                <constraint firstAttribute="height" constant="6" id="ayW-t7-SKm"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="24" id="9C4-Ln-Oyh"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="24" id="QbE-Cm-imu"/>
+                        <constraint firstItem="3PF-Y6-ZMf" firstAttribute="centerX" secondItem="2YY-c5-C0U" secondAttribute="centerX" id="lZL-wj-i76"/>
+                        <constraint firstItem="3PF-Y6-ZMf" firstAttribute="centerY" secondItem="2YY-c5-C0U" secondAttribute="centerY" id="z55-QS-Rmd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="2YY-c5-C0U" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BK0-sI-Uqr"/>
+                <constraint firstItem="2YY-c5-C0U" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HsU-Sg-asB"/>
+                <constraint firstAttribute="trailing" secondItem="2YY-c5-C0U" secondAttribute="trailing" id="gfB-od-EgS"/>
+                <constraint firstAttribute="bottom" secondItem="2YY-c5-C0U" secondAttribute="bottom" id="rri-PP-DYQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-52" y="21"/>
+        </view>
+    </objects>
+</document>

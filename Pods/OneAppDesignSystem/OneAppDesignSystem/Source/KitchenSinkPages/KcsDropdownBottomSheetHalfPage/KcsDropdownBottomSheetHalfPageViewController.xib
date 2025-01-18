@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ekachon-Bold.ttf">
+            <string>Ekachon-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsDropdownBottomSheetHalfPageViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="dropdownField1" destination="YFm-K2-eHU" id="WLJ-uL-gTm"/>
+                <outlet property="dropdownField10" destination="u6A-Ns-QXR" id="hBp-pr-qhZ"/>
+                <outlet property="dropdownField11" destination="fF3-uY-e5i" id="nx6-mH-QLu"/>
+                <outlet property="dropdownField12" destination="1sF-Ep-mUp" id="r0Z-eE-bJk"/>
+                <outlet property="dropdownField13" destination="102-bg-I8l" id="lIa-j1-Ckb"/>
+                <outlet property="dropdownField14" destination="AbD-LZ-8fX" id="H3b-cU-N0N"/>
+                <outlet property="dropdownField15" destination="QYw-qe-YbF" id="zzT-pZ-DJm"/>
+                <outlet property="dropdownField16" destination="bCo-Gl-mbW" id="HeE-JE-Yx9"/>
+                <outlet property="dropdownField17" destination="tvV-yj-6Sa" id="0m0-ET-4t8"/>
+                <outlet property="dropdownField18" destination="uWO-jX-MHQ" id="sz8-Lu-bqc"/>
+                <outlet property="dropdownField19" destination="j2v-pb-hG4" id="T3b-2s-rfJ"/>
+                <outlet property="dropdownField2" destination="oSv-fc-jia" id="Dnd-mC-BA7"/>
+                <outlet property="dropdownField20" destination="Diw-c0-Cah" id="cyu-n9-rgw"/>
+                <outlet property="dropdownField21" destination="2d7-Ao-bJ6" id="Wc7-Q4-J8p"/>
+                <outlet property="dropdownField3" destination="TNM-Ve-2hY" id="e28-aR-QYs"/>
+                <outlet property="dropdownField4" destination="DkG-44-T9b" id="KUo-Rf-hT7"/>
+                <outlet property="dropdownField5" destination="kLX-uh-ql4" id="ttL-h4-qdd"/>
+                <outlet property="dropdownField6" destination="4Y9-3K-ZUD" id="wXh-Sk-qmm"/>
+                <outlet property="dropdownField7" destination="GOV-BH-KSC" id="W36-Ol-Ufo"/>
+                <outlet property="dropdownField8" destination="9GN-A3-ngl" id="Ufg-bb-G7o"/>
+                <outlet property="dropdownField9" destination="wNE-uc-cxS" id="xBY-Ys-dBi"/>
+                <outlet property="firstLabel" destination="XyH-2y-RCV" id="xYu-Sx-aGk"/>
+                <outlet property="horizontalLargeDivider1" destination="GLn-MJ-Q5X" id="jyP-xS-MQp"/>
+                <outlet property="horizontalLargeDivider2" destination="nji-3K-eNy" id="bCx-Rq-R3M"/>
+                <outlet property="navigationBarView" destination="Zz1-AH-bXr" id="c6T-H3-Uhj"/>
+                <outlet property="secondLabel" destination="Fyh-S9-oY6" id="gbF-yq-ltK"/>
+                <outlet property="thirdLabel" destination="yPn-7X-yP6" id="Wgp-oA-n0E"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zz1-AH-bXr" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="moe-Cp-CjU"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3H3-nU-A3D">
+                    <rect key="frame" x="0.0" y="99" width="393" height="719"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MenuList-Desc-Action-MediumIcon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3e-za-SEC">
+                            <rect key="frame" x="16" y="10.000000000000002" width="361" height="23.666666666666671"/>
+                            <fontDescription key="fontDescription" name="Ekachon-Bold" family="Ekachon" pointSize="16"/>
+                            <color key="textColor" name="primaryTrustedNavy"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3Fh-3A-Z47">
+                            <rect key="frame" x="0.0" y="25.666666666666629" width="393" height="1080"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="9Pp-bx-DHr">
+                                    <rect key="frame" x="16" y="15.999999999999986" width="361" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XyH-2y-RCV">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="40"/>
+                                            <string key="text">Half Page (Dynamic
+ContentArea ≤  BottomSheet Max Height (2 cards)ContentArea ≤  BottomSheet Max Heg</string>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="XyH-2y-RCV" firstAttribute="top" secondItem="9Pp-bx-DHr" secondAttribute="top" id="W4o-Kt-Bmp"/>
+                                        <constraint firstAttribute="bottom" secondItem="XyH-2y-RCV" secondAttribute="bottom" id="hcW-bQ-02M"/>
+                                        <constraint firstAttribute="trailing" secondItem="XyH-2y-RCV" secondAttribute="trailing" id="miZ-Kj-Img"/>
+                                        <constraint firstItem="XyH-2y-RCV" firstAttribute="leading" secondItem="9Pp-bx-DHr" secondAttribute="leading" id="s94-io-FkI"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="YFm-K2-eHU" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="72" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="oSv-fc-jia" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="216" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="TNM-Ve-2hY" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="360" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="DkG-44-T9b" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="504" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="kLX-uh-ql4" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="648" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="4Y9-3K-ZUD" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="792" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="GOV-BH-KSC" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="936.00000000000011" width="361" height="127.99999999999989"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                            <directionalEdgeInsets key="directionalLayoutMargins" top="16" leading="16" bottom="16" trailing="16"/>
+                        </stackView>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="8" translatesAutoresizingMaskIntoConstraints="NO" id="GLn-MJ-Q5X" customClass="DSDivider" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="1121.6666666666667" width="393" height="8"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MenuList-Desc-Action-MediumIcon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRs-Pz-j1w">
+                            <rect key="frame" x="16" y="1161.6666666666667" width="361" height="23.666666666666742"/>
+                            <fontDescription key="fontDescription" name="Ekachon-Bold" family="Ekachon" pointSize="16"/>
+                            <color key="textColor" name="primaryTrustedNavy"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="yOI-AR-Peb" userLabel="Stack View2">
+                            <rect key="frame" x="0.0" y="1177.3333333333333" width="393" height="1079.9999999999998"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="gZU-na-Oxb">
+                                    <rect key="frame" x="16" y="16" width="361" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fyh-S9-oY6">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="40"/>
+                                            <string key="text">Half Page (Dynamic
+ContentArea ≤  BottomSheet Max Height (2 cards)ContentArea ≤  BottomSheet Max Heg</string>
+                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Fyh-S9-oY6" secondAttribute="bottom" id="8h0-y6-wia"/>
+                                        <constraint firstItem="Fyh-S9-oY6" firstAttribute="leading" secondItem="gZU-na-Oxb" secondAttribute="leading" id="9IL-qI-E7a"/>
+                                        <constraint firstAttribute="trailing" secondItem="Fyh-S9-oY6" secondAttribute="trailing" id="CfA-jH-Vcl"/>
+                                        <constraint firstItem="Fyh-S9-oY6" firstAttribute="top" secondItem="gZU-na-Oxb" secondAttribute="top" id="x06-3H-nJ7"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="9GN-A3-ngl" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="72" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="wNE-uc-cxS" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="216" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="u6A-Ns-QXR" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="360" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="fF3-uY-e5i" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="504" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="1sF-Ep-mUp" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="648" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="102-bg-I8l" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="792.00000000000023" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="AbD-LZ-8fX" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="936.00000000000023" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                            <directionalEdgeInsets key="directionalLayoutMargins" top="16" leading="16" bottom="16" trailing="16"/>
+                        </stackView>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="8" translatesAutoresizingMaskIntoConstraints="NO" id="nji-3K-eNy" customClass="DSDivider" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="2273.3333333333335" width="393" height="8"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MenuList-Desc-Action-MediumIcon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66w-pO-7tQ">
+                            <rect key="frame" x="16" y="2313.3333333333335" width="361" height="23.666666666666515"/>
+                            <fontDescription key="fontDescription" name="Ekachon-Bold" family="Ekachon" pointSize="16"/>
+                            <color key="textColor" name="primaryTrustedNavy"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="eTV-oS-etn" userLabel="Stack View3">
+                            <rect key="frame" x="0.0" y="2329" width="393" height="1080"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="iog-8C-f2n">
+                                    <rect key="frame" x="16" y="16" width="361" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPn-7X-yP6">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="40"/>
+                                            <string key="text">Half Page (Dynamic
+ContentArea ≤  BottomSheet Max Height (2 cards)ContentArea ≤  BottomSheet Max Heg</string>
+                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="yPn-7X-yP6" firstAttribute="top" secondItem="iog-8C-f2n" secondAttribute="top" id="F4G-Yj-2rW"/>
+                                        <constraint firstAttribute="bottom" secondItem="yPn-7X-yP6" secondAttribute="bottom" id="lKR-Hx-rxe"/>
+                                        <constraint firstAttribute="trailing" secondItem="yPn-7X-yP6" secondAttribute="trailing" id="qep-RH-fPc"/>
+                                        <constraint firstItem="yPn-7X-yP6" firstAttribute="leading" secondItem="iog-8C-f2n" secondAttribute="leading" id="wyr-1P-jzR"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="QYw-qe-YbF" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="72" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="bCo-Gl-mbW" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="216" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="tvV-yj-6Sa" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="360" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="uWO-jX-MHQ" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="504" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="j2v-pb-hG4" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="648" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="Diw-c0-Cah" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="792" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="2d7-Ao-bJ6" customClass="DSDropdownBottomMenuListDescAction" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="936" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                            <directionalEdgeInsets key="directionalLayoutMargins" top="16" leading="16" bottom="16" trailing="16"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hPL-Ef-Crc" firstAttribute="trailing" secondItem="y3e-za-SEC" secondAttribute="trailing" constant="16" id="0fN-HU-IcW"/>
+                        <constraint firstItem="aRs-Pz-j1w" firstAttribute="leading" secondItem="3H3-nU-A3D" secondAttribute="leading" constant="16" id="0zw-gp-86B"/>
+                        <constraint firstItem="hPL-Ef-Crc" firstAttribute="trailing" secondItem="nji-3K-eNy" secondAttribute="trailing" id="4AB-Dv-64g"/>
+                        <constraint firstItem="66w-pO-7tQ" firstAttribute="bottom" secondItem="eTV-oS-etn" secondAttribute="top" constant="8" id="5En-8X-maM"/>
+                        <constraint firstItem="nji-3K-eNy" firstAttribute="leading" secondItem="hPL-Ef-Crc" secondAttribute="leading" id="6Uc-op-zh2"/>
+                        <constraint firstItem="GLn-MJ-Q5X" firstAttribute="top" secondItem="3Fh-3A-Z47" secondAttribute="bottom" constant="16" id="7U1-sI-5qc"/>
+                        <constraint firstItem="nji-3K-eNy" firstAttribute="top" secondItem="yOI-AR-Peb" secondAttribute="bottom" constant="16" id="7c9-x1-tLm"/>
+                        <constraint firstItem="GLn-MJ-Q5X" firstAttribute="leading" secondItem="hPL-Ef-Crc" secondAttribute="leading" id="9Yg-hX-RW7"/>
+                        <constraint firstAttribute="trailing" secondItem="aRs-Pz-j1w" secondAttribute="trailing" constant="16" id="G6U-OL-hoP"/>
+                        <constraint firstItem="YQN-iO-Epp" firstAttribute="bottom" secondItem="eTV-oS-etn" secondAttribute="bottom" id="LQs-HJ-10b"/>
+                        <constraint firstItem="66w-pO-7tQ" firstAttribute="leading" secondItem="YQN-iO-Epp" secondAttribute="leading" constant="16" id="Ms3-h2-cHP"/>
+                        <constraint firstItem="yOI-AR-Peb" firstAttribute="leading" secondItem="YQN-iO-Epp" secondAttribute="leading" id="Q8S-46-ln8"/>
+                        <constraint firstItem="eTV-oS-etn" firstAttribute="width" secondItem="3H3-nU-A3D" secondAttribute="width" id="Svl-bR-5pD"/>
+                        <constraint firstItem="66w-pO-7tQ" firstAttribute="top" secondItem="nji-3K-eNy" secondAttribute="bottom" constant="32" id="THB-3w-yzm"/>
+                        <constraint firstItem="aRs-Pz-j1w" firstAttribute="top" secondItem="GLn-MJ-Q5X" secondAttribute="bottom" constant="32" id="Wot-Wg-ikl"/>
+                        <constraint firstItem="y3e-za-SEC" firstAttribute="leading" secondItem="hPL-Ef-Crc" secondAttribute="leading" constant="16" id="b1t-S9-R2B"/>
+                        <constraint firstItem="YQN-iO-Epp" firstAttribute="trailing" secondItem="3Fh-3A-Z47" secondAttribute="trailing" id="c3a-Z5-z11"/>
+                        <constraint firstItem="3Fh-3A-Z47" firstAttribute="width" secondItem="3H3-nU-A3D" secondAttribute="width" id="cvd-Ma-JrS"/>
+                        <constraint firstItem="YQN-iO-Epp" firstAttribute="trailing" secondItem="eTV-oS-etn" secondAttribute="trailing" id="dTL-zz-cSA"/>
+                        <constraint firstItem="hPL-Ef-Crc" firstAttribute="trailing" secondItem="GLn-MJ-Q5X" secondAttribute="trailing" id="el2-iW-Ful"/>
+                        <constraint firstItem="yOI-AR-Peb" firstAttribute="width" secondItem="3H3-nU-A3D" secondAttribute="width" id="jG3-kZ-FdZ"/>
+                        <constraint firstItem="YQN-iO-Epp" firstAttribute="trailing" secondItem="66w-pO-7tQ" secondAttribute="trailing" constant="16" id="n80-Hu-GcM"/>
+                        <constraint firstItem="YQN-iO-Epp" firstAttribute="trailing" secondItem="yOI-AR-Peb" secondAttribute="trailing" id="n85-H8-V9J"/>
+                        <constraint firstItem="y3e-za-SEC" firstAttribute="top" secondItem="3H3-nU-A3D" secondAttribute="top" constant="10" id="nSZ-yp-tlA"/>
+                        <constraint firstItem="eTV-oS-etn" firstAttribute="leading" secondItem="YQN-iO-Epp" secondAttribute="leading" id="pC2-f4-9SQ"/>
+                        <constraint firstItem="3Fh-3A-Z47" firstAttribute="top" secondItem="y3e-za-SEC" secondAttribute="bottom" constant="-8" id="quZ-Tb-hpL"/>
+                        <constraint firstItem="3Fh-3A-Z47" firstAttribute="leading" secondItem="YQN-iO-Epp" secondAttribute="leading" id="wJb-7z-jjP"/>
+                        <constraint firstItem="aRs-Pz-j1w" firstAttribute="bottom" secondItem="yOI-AR-Peb" secondAttribute="top" constant="8" id="xTP-cE-ICw"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="YQN-iO-Epp"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="hPL-Ef-Crc"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Zz1-AH-bXr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LnN-dH-6MD"/>
+                <constraint firstItem="3H3-nU-A3D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="P9Y-68-RKw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="3H3-nU-A3D" secondAttribute="bottom" id="QLg-Of-lv7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Zz1-AH-bXr" secondAttribute="trailing" id="Qu4-Jx-65a"/>
+                <constraint firstItem="Zz1-AH-bXr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="V4x-lL-NfN"/>
+                <constraint firstItem="3H3-nU-A3D" firstAttribute="top" secondItem="Zz1-AH-bXr" secondAttribute="bottom" id="XR8-uQ-Q3u"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3H3-nU-A3D" secondAttribute="trailing" id="Zqy-0z-Scq"/>
+            </constraints>
+            <point key="canvasLocation" x="34" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="primaryTrustedNavy">
+            <color red="0.0" green="0.17599999904632568" blue="0.3880000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

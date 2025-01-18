@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClickableSelectionSelectedView" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="zNj-wL-vVx" id="JK1-Ry-ow0"/>
+                <outlet property="iconImageView" destination="w29-K2-qrq" id="MDc-2h-6dk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="34"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNj-wL-vVx">
+                    <rect key="frame" x="2" y="2" width="12" height="12"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w29-K2-qrq">
+                            <rect key="frame" x="3" y="3" width="6" height="6"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="6" id="Kj6-WM-hAh"/>
+                                <constraint firstAttribute="width" constant="6" id="jId-Lf-wLN"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="YSx-va-AfK"/>
+                        <constraint firstItem="w29-K2-qrq" firstAttribute="centerY" secondItem="zNj-wL-vVx" secondAttribute="centerY" id="eUU-Lb-GPn"/>
+                        <constraint firstAttribute="height" constant="12" id="qNQ-Rc-PyF"/>
+                        <constraint firstItem="w29-K2-qrq" firstAttribute="centerX" secondItem="zNj-wL-vVx" secondAttribute="centerX" id="zrN-Rq-Jec"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zNj-wL-vVx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="RV9-c9-fN3"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zNj-wL-vVx" secondAttribute="bottom" constant="2" id="aUh-zs-h1M"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zNj-wL-vVx" secondAttribute="trailing" constant="2" id="db1-cp-iZf"/>
+                <constraint firstItem="zNj-wL-vVx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="mhf-le-afc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-132.82442748091603" y="230.98591549295776"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSSelectionRadioCardView" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="4iQ-J9-Kat" id="1cE-Yk-lF9"/>
+                <outlet property="radioView" destination="KIO-z4-grn" id="TVo-Io-i9m"/>
+                <outlet property="titleLabel" destination="906-Zu-Yij" id="a98-JG-zyS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4iQ-J9-Kat">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xqE-0V-aSN">
+                            <rect key="frame" x="16" y="16" width="382" height="37"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPz-st-0Ez">
+                                    <rect key="frame" x="0.0" y="0.0" width="24" height="37"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIO-z4-grn" customClass="RadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="4" y="10.5" width="16" height="16"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="16" id="JBi-lL-ZBp"/>
+                                                <constraint firstAttribute="height" constant="16" id="onw-z2-Zgs"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="KIO-z4-grn" secondAttribute="trailing" constant="4" id="9RS-gV-4Hh"/>
+                                        <constraint firstItem="KIO-z4-grn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="VPz-st-0Ez" secondAttribute="top" constant="4" id="F3O-8R-cC9"/>
+                                        <constraint firstItem="KIO-z4-grn" firstAttribute="centerY" secondItem="VPz-st-0Ez" secondAttribute="centerY" id="GhL-0B-sMj"/>
+                                        <constraint firstItem="KIO-z4-grn" firstAttribute="leading" secondItem="VPz-st-0Ez" secondAttribute="leading" constant="4" id="H3O-eW-zUP"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="KIO-z4-grn" secondAttribute="bottom" constant="4" id="ja2-Yt-seH"/>
+                                        <constraint firstItem="KIO-z4-grn" firstAttribute="centerX" secondItem="VPz-st-0Ez" secondAttribute="centerX" id="om7-Oo-o2P"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="906-Zu-Yij">
+                                    <rect key="frame" x="32" y="0.0" width="350" height="37"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="xqE-0V-aSN" firstAttribute="top" secondItem="4iQ-J9-Kat" secondAttribute="top" constant="16" id="5Et-XS-VW2"/>
+                        <constraint firstAttribute="trailing" secondItem="xqE-0V-aSN" secondAttribute="trailing" constant="16" id="L2N-UJ-ndX"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="xqE-0V-aSN" secondAttribute="bottom" constant="16" id="bLB-UQ-7Jz"/>
+                        <constraint firstItem="xqE-0V-aSN" firstAttribute="leading" secondItem="4iQ-J9-Kat" secondAttribute="leading" constant="16" id="bbA-fu-IZ0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4iQ-J9-Kat" secondAttribute="trailing" id="W3e-fz-mVc"/>
+                <constraint firstAttribute="bottom" secondItem="4iQ-J9-Kat" secondAttribute="bottom" id="WnQ-F1-AwL"/>
+                <constraint firstItem="4iQ-J9-Kat" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="a8q-5c-tye"/>
+                <constraint firstItem="4iQ-J9-Kat" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qCF-gH-olI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="367.96875"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

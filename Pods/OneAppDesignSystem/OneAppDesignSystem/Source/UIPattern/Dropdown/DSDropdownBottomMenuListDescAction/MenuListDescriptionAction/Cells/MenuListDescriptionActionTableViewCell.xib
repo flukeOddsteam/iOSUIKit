@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="OfY-85-4Rf" customClass="MenuListDescriptionActionTableViewCell" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OfY-85-4Rf" id="pei-5B-PwU">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PT1-qE-mXI" customClass="DropdownCardSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="8" width="393" height="28"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="PT1-qE-mXI" secondAttribute="trailing" id="91o-Ku-C3n"/>
+                    <constraint firstItem="PT1-qE-mXI" firstAttribute="leading" secondItem="pei-5B-PwU" secondAttribute="leading" id="W4D-dz-wHM"/>
+                    <constraint firstItem="PT1-qE-mXI" firstAttribute="top" secondItem="pei-5B-PwU" secondAttribute="top" constant="8" id="eIi-9s-hQO"/>
+                    <constraint firstAttribute="bottom" secondItem="PT1-qE-mXI" secondAttribute="bottom" constant="8" id="w11-bt-Cvj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cardSelectionView" destination="PT1-qE-mXI" id="mi5-9Y-N6V"/>
+            </connections>
+            <point key="canvasLocation" x="-949" y="-234"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

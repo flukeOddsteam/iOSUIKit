@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsMessageBoxBulletViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="messageBoxError1" destination="fnn-hF-nYb" id="pL1-7L-7nR"/>
+                <outlet property="messageBoxError2" destination="jwR-0m-YCL" id="FHO-w7-j9D"/>
+                <outlet property="messageBoxInformative1" destination="rXD-vm-Eyg" id="rCC-29-oKG"/>
+                <outlet property="messageBoxInformative2" destination="XzC-Zt-Yqa" id="saR-93-piG"/>
+                <outlet property="messageBoxWarning1" destination="t3V-Bn-14o" id="0dU-9c-Jeo"/>
+                <outlet property="messageBoxWarning2" destination="eY5-48-RY1" id="d7z-Iw-6ll"/>
+                <outlet property="navigationBarView" destination="rvt-Uq-leJ" id="oav-yz-YhB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvt-Uq-leJ" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="vi9-ml-KGi"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03N-P5-Ed0">
+                    <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWF-CY-9tb">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="838"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="e8e-z8-7Pf">
+                                    <rect key="frame" x="10" y="10" width="373" height="818"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="rXD-vm-Eyg" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="128"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="XzC-Zt-Yqa" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="138" width="373" height="128"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="fnn-hF-nYb" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="276" width="373" height="128"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="jwR-0m-YCL" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="414" width="373" height="128"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="t3V-Bn-14o" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="552" width="373" height="128"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="eY5-48-RY1" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="690" width="373" height="128"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="e8e-z8-7Pf" firstAttribute="top" secondItem="EWF-CY-9tb" secondAttribute="top" constant="10" id="1sg-o4-hz0"/>
+                                <constraint firstAttribute="bottom" secondItem="e8e-z8-7Pf" secondAttribute="bottom" constant="10" id="BSY-OH-2wR"/>
+                                <constraint firstAttribute="trailing" secondItem="e8e-z8-7Pf" secondAttribute="trailing" constant="10" id="FNb-eZ-pK0"/>
+                                <constraint firstItem="e8e-z8-7Pf" firstAttribute="leading" secondItem="EWF-CY-9tb" secondAttribute="leading" constant="10" id="Wua-1O-OH8"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="EWF-CY-9tb" secondAttribute="trailing" id="VyP-Qf-0B3"/>
+                        <constraint firstItem="EWF-CY-9tb" firstAttribute="leading" secondItem="03N-P5-Ed0" secondAttribute="leading" id="Y5u-R2-xXn"/>
+                        <constraint firstItem="EWF-CY-9tb" firstAttribute="top" secondItem="03N-P5-Ed0" secondAttribute="top" id="jVs-fs-fGr"/>
+                        <constraint firstAttribute="bottom" secondItem="EWF-CY-9tb" secondAttribute="bottom" id="smL-pq-Gpu"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="03N-P5-Ed0" secondAttribute="bottom" id="2hQ-bY-rag"/>
+                <constraint firstItem="03N-P5-Ed0" firstAttribute="top" secondItem="rvt-Uq-leJ" secondAttribute="bottom" id="6AH-oi-ek0"/>
+                <constraint firstItem="rvt-Uq-leJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="AHz-vt-O3W"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="03N-P5-Ed0" secondAttribute="trailing" id="RHU-Of-keP"/>
+                <constraint firstAttribute="trailing" secondItem="rvt-Uq-leJ" secondAttribute="trailing" id="Sxj-JB-aIf"/>
+                <constraint firstItem="03N-P5-Ed0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gZz-aK-db0"/>
+                <constraint firstItem="rvt-Uq-leJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="j85-wE-u5g"/>
+                <constraint firstItem="EWF-CY-9tb" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="nVK-rM-Q2Q"/>
+            </constraints>
+            <point key="canvasLocation" x="-25" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

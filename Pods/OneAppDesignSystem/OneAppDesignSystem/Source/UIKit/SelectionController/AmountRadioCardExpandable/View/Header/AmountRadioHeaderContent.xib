@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AmountRadioHeaderContent" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="zwo-7a-Ur0" id="Q3l-OI-RsM"/>
+                <outlet property="radioView" destination="AE0-Lh-qhQ" id="BtP-1h-ZDd"/>
+                <outlet property="titleLabel" destination="Wk9-7A-p6i" id="A5k-Pu-MFk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="117"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="zwo-7a-Ur0">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="117"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAK-3K-qjU">
+                            <rect key="frame" x="16" y="16" width="24" height="85"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AE0-Lh-qhQ" customClass="RadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="4" y="4" width="16" height="16"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="xsZ-1V-SfI"/>
+                                        <constraint firstAttribute="width" constant="16" id="zbX-bY-GG0"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="AE0-Lh-qhQ" secondAttribute="trailing" constant="4" id="HXq-qp-GkI"/>
+                                <constraint firstItem="AE0-Lh-qhQ" firstAttribute="leading" secondItem="XAK-3K-qjU" secondAttribute="leading" constant="4" id="MRg-WI-ueB"/>
+                                <constraint firstItem="AE0-Lh-qhQ" firstAttribute="top" secondItem="XAK-3K-qjU" secondAttribute="top" constant="4" id="pvG-Kc-wCA"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="AE0-Lh-qhQ" secondAttribute="bottom" constant="4" id="sYB-Mk-tSG"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wk9-7A-p6i">
+                            <rect key="frame" x="48" y="16" width="316" height="81.333333333333329"/>
+                            <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since th</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="XAK-3K-qjU" secondAttribute="bottom" constant="16" id="1cn-WU-eX0"/>
+                        <constraint firstItem="XAK-3K-qjU" firstAttribute="top" secondItem="zwo-7a-Ur0" secondAttribute="top" constant="16" id="Ky5-j6-I1o"/>
+                        <constraint firstItem="Wk9-7A-p6i" firstAttribute="top" secondItem="zwo-7a-Ur0" secondAttribute="top" constant="16" id="N0S-0P-Anb"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Wk9-7A-p6i" secondAttribute="trailing" constant="16" id="NaS-2S-iLb"/>
+                        <constraint firstItem="Wk9-7A-p6i" firstAttribute="leading" secondItem="XAK-3K-qjU" secondAttribute="trailing" constant="8" id="Tzb-xk-9Nm"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Wk9-7A-p6i" secondAttribute="bottom" constant="16" id="a1J-RH-cKc"/>
+                        <constraint firstItem="XAK-3K-qjU" firstAttribute="leading" secondItem="zwo-7a-Ur0" secondAttribute="leading" constant="16" id="dHM-Ct-UJa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zwo-7a-Ur0" secondAttribute="trailing" id="Bv6-vU-Wdi"/>
+                <constraint firstItem="zwo-7a-Ur0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="I5q-OG-y19"/>
+                <constraint firstAttribute="bottom" secondItem="zwo-7a-Ur0" secondAttribute="bottom" id="IRC-eY-FxK"/>
+                <constraint firstItem="zwo-7a-Ur0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gYA-sX-05x"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="136.64122137404578" y="282.74647887323943"/>
+        </view>
+    </objects>
+</document>

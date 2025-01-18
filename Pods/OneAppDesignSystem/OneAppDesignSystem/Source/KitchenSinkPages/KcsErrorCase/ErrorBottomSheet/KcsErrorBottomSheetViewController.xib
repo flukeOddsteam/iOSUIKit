@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsErrorBottomSheetViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="blockGhostButton" destination="cWw-se-F4E" id="bbf-BZ-sUW"/>
+                <outlet property="confirmGhostButton" destination="Hj7-YB-lCe" id="YYr-yh-TWL"/>
+                <outlet property="limitationGhostButton" destination="uev-iy-cgD" id="Ou5-A1-kcx"/>
+                <outlet property="multipleConditionGhostButton" destination="m84-G6-bsq" id="VnQ-Et-UxX"/>
+                <outlet property="navBar" destination="rPa-5f-b7q" id="d8y-V3-ady"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="headerLabels" destination="it9-FS-1zn" collectionClass="NSMutableArray" id="KkY-cn-OGa"/>
+                <outletCollection property="headerLabels" destination="s30-Q1-3Tr" collectionClass="NSMutableArray" id="LnM-Yl-ZeX"/>
+                <outletCollection property="headerLabels" destination="5CH-du-FFq" collectionClass="NSMutableArray" id="Fyx-LG-0r2"/>
+                <outletCollection property="headerLabels" destination="CUm-fB-QiA" collectionClass="NSMutableArray" id="hOI-c2-NMh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="rPa-5f-b7q" customClass="DSNavBar" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3Pv-YF-zUI">
+                    <rect key="frame" x="0.0" y="125" width="393" height="693"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jFn-JS-To4">
+                            <rect key="frame" x="16" y="0.0" width="361" height="140.33333333333334"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BottomSheet Error - Block" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="it9-FS-1zn">
+                                    <rect key="frame" x="16" y="0.0" width="329" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWP-S5-udK">
+                                    <rect key="frame" x="16" y="36.333333333333343" width="329" height="104"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="cWw-se-F4E" customClass="DSGhostButton" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="104"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <connections>
+                                                <action selector="blockGhostButtonDidTapped:" destination="-1" eventType="touchUpInside" id="UjT-rs-JoO"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="cWw-se-F4E" firstAttribute="top" secondItem="cWP-S5-udK" secondAttribute="top" id="0Vl-uA-ukL"/>
+                                        <constraint firstAttribute="bottom" secondItem="cWw-se-F4E" secondAttribute="bottom" id="5Nd-LH-gcG"/>
+                                        <constraint firstItem="cWw-se-F4E" firstAttribute="leading" secondItem="cWP-S5-udK" secondAttribute="leading" id="fED-pU-Fff"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cWw-se-F4E" secondAttribute="trailing" id="o9D-Rg-kJm"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="MRn-6h-cxT">
+                            <rect key="frame" x="16" y="156.33333333333331" width="361" height="204.33333333333331"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BottomSheet  Error - Confirm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s30-Q1-3Tr">
+                                    <rect key="frame" x="16" y="0.0" width="329" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X3O-1s-prh">
+                                    <rect key="frame" x="16" y="36.333333333333371" width="329" height="168"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="Hj7-YB-lCe" customClass="DSGhostButton" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="168"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <connections>
+                                                <action selector="confirmGhostButtonDidTapped:" destination="-1" eventType="touchUpInside" id="2Kh-yo-dyn"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="Hj7-YB-lCe" firstAttribute="leading" secondItem="X3O-1s-prh" secondAttribute="leading" id="2EC-VF-o0u"/>
+                                        <constraint firstItem="Hj7-YB-lCe" firstAttribute="top" secondItem="X3O-1s-prh" secondAttribute="top" id="6v7-Jl-CoX"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Hj7-YB-lCe" secondAttribute="trailing" id="Uqv-dn-3Y0"/>
+                                        <constraint firstAttribute="bottom" secondItem="Hj7-YB-lCe" secondAttribute="bottom" id="hhb-US-Ms1"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hEx-fv-MAM">
+                            <rect key="frame" x="16" y="376.66666666666669" width="361" height="204.33333333333331"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BottomSheet  Error - Limitation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CH-du-FFq">
+                                    <rect key="frame" x="16" y="0.0" width="329" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXc-9c-acx">
+                                    <rect key="frame" x="16" y="36.333333333333314" width="329" height="168"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="uev-iy-cgD" customClass="DSGhostButton" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="168"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <connections>
+                                                <action selector="limitationGhostButtonDidTapped:" destination="-1" eventType="touchUpInside" id="FR2-U7-917"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uev-iy-cgD" secondAttribute="trailing" id="bjP-8n-IDn"/>
+                                        <constraint firstAttribute="bottom" secondItem="uev-iy-cgD" secondAttribute="bottom" id="c9x-U8-t9O"/>
+                                        <constraint firstItem="uev-iy-cgD" firstAttribute="top" secondItem="cXc-9c-acx" secondAttribute="top" id="ksV-uw-Gon"/>
+                                        <constraint firstItem="uev-iy-cgD" firstAttribute="leading" secondItem="cXc-9c-acx" secondAttribute="leading" id="uvq-gd-eTY"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7Rr-Im-AhQ">
+                            <rect key="frame" x="16" y="597" width="361" height="96"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BottomSheet Error - Multiple Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUm-fB-QiA">
+                                    <rect key="frame" x="16" y="0.0" width="329" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="boh-6w-FSZ">
+                                    <rect key="frame" x="16" y="36.333333333333371" width="329" height="59.666666666666657"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="m84-G6-bsq" customClass="DSGhostButton" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="59.666666666666664"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <connections>
+                                                <action selector="multipleConditionGhostButtonDidTapped:" destination="-1" eventType="touchUpInside" id="tWE-qp-AzR"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="m84-G6-bsq" firstAttribute="leading" secondItem="boh-6w-FSZ" secondAttribute="leading" id="BnV-Ha-vqh"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m84-G6-bsq" secondAttribute="trailing" id="MlD-li-zpn"/>
+                                        <constraint firstAttribute="bottom" secondItem="m84-G6-bsq" secondAttribute="bottom" id="Rdu-yC-5yc"/>
+                                        <constraint firstItem="m84-G6-bsq" firstAttribute="top" secondItem="boh-6w-FSZ" secondAttribute="top" id="T0v-fX-cWz"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
+                        </stackView>
+                    </subviews>
+                    <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="3Pv-YF-zUI" firstAttribute="top" secondItem="rPa-5f-b7q" secondAttribute="bottom" constant="16" id="6ea-O5-GEI"/>
+                <constraint firstItem="rPa-5f-b7q" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="GaK-4w-Har"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3Pv-YF-zUI" secondAttribute="bottom" id="WUC-e2-Fu2"/>
+                <constraint firstAttribute="trailing" secondItem="rPa-5f-b7q" secondAttribute="trailing" id="odR-Si-8Dx"/>
+                <constraint firstItem="3Pv-YF-zUI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="spp-qb-bLk"/>
+                <constraint firstAttribute="trailing" secondItem="3Pv-YF-zUI" secondAttribute="trailing" id="vh0-yN-GpY"/>
+                <constraint firstItem="rPa-5f-b7q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yT6-Jq-Ggj"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

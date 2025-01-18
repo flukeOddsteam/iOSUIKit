@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsBottomSheetDropdownViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="fullButton" destination="ojM-cJ-1Na" id="Tt1-FN-x2p"/>
+                <outlet property="halfButton" destination="axn-lC-yGu" id="gSv-PC-Dbg"/>
+                <outlet property="listIconValueFullButton" destination="dZc-rN-IFo" id="BBr-Hz-PWv"/>
+                <outlet property="listIconValueHalfButton" destination="UDj-X2-Tib" id="DA0-5I-2H5"/>
+                <outlet property="navigationBarView" destination="qpr-r2-qW6" id="qrz-0l-tqj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="titleLabels" destination="LHg-c9-prt" collectionClass="NSMutableArray" id="Wo4-Xz-boD"/>
+                <outletCollection property="titleLabels" destination="zG3-VU-Zb4" collectionClass="NSMutableArray" id="WLA-cT-nmn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qpr-r2-qW6" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="48" width="414" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="gPN-GH-JC5"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bottom Sheet / Dropdown / List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHg-c9-prt">
+                    <rect key="frame" x="16" y="114" width="238" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="axn-lC-yGu" customClass="DSGhostButton" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="16" y="151" width="240" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="ojM-cJ-1Na" customClass="DSGhostButton" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="16" y="217" width="240" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bottom Sheet / Dropdown / List + Icon + Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zG3-VU-Zb4" userLabel="Bottom Sheet / Dropdown / List + Icon + Value">
+                    <rect key="frame" x="16" y="283" width="349.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="UDj-X2-Tib" customClass="DSGhostButton" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="16" y="320" width="240" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="dZc-rN-IFo" customClass="DSGhostButton" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="16" y="386" width="240" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="zG3-VU-Zb4" firstAttribute="top" secondItem="ojM-cJ-1Na" secondAttribute="bottom" constant="16" id="2od-TJ-Z7d"/>
+                <constraint firstItem="zG3-VU-Zb4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="6Es-15-GDd"/>
+                <constraint firstItem="dZc-rN-IFo" firstAttribute="top" secondItem="UDj-X2-Tib" secondAttribute="bottom" constant="16" id="7lr-Ym-f5j"/>
+                <constraint firstAttribute="trailing" secondItem="qpr-r2-qW6" secondAttribute="trailing" id="DFK-fX-F28"/>
+                <constraint firstItem="LHg-c9-prt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="EFL-MM-Zw0"/>
+                <constraint firstItem="UDj-X2-Tib" firstAttribute="top" secondItem="zG3-VU-Zb4" secondAttribute="bottom" constant="16" id="PeG-Ty-l1K"/>
+                <constraint firstItem="ojM-cJ-1Na" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Z3L-sb-VEJ"/>
+                <constraint firstItem="axn-lC-yGu" firstAttribute="top" secondItem="LHg-c9-prt" secondAttribute="bottom" constant="16" id="f3U-dG-YxE"/>
+                <constraint firstItem="qpr-r2-qW6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hu9-Uv-KaD"/>
+                <constraint firstItem="UDj-X2-Tib" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="iBl-63-xmi"/>
+                <constraint firstItem="LHg-c9-prt" firstAttribute="top" secondItem="qpr-r2-qW6" secondAttribute="bottom" constant="16" id="iy8-SN-CCv"/>
+                <constraint firstItem="axn-lC-yGu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="kvQ-6i-j0v"/>
+                <constraint firstItem="ojM-cJ-1Na" firstAttribute="top" secondItem="axn-lC-yGu" secondAttribute="bottom" constant="16" id="oNp-xP-3IU"/>
+                <constraint firstItem="dZc-rN-IFo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="xiS-0Z-I1b"/>
+                <constraint firstItem="qpr-r2-qW6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yfQ-Rx-cx7"/>
+            </constraints>
+            <point key="canvasLocation" x="133" y="80"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ekachon-Regular.ttf">
+            <string>Ekachon-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="IconCollectionViewCell" reuseIdentifier="IconCollectionViewCell" id="VVD-lD-SCp" customClass="IconCollectionViewCell" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="118" height="152"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="118" height="152"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huX-jR-x2A">
+                        <rect key="frame" x="0.0" y="0.0" width="118" height="152"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" placeholderIntrinsicWidth="56" placeholderIntrinsicHeight="16" image="coldStartBorderCategory" translatesAutoresizingMaskIntoConstraints="NO" id="ntv-Qz-gTa">
+                                <rect key="frame" x="31" y="14" width="56" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Ado-Wb-0MC"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" id="Doq-GP-4VW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTest" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLj-FM-Iez">
+                                <rect key="frame" x="0.0" y="38" width="118" height="100"/>
+                                <fontDescription key="fontDescription" name="Ekachon-Regular" family="Ekachon" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.1764705882" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zLj-FM-Iez" firstAttribute="centerX" secondItem="ntv-Qz-gTa" secondAttribute="centerX" id="4wW-Om-ntP"/>
+                            <constraint firstItem="ntv-Qz-gTa" firstAttribute="centerX" secondItem="huX-jR-x2A" secondAttribute="centerX" id="89a-p2-8Ch"/>
+                            <constraint firstAttribute="trailing" secondItem="zLj-FM-Iez" secondAttribute="trailing" id="PR8-iD-RW6"/>
+                            <constraint firstItem="zLj-FM-Iez" firstAttribute="leading" secondItem="huX-jR-x2A" secondAttribute="leading" id="T53-0H-71y"/>
+                            <constraint firstItem="ntv-Qz-gTa" firstAttribute="top" secondItem="huX-jR-x2A" secondAttribute="top" constant="14" id="Zq9-41-87n"/>
+                            <constraint firstAttribute="bottom" secondItem="zLj-FM-Iez" secondAttribute="bottom" constant="14" id="fhX-Ov-0QU"/>
+                            <constraint firstItem="zLj-FM-Iez" firstAttribute="top" secondItem="ntv-Qz-gTa" secondAttribute="bottom" constant="8" id="yYQ-2d-Jgr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="huX-jR-x2A" firstAttribute="leading" secondItem="VVD-lD-SCp" secondAttribute="leading" id="HZA-6p-4Hv"/>
+                <constraint firstItem="huX-jR-x2A" firstAttribute="top" secondItem="VVD-lD-SCp" secondAttribute="top" id="ONy-Iq-mpy"/>
+                <constraint firstAttribute="bottom" secondItem="huX-jR-x2A" secondAttribute="bottom" id="RtJ-Xf-Djb"/>
+                <constraint firstAttribute="trailing" secondItem="huX-jR-x2A" secondAttribute="trailing" id="TvY-5a-Ls5"/>
+            </constraints>
+            <size key="customSize" width="229" height="210"/>
+            <connections>
+                <outlet property="icon" destination="ntv-Qz-gTa" id="rwe-6v-iKX"/>
+                <outlet property="iconName" destination="zLj-FM-Iez" id="5Mv-4V-1gm"/>
+            </connections>
+            <point key="canvasLocation" x="242.74809160305344" y="197.88732394366198"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="coldStartBorderCategory" width="56" height="60"/>
+    </resources>
+</document>

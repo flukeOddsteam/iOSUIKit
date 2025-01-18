@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ttb-signaturet-credit-card-image-mock.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

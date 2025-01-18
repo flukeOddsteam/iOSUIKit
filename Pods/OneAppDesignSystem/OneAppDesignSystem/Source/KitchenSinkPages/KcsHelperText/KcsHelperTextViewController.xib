@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ekachon-Bold.ttf">
+            <string>Ekachon-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsHelperTextViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="ot8-8J-5tv" id="N9b-J8-Kmc"/>
+                <outlet property="centerHelperText" destination="QsV-YF-MOi" id="FbC-fG-OTy"/>
+                <outlet property="helperText" destination="Uyu-9T-9Jg" id="TM6-Wn-9E2"/>
+                <outlet property="helperTextAndFee" destination="qXZ-vk-KT3" id="oBs-Ia-73K"/>
+                <outlet property="helperTextError" destination="jkw-LL-PUJ" id="1Yi-fP-Y71"/>
+                <outlet property="navBar" destination="PWo-1H-etC" id="fZY-lS-bSF"/>
+                <outlet property="textFieldOne" destination="8SO-3V-eBa" id="ktx-gx-CwI"/>
+                <outlet property="textFieldTwo" destination="L33-yX-AZq" id="Bkb-q5-pZ5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PWo-1H-etC" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2fF-Rb-CyM"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="KKW-6a-92e">
+                    <rect key="frame" x="16" y="125" width="361" height="160"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8SO-3V-eBa" userLabel="Title Text Field">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="S3V-0G-U74"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="text right" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L33-yX-AZq" userLabel="Percentage Text Field">
+                            <rect key="frame" x="0.0" y="56" width="361" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="HQj-V7-Khs"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ot8-8J-5tv" customClass="DSPrimaryButton" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="112" width="361" height="48"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="aGV-Nt-zFf"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="200" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="0SW-t3-lCU">
+                    <rect key="frame" x="16" y="301" width="361" height="436"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="JvP-fU-OVH">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="100"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlJ-fC-8bc">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="23.666666666666668"/>
+                                    <fontDescription key="fontDescription" name="Ekachon-Bold" family="Ekachon" pointSize="16"/>
+                                    <color key="textColor" red="0.0" green="0.31372549019607843" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uyu-9T-9Jg" customClass="DSHelperTextView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="23.666666666666686" width="361" height="76.333333333333329"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="dlJ-fC-8bc" secondAttribute="trailing" id="D3U-a8-Icb"/>
+                                <constraint firstItem="dlJ-fC-8bc" firstAttribute="leading" secondItem="JvP-fU-OVH" secondAttribute="leading" id="Ort-Jg-snW"/>
+                                <constraint firstItem="Uyu-9T-9Jg" firstAttribute="leading" secondItem="JvP-fU-OVH" secondAttribute="leading" id="U0K-dw-13W"/>
+                                <constraint firstItem="dlJ-fC-8bc" firstAttribute="top" secondItem="JvP-fU-OVH" secondAttribute="top" id="Y3Y-7p-72s"/>
+                                <constraint firstAttribute="trailing" secondItem="Uyu-9T-9Jg" secondAttribute="trailing" id="Yoi-FN-J0v"/>
+                                <constraint firstItem="Uyu-9T-9Jg" firstAttribute="top" secondItem="dlJ-fC-8bc" secondAttribute="bottom" id="f58-U7-PYN"/>
+                                <constraint firstAttribute="bottom" secondItem="Uyu-9T-9Jg" secondAttribute="bottom" id="f8G-bZ-D3T"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="gp3-vq-WiI">
+                            <rect key="frame" x="0.0" y="112" width="361" height="100"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helper + Fee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ojw-Pm-kJg">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="23.666666666666668"/>
+                                    <fontDescription key="fontDescription" name="Ekachon-Bold" family="Ekachon" pointSize="16"/>
+                                    <color key="textColor" red="0.0" green="0.31372549020000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qXZ-vk-KT3" customClass="DSHelperTextView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="23.666666666666686" width="361" height="76.333333333333329"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="qXZ-vk-KT3" firstAttribute="top" secondItem="Ojw-Pm-kJg" secondAttribute="bottom" id="3q3-kq-tTQ"/>
+                                <constraint firstItem="Ojw-Pm-kJg" firstAttribute="leading" secondItem="gp3-vq-WiI" secondAttribute="leading" id="5k8-cY-tTb"/>
+                                <constraint firstAttribute="bottom" secondItem="qXZ-vk-KT3" secondAttribute="bottom" id="FaG-38-xtV"/>
+                                <constraint firstItem="qXZ-vk-KT3" firstAttribute="leading" secondItem="gp3-vq-WiI" secondAttribute="leading" id="IYa-7p-cD2"/>
+                                <constraint firstAttribute="trailing" secondItem="qXZ-vk-KT3" secondAttribute="trailing" id="Mnu-nB-i7F"/>
+                                <constraint firstAttribute="trailing" secondItem="Ojw-Pm-kJg" secondAttribute="trailing" id="Vdg-fo-5vX"/>
+                                <constraint firstItem="Ojw-Pm-kJg" firstAttribute="top" secondItem="gp3-vq-WiI" secondAttribute="top" id="Wex-JW-Goc"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="DnS-UE-2eI">
+                            <rect key="frame" x="0.0" y="224" width="361" height="100"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8J-MW-aeI">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="23.666666666666668"/>
+                                    <fontDescription key="fontDescription" name="Ekachon-Bold" family="Ekachon" pointSize="16"/>
+                                    <color key="textColor" red="0.0" green="0.31372549020000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jkw-LL-PUJ" customClass="DSHelperTextView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="23.666666666666629" width="361" height="76.333333333333329"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="V8J-MW-aeI" firstAttribute="leading" secondItem="DnS-UE-2eI" secondAttribute="leading" id="2Sq-8e-Xjn"/>
+                                <constraint firstAttribute="bottom" secondItem="jkw-LL-PUJ" secondAttribute="bottom" id="4J0-fO-VIU"/>
+                                <constraint firstItem="jkw-LL-PUJ" firstAttribute="top" secondItem="V8J-MW-aeI" secondAttribute="bottom" id="7bV-3X-EL8"/>
+                                <constraint firstAttribute="trailing" secondItem="jkw-LL-PUJ" secondAttribute="trailing" id="ARE-HP-CS5"/>
+                                <constraint firstAttribute="trailing" secondItem="V8J-MW-aeI" secondAttribute="trailing" id="IxU-9j-VI2"/>
+                                <constraint firstItem="V8J-MW-aeI" firstAttribute="top" secondItem="DnS-UE-2eI" secondAttribute="top" id="ReL-TC-82Y"/>
+                                <constraint firstItem="jkw-LL-PUJ" firstAttribute="leading" secondItem="DnS-UE-2eI" secondAttribute="leading" id="v6b-Lf-5sJ"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="c0a-mb-ezu">
+                            <rect key="frame" x="0.0" y="336" width="361" height="100"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error + Text Alignment center" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAg-8G-VJS" userLabel="Center">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="23.666666666666668"/>
+                                    <fontDescription key="fontDescription" name="Ekachon-Bold" family="Ekachon" pointSize="16"/>
+                                    <color key="textColor" red="0.0" green="0.31372549020000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="76.333333333333329" translatesAutoresizingMaskIntoConstraints="NO" id="QsV-YF-MOi" customClass="DSHelperTextView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="23.666666666666629" width="361" height="76.333333333333329"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="QsV-YF-MOi" firstAttribute="centerX" secondItem="c0a-mb-ezu" secondAttribute="centerX" id="3Bo-9I-CYJ"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QsV-YF-MOi" secondAttribute="trailing" id="GO1-Jp-PAE"/>
+                                <constraint firstItem="CAg-8G-VJS" firstAttribute="leading" secondItem="c0a-mb-ezu" secondAttribute="leading" id="MRh-du-LKA"/>
+                                <constraint firstItem="QsV-YF-MOi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c0a-mb-ezu" secondAttribute="leading" id="dVY-uu-04M"/>
+                                <constraint firstAttribute="trailing" secondItem="CAg-8G-VJS" secondAttribute="trailing" id="dyZ-Gn-Z8N"/>
+                                <constraint firstAttribute="bottom" secondItem="QsV-YF-MOi" secondAttribute="bottom" id="smw-cy-xaQ"/>
+                                <constraint firstItem="QsV-YF-MOi" firstAttribute="top" secondItem="CAg-8G-VJS" secondAttribute="bottom" id="ttb-Pz-AuV"/>
+                                <constraint firstItem="CAg-8G-VJS" firstAttribute="top" secondItem="c0a-mb-ezu" secondAttribute="top" id="yH1-Ig-Sov"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="0SW-t3-lCU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="1QK-xw-WRz"/>
+                <constraint firstItem="PWo-1H-etC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="90e-9Q-3hU"/>
+                <constraint firstItem="KKW-6a-92e" firstAttribute="top" secondItem="PWo-1H-etC" secondAttribute="bottom" constant="16" id="C27-3W-hZ0"/>
+                <constraint firstAttribute="trailing" secondItem="0SW-t3-lCU" secondAttribute="trailing" constant="16" id="ClX-g7-JYf"/>
+                <constraint firstAttribute="trailing" secondItem="KKW-6a-92e" secondAttribute="trailing" constant="16" id="SEj-Hy-vd4"/>
+                <constraint firstItem="KKW-6a-92e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="Tas-yv-722"/>
+                <constraint firstItem="PWo-1H-etC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" id="fv6-Gk-6oZ"/>
+                <constraint firstItem="0SW-t3-lCU" firstAttribute="top" secondItem="KKW-6a-92e" secondAttribute="bottom" constant="16" id="q3Q-fl-5M0"/>
+                <constraint firstItem="PWo-1H-etC" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="y9s-V9-5tN"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="56"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSCarouselView" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="ltA-XU-IZw" id="00W-0r-xEa"/>
+                <outlet property="collectionViewHeight" destination="JYg-Kh-csV" id="xXa-Xc-1L7"/>
+                <outlet property="scrollingPageControl" destination="JHt-7g-MCY" id="BbB-34-Dkj"/>
+                <outlet property="scrollingView" destination="rSs-iD-TUH" id="pup-yK-c8r"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="399"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fAM-3m-yxM">
+                    <rect key="frame" x="0.0" y="64" width="414" height="285"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="230" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ltA-XU-IZw">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="255"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="JYg-Kh-csV"/>
+                            </constraints>
+                            <collectionViewLayout key="collectionViewLayout" id="8c8-Bk-m5R" customClass="CenteredCollectionViewFlowLayout" customModule="OneAppDesignSystem" customModuleProvider="target"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="3JB-88-Qd8"/>
+                                <outlet property="delegate" destination="-1" id="5xl-Vg-JZm"/>
+                            </connections>
+                        </collectionView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rSs-iD-TUH">
+                            <rect key="frame" x="0.0" y="255" width="414" height="30"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="30" translatesAutoresizingMaskIntoConstraints="NO" id="JHt-7g-MCY" customClass="ScrollingPageControl" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="107" y="16" width="200" height="6"/>
+                                    <viewLayoutGuide key="safeArea" id="tvg-uz-EXs"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="6" id="u7G-Zj-lTY"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="JHt-7g-MCY" secondAttribute="bottom" constant="8" id="id6-FY-bLd"/>
+                                <constraint firstItem="JHt-7g-MCY" firstAttribute="top" secondItem="rSs-iD-TUH" secondAttribute="top" constant="16" id="oVk-Ax-ZlJ"/>
+                                <constraint firstItem="JHt-7g-MCY" firstAttribute="centerX" secondItem="rSs-iD-TUH" secondAttribute="centerX" id="vGw-a5-8qe"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fAM-3m-yxM" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="-16" id="QtN-c6-VFH"/>
+                <constraint firstItem="fAM-3m-yxM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="TX6-wZ-3JU"/>
+                <constraint firstItem="fAM-3m-yxM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="mJI-in-LL0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fAM-3m-yxM" secondAttribute="trailing" id="vlN-3T-Zsq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="133.33333333333334" y="242.07589285714283"/>
+        </view>
+    </objects>
+</document>

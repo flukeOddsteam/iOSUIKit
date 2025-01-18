@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSOfferingCard" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="offeringBackgroundView" destination="qQs-dj-fC5" id="q3q-JR-bdM"/>
+                <outlet property="offeringImageLeftView" destination="Ocj-bq-G5e" id="VBN-n6-RaI"/>
+                <outlet property="stackView" destination="dTi-YT-qb1" id="6vV-UD-0tr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="262"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dTi-YT-qb1">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="0.0"/>
+                    <subviews>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQs-dj-fC5" customClass="OfferingBackgroundImageView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="0.0"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ocj-bq-G5e" customClass="OfferingImageLeftView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="0.0"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dTi-YT-qb1" secondAttribute="bottom" id="JQI-sp-v9G"/>
+                <constraint firstItem="dTi-YT-qb1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ke0-3g-PC3"/>
+                <constraint firstAttribute="trailing" secondItem="dTi-YT-qb1" secondAttribute="trailing" id="TV2-jb-jw1"/>
+                <constraint firstItem="dTi-YT-qb1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YRH-yY-9yt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="58.778625954198468" y="228.16901408450704"/>
+        </view>
+    </objects>
+</document>

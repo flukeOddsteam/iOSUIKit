@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsMustKnowCardViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="mustKnowCard1" destination="wl2-WH-D94" id="Uhd-WU-q5P"/>
+                <outlet property="mustKnowCard2" destination="HWY-Zh-S6k" id="IXb-cv-xrY"/>
+                <outlet property="mustKnowCard3" destination="Js4-LW-3Zd" id="Sve-iG-zMF"/>
+                <outlet property="mustKnowCard4" destination="EOD-QB-v49" id="fO7-Pu-OJW"/>
+                <outlet property="mustKnowCard5" destination="zYG-gQ-V28" id="lts-En-q1s"/>
+                <outlet property="mustKnowCard6" destination="LpV-CA-fo1" id="geK-dJ-zMZ"/>
+                <outlet property="navigationBarView" destination="riy-6f-Eig" id="kX1-89-gmS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="subLabels" destination="RbR-yW-bAw" collectionClass="NSMutableArray" id="eDW-er-SGM"/>
+                <outletCollection property="subLabels" destination="yMv-ej-feD" collectionClass="NSMutableArray" id="Cxy-Qp-F70"/>
+                <outletCollection property="subLabels" destination="lNd-1n-QPH" collectionClass="NSMutableArray" id="xja-9O-6ha"/>
+                <outletCollection property="subLabels" destination="XGT-lC-WiJ" collectionClass="NSMutableArray" id="LoG-uK-zjx"/>
+                <outletCollection property="subLabels" destination="fKA-ag-x2W" collectionClass="NSMutableArray" id="0su-hv-VC9"/>
+                <outletCollection property="titleLabels" destination="cXL-jM-y91" collectionClass="NSMutableArray" id="TH8-kP-xaU"/>
+                <outletCollection property="titleLabels" destination="z4S-fm-snq" collectionClass="NSMutableArray" id="AbE-1U-3eR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VQ-lz-oVX">
+                    <rect key="frame" x="0.0" y="93" width="393" height="725"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ahe-0L-kgb">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="1568"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="x3a-32-yrC">
+                                    <rect key="frame" x="16" y="16" width="361" height="1536"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image : Icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXL-jM-y91">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type : Security" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMv-ej-feD">
+                                            <rect key="frame" x="0.0" y="40" width="361" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="196" translatesAutoresizingMaskIntoConstraints="NO" id="wl2-WH-D94" customClass="DSMustKnowCard" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="80" width="361" height="196"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type : Reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbR-yW-bAw" userLabel="Type : Reminder">
+                                            <rect key="frame" x="0.0" y="292" width="361" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="196" translatesAutoresizingMaskIntoConstraints="NO" id="HWY-Zh-S6k" customClass="DSMustKnowCard" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="332" width="361" height="196"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type : Informative" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNd-1n-QPH">
+                                            <rect key="frame" x="0.0" y="544" width="361" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="196" translatesAutoresizingMaskIntoConstraints="NO" id="Js4-LW-3Zd" customClass="DSMustKnowCard" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="584" width="361" height="196"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type : Approval" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGT-lC-WiJ">
+                                            <rect key="frame" x="0.0" y="796" width="361" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="196" translatesAutoresizingMaskIntoConstraints="NO" id="EOD-QB-v49" customClass="DSMustKnowCard" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="836" width="361" height="196"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type : Disable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKA-ag-x2W">
+                                            <rect key="frame" x="0.0" y="1048" width="361" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="196" translatesAutoresizingMaskIntoConstraints="NO" id="zYG-gQ-V28" customClass="DSMustKnowCard" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="1088" width="361" height="196"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image : Logo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4S-fm-snq" userLabel="Image : Logo">
+                                            <rect key="frame" x="0.0" y="1300" width="361" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="196" translatesAutoresizingMaskIntoConstraints="NO" id="LpV-CA-fo1" customClass="DSMustKnowCard" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="1340" width="361" height="196"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="x3a-32-yrC" firstAttribute="top" secondItem="Ahe-0L-kgb" secondAttribute="top" constant="16" id="c7T-Sg-dVi"/>
+                                <constraint firstAttribute="bottom" secondItem="x3a-32-yrC" secondAttribute="bottom" constant="16" id="lL1-Ml-C4J"/>
+                                <constraint firstAttribute="trailing" secondItem="x3a-32-yrC" secondAttribute="trailing" constant="16" id="qYs-g8-ddd"/>
+                                <constraint firstItem="x3a-32-yrC" firstAttribute="leading" secondItem="Ahe-0L-kgb" secondAttribute="leading" constant="16" id="vIW-7x-3vu"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Ahe-0L-kgb" secondAttribute="width" id="0pd-rr-Zpn"/>
+                        <constraint firstItem="Ahe-0L-kgb" firstAttribute="leading" secondItem="1VQ-lz-oVX" secondAttribute="leading" id="715-U2-4WR"/>
+                        <constraint firstAttribute="bottom" secondItem="Ahe-0L-kgb" secondAttribute="bottom" id="7Bk-ir-BVJ"/>
+                        <constraint firstAttribute="trailing" secondItem="Ahe-0L-kgb" secondAttribute="trailing" id="7WD-Y5-hmU"/>
+                        <constraint firstItem="Ahe-0L-kgb" firstAttribute="top" secondItem="1VQ-lz-oVX" secondAttribute="top" id="os4-2u-FRF"/>
+                    </constraints>
+                </scrollView>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="riy-6f-Eig" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1VQ-lz-oVX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4uO-Uj-IcA"/>
+                <constraint firstItem="riy-6f-Eig" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8q3-Vq-iJN"/>
+                <constraint firstItem="riy-6f-Eig" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Ras-eV-IxS"/>
+                <constraint firstItem="1VQ-lz-oVX" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="auF-ZB-reR"/>
+                <constraint firstItem="riy-6f-Eig" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ba3-ij-7xh"/>
+                <constraint firstItem="riy-6f-Eig" firstAttribute="bottom" secondItem="1VQ-lz-oVX" secondAttribute="top" constant="16" id="iyo-7h-y50"/>
+                <constraint firstItem="1VQ-lz-oVX" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="vAy-Jy-Qaq"/>
+            </constraints>
+            <point key="canvasLocation" x="-89.312977099236633" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="riy-6f-Eig">
+            <size key="intrinsicContentSize" width="393" height="50"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

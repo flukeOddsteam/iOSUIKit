@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ekachon-Bold.ttf">
+            <string>Ekachon-Bold</string>
+        </array>
+        <array key="Ekachon-Regular.ttf">
+            <string>Ekachon-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsTextFieldViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="navigationBar" destination="kwS-cg-mXn" id="JAq-HT-aKa"/>
+                <outlet property="textField1" destination="kg4-hJ-2K6" id="b0v-mU-Gyz"/>
+                <outlet property="textField10" destination="gqZ-xJ-Tw1" id="0ni-MD-Vij"/>
+                <outlet property="textField11" destination="RS6-J8-BgE" id="dc8-z6-gKx"/>
+                <outlet property="textField12" destination="yPQ-Q4-enT" id="hmM-gG-yQk"/>
+                <outlet property="textField2" destination="pR6-0h-Uo0" id="RE7-Z7-gcM"/>
+                <outlet property="textField3" destination="Tae-b4-yNj" id="gec-2m-wUb"/>
+                <outlet property="textField4" destination="scK-Nq-GHC" id="27e-MN-edh"/>
+                <outlet property="textField5" destination="PTG-l5-YHt" id="cqz-uD-76b"/>
+                <outlet property="textField6" destination="U1q-eG-d1H" id="kS1-Qr-Jjn"/>
+                <outlet property="textField7" destination="F9d-Iv-Lzc" id="p7O-bX-Wad"/>
+                <outlet property="textField8" destination="q0V-De-CjE" id="X0x-Gq-n7I"/>
+                <outlet property="textField9" destination="scj-OH-gap" id="f1V-pv-cMj"/>
+                <outlet property="textFieldMaxLength1" destination="iCM-O1-Htq" id="O76-fI-fFu"/>
+                <outlet property="textFieldMaxLength2" destination="GF8-97-hnm" id="aNx-M3-1Rp"/>
+                <outlet property="textFieldMaxLength3" destination="J3N-me-Wa3" id="1UN-aU-nXa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwS-cg-mXn" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Db7-Na-Lig"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ad-nb-fdf">
+                    <rect key="frame" x="0.0" y="84" width="414" height="778"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hIr-iz-n2X">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="2127"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="kg4-hJ-2K6" customClass="DSTextField" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="16" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="pR6-0h-Uo0" customClass="DSTextField" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="152" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="iCM-O1-Htq" customClass="DSTextField" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="288" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="Tae-b4-yNj" customClass="DSTextField" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="424" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="scK-Nq-GHC" customClass="DSTextField" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="560" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hide Helper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyi-JJ-iT9">
+                                    <rect key="frame" x="16" y="696" width="382" height="23.5"/>
+                                    <fontDescription key="fontDescription" name="Ekachon-Regular" family="Ekachon" pointSize="16"/>
+                                    <color key="textColor" red="0.0" green="0.31372549019607843" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="PTG-l5-YHt" customClass="DSTextField" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="727.5" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="U1q-eG-d1H" customClass="DSTextField" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="863.5" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="GF8-97-hnm" customClass="DSTextField" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="999.5" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="F9d-Iv-Lzc" customClass="DSTextField" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="1135.5" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="q0V-De-CjE" customClass="DSTextField" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="1271.5" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn on Icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fH8-RA-Wg9">
+                                    <rect key="frame" x="16" y="1407.5" width="382" height="23.5"/>
+                                    <fontDescription key="fontDescription" name="Ekachon-Bold" family="Ekachon" pointSize="16"/>
+                                    <color key="textColor" red="0.0" green="0.31372549020000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="scj-OH-gap" customClass="DSTextField" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="1439" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="gqZ-xJ-Tw1" customClass="DSTextField" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="1575" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="J3N-me-Wa3" customClass="DSTextField" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="1711" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="RS6-J8-BgE" customClass="DSTextField" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="1847" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="yPQ-Q4-enT" customClass="DSTextField" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="1983" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hIr-iz-n2X" firstAttribute="top" secondItem="6ad-nb-fdf" secondAttribute="top" id="52k-FN-6za"/>
+                        <constraint firstItem="hIr-iz-n2X" firstAttribute="leading" secondItem="6ad-nb-fdf" secondAttribute="leading" id="5Ei-Me-19s"/>
+                        <constraint firstAttribute="trailing" secondItem="hIr-iz-n2X" secondAttribute="trailing" id="XDs-2I-UjO"/>
+                        <constraint firstAttribute="bottom" secondItem="hIr-iz-n2X" secondAttribute="bottom" id="euj-7h-ntN"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6ad-nb-fdf" secondAttribute="trailing" id="0wG-xU-vQH"/>
+                <constraint firstItem="kwS-cg-mXn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JWT-2g-Dlv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kwS-cg-mXn" secondAttribute="trailing" id="OPW-QM-r20"/>
+                <constraint firstItem="hIr-iz-n2X" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="TUG-O5-YpG"/>
+                <constraint firstItem="6ad-nb-fdf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VFr-iu-daq"/>
+                <constraint firstItem="kwS-cg-mXn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="e5I-GI-qXu"/>
+                <constraint firstItem="6ad-nb-fdf" firstAttribute="top" secondItem="kwS-cg-mXn" secondAttribute="bottom" id="e6N-b6-t4m"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6ad-nb-fdf" secondAttribute="bottom" id="uaZ-fQ-P3A"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="60.9375"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

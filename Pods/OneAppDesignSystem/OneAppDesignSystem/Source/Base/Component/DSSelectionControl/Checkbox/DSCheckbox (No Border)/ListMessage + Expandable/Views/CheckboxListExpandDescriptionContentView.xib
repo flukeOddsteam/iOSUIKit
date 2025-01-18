@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckboxListExpandDescriptionContentView" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="leftContainerView" destination="VRi-gz-w2p" id="3ku-Pe-Zqz"/>
+                <outlet property="leftDescriptionLabel" destination="ar8-Xi-tEe" id="cnI-lI-8Ef"/>
+                <outlet property="rightContainerView" destination="JS8-Ai-NUq" id="Br9-ja-s3A"/>
+                <outlet property="rightDescriptionLabel" destination="da2-Pz-8Gx" id="nI5-HL-dQ6"/>
+                <outlet property="widthContentContainerConstraint" destination="09E-hZ-2K4" id="gC1-ov-8vC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RX9-YT-Upk">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRi-gz-w2p">
+                            <rect key="frame" x="0.0" y="0.0" width="192.66666666666666" height="100"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar8-Xi-tEe">
+                                    <rect key="frame" x="0.0" y="0.0" width="192.66666666666666" height="100"/>
+                                    <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="ar8-Xi-tEe" firstAttribute="top" secondItem="VRi-gz-w2p" secondAttribute="top" id="d37-hd-6qB"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ar8-Xi-tEe" secondAttribute="bottom" id="gIN-3D-Y4c"/>
+                                <constraint firstAttribute="trailing" secondItem="ar8-Xi-tEe" secondAttribute="trailing" id="rDx-NP-W1W"/>
+                                <constraint firstItem="ar8-Xi-tEe" firstAttribute="leading" secondItem="VRi-gz-w2p" secondAttribute="leading" id="u2o-WB-li7"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JS8-Ai-NUq">
+                            <rect key="frame" x="200.66666666666663" y="0.0" width="192.33333333333337" height="100"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da2-Pz-8Gx">
+                                    <rect key="frame" x="0.0" y="0.0" width="192.33333333333334" height="100"/>
+                                    <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="da2-Pz-8Gx" firstAttribute="top" secondItem="JS8-Ai-NUq" secondAttribute="top" id="CDP-Yd-jWJ"/>
+                                <constraint firstAttribute="trailing" secondItem="da2-Pz-8Gx" secondAttribute="trailing" id="cdY-B8-xdK"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="da2-Pz-8Gx" secondAttribute="bottom" id="e0T-Ry-Yz3"/>
+                                <constraint firstItem="da2-Pz-8Gx" firstAttribute="leading" secondItem="JS8-Ai-NUq" secondAttribute="leading" id="isF-vx-izI"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="VRi-gz-w2p" firstAttribute="width" secondItem="JS8-Ai-NUq" secondAttribute="width" id="09E-hZ-2K4"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RX9-YT-Upk" secondAttribute="trailing" id="6XG-c5-vI9"/>
+                <constraint firstItem="RX9-YT-Upk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7Q6-XC-TjZ"/>
+                <constraint firstAttribute="bottom" secondItem="RX9-YT-Upk" secondAttribute="bottom" id="hR3-wA-xMw"/>
+                <constraint firstItem="RX9-YT-Upk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oIt-HB-eyg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="32.824427480916029" y="285.21126760563379"/>
+        </view>
+    </objects>
+</document>

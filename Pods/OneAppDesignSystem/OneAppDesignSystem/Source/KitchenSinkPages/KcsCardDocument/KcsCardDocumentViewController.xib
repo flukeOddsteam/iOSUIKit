@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsCardDocumentViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="cardDocument1" destination="Q79-9b-H3m" id="4v3-2X-gtP"/>
+                <outlet property="cardDocument2" destination="3Ru-Qe-j7r" id="XL8-sC-13G"/>
+                <outlet property="cardDocument3" destination="MaA-Yv-prb" id="Tco-ag-Tao"/>
+                <outlet property="cardDocument4" destination="eeC-cC-6DH" id="FfL-EW-LO2"/>
+                <outlet property="navigationBarView" destination="9Px-rC-Mzh" id="I6F-85-MTu"/>
+                <outlet property="titleLabel" destination="peb-9v-fPW" id="Dee-PL-e4q"/>
+                <outlet property="view" destination="UHd-C0-w8F" id="eIg-In-4Gh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="UHd-C0-w8F">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Px-rC-Mzh" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="SK0-R2-bVk"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ec4-4L-Lsy">
+                    <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xnc-pP-z8b">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="493.66666666666669"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Igq-Mc-uDc">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peb-9v-fPW">
+                                            <rect key="frame" x="16" y="8" width="361" height="42"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="peb-9v-fPW" firstAttribute="leading" secondItem="Igq-Mc-uDc" secondAttribute="leading" constant="16" id="8Km-Bm-u70"/>
+                                        <constraint firstAttribute="bottom" secondItem="peb-9v-fPW" secondAttribute="bottom" id="AHf-ED-zPm"/>
+                                        <constraint firstItem="peb-9v-fPW" firstAttribute="top" secondItem="Igq-Mc-uDc" secondAttribute="top" constant="8" id="BJ4-1W-a3t"/>
+                                        <constraint firstAttribute="trailing" secondItem="peb-9v-fPW" secondAttribute="trailing" constant="16" id="gjK-dA-dd6"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1EP-yY-S63">
+                                    <rect key="frame" x="0.0" y="58" width="393" height="8"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="8" id="JJZ-kG-ttJ"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="mB0-15-koy">
+                                    <rect key="frame" x="0.0" y="74" width="393" height="198"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="FMO-vf-ztR">
+                                            <rect key="frame" x="16" y="0.0" width="361" height="198"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q79-9b-H3m" customClass="DSCardDocument" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="198"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ru-Qe-j7r" customClass="DSCardDocument" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="188.66666666666663" y="0.0" width="172.33333333333337" height="198"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="FMO-vf-ztR" secondAttribute="bottom" id="BU5-gG-f1N"/>
+                                        <constraint firstAttribute="trailing" secondItem="FMO-vf-ztR" secondAttribute="trailing" constant="16" id="EVh-aT-uuC"/>
+                                        <constraint firstItem="FMO-vf-ztR" firstAttribute="leading" secondItem="mB0-15-koy" secondAttribute="leading" constant="16" id="GMg-Be-u66"/>
+                                        <constraint firstItem="FMO-vf-ztR" firstAttribute="top" secondItem="mB0-15-koy" secondAttribute="top" id="lGs-8O-7Zr"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKs-0O-9zZ">
+                                    <rect key="frame" x="0.0" y="280" width="393" height="16"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="ZU4-V1-eVo"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="iVC-xn-iNQ">
+                                    <rect key="frame" x="0.0" y="304" width="393" height="189.66666666666663"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bOz-Ee-q6u">
+                                            <rect key="frame" x="16" y="0.0" width="361" height="189.66666666666666"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MaA-Yv-prb" customClass="DSCardDocument" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="189.66666666666666"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeC-cC-6DH" customClass="DSCardDocument" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="188.66666666666663" y="0.0" width="172.33333333333337" height="189.66666666666666"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="bOz-Ee-q6u" secondAttribute="trailing" constant="16" id="CgS-bj-AEz"/>
+                                        <constraint firstItem="bOz-Ee-q6u" firstAttribute="top" secondItem="iVC-xn-iNQ" secondAttribute="top" id="J5V-hO-Vu0"/>
+                                        <constraint firstItem="bOz-Ee-q6u" firstAttribute="leading" secondItem="iVC-xn-iNQ" secondAttribute="leading" constant="16" id="Sck-mT-jR2"/>
+                                        <constraint firstAttribute="bottom" secondItem="bOz-Ee-q6u" secondAttribute="bottom" id="jLc-e0-2gW" userLabel="I"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="xnc-pP-z8b" firstAttribute="top" secondItem="ec4-4L-Lsy" secondAttribute="top" id="QUn-Ve-iUo"/>
+                        <constraint firstAttribute="bottom" secondItem="xnc-pP-z8b" secondAttribute="bottom" id="Vp0-fp-7mS"/>
+                        <constraint firstAttribute="trailing" secondItem="xnc-pP-z8b" secondAttribute="trailing" id="Yha-TO-1Hq"/>
+                        <constraint firstItem="xnc-pP-z8b" firstAttribute="leading" secondItem="ec4-4L-Lsy" secondAttribute="leading" id="yNb-wb-WxQ"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Dcf-Ya-s1s"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9Px-rC-Mzh" secondAttribute="trailing" id="9FK-XN-eKg"/>
+                <constraint firstItem="Dcf-Ya-s1s" firstAttribute="bottom" secondItem="ec4-4L-Lsy" secondAttribute="bottom" id="FRg-UX-bUG"/>
+                <constraint firstItem="ec4-4L-Lsy" firstAttribute="leading" secondItem="UHd-C0-w8F" secondAttribute="leading" id="P24-Be-vcI"/>
+                <constraint firstItem="9Px-rC-Mzh" firstAttribute="leading" secondItem="Dcf-Ya-s1s" secondAttribute="leading" id="RZ4-C0-XKf"/>
+                <constraint firstItem="xnc-pP-z8b" firstAttribute="width" secondItem="UHd-C0-w8F" secondAttribute="width" id="ZZg-kP-Q3f"/>
+                <constraint firstItem="ec4-4L-Lsy" firstAttribute="top" secondItem="9Px-rC-Mzh" secondAttribute="bottom" id="ZhQ-sX-iIa"/>
+                <constraint firstItem="9Px-rC-Mzh" firstAttribute="top" secondItem="Dcf-Ya-s1s" secondAttribute="top" id="ooQ-EC-2FQ"/>
+                <constraint firstAttribute="trailing" secondItem="ec4-4L-Lsy" secondAttribute="trailing" id="rPa-Tk-9UO"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

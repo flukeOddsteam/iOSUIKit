@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon-must-know-urgent.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

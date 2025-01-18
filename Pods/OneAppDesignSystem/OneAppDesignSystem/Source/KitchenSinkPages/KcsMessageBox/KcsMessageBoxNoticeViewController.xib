@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsMessageBoxNoticeViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="messageBoxNotice" destination="5O4-Hr-Djm" id="yqE-4o-Zvk"/>
+                <outlet property="navigationBarView" destination="tzC-qr-E66" id="okb-CA-r2j"/>
+                <outlet property="stackView" destination="63W-9B-ErH" id="E3f-bP-N2o"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzC-qr-E66" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" placeholder="YES" id="avv-iF-aWv"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giN-cx-QFs">
+                    <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="oC7-Db-i2l">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="342"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="5O4-Hr-Djm" customClass="DSMessageBoxNotice" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="24" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="150" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="63W-9B-ErH">
+                                    <rect key="frame" x="16" y="168" width="361" height="150"/>
+                                </stackView>
+                            </subviews>
+                            <directionalEdgeInsets key="directionalLayoutMargins" top="24" leading="16" bottom="24" trailing="16"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="oC7-Db-i2l" firstAttribute="bottom" secondItem="UOI-ke-iuh" secondAttribute="bottom" id="0ib-mk-e2K"/>
+                        <constraint firstItem="oC7-Db-i2l" firstAttribute="leading" secondItem="UOI-ke-iuh" secondAttribute="leading" id="5Fn-oP-ANJ"/>
+                        <constraint firstItem="oC7-Db-i2l" firstAttribute="width" secondItem="I0h-9F-LLN" secondAttribute="width" id="Sog-j6-ZL8"/>
+                        <constraint firstItem="oC7-Db-i2l" firstAttribute="trailing" secondItem="UOI-ke-iuh" secondAttribute="trailing" id="i0f-A5-Qha"/>
+                        <constraint firstItem="oC7-Db-i2l" firstAttribute="top" secondItem="UOI-ke-iuh" secondAttribute="top" id="sfA-xG-U35"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="UOI-ke-iuh"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="I0h-9F-LLN"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="tzC-qr-E66" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5WE-c4-k3I"/>
+                <constraint firstItem="giN-cx-QFs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5q6-a1-Akt"/>
+                <constraint firstItem="giN-cx-QFs" firstAttribute="top" secondItem="tzC-qr-E66" secondAttribute="bottom" id="Fm3-Jz-xbd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tzC-qr-E66" secondAttribute="trailing" id="Sef-yK-KWl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="giN-cx-QFs" secondAttribute="trailing" id="Swh-VT-RI4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="giN-cx-QFs" secondAttribute="bottom" id="WQB-10-n5G"/>
+                <constraint firstItem="tzC-qr-E66" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xRr-5C-c00"/>
+            </constraints>
+            <point key="canvasLocation" x="102" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

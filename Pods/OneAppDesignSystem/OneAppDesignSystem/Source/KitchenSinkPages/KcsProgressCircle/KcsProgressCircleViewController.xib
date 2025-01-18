@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsProgressCircleViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="inputTextField" destination="14u-GO-C35" id="BaR-Xl-lND"/>
+                <outlet property="inputTitleLabel" destination="yv8-X5-gXf" id="jKN-Gu-gQL"/>
+                <outlet property="largeConfidentBlueProgressCircle1" destination="MEm-Cm-Chb" id="uMh-le-Apy"/>
+                <outlet property="largeConfidentBlueProgressCircle2" destination="iMu-Ot-XBx" id="f8K-Vb-eYJ"/>
+                <outlet property="largeConfidentBlueProgressCircle3" destination="aLn-ts-7GL" id="A5m-Ek-MPd"/>
+                <outlet property="largeConfidentBlueProgressCircle4" destination="VDt-Mr-cUa" id="ZaL-IL-jxJ"/>
+                <outlet property="largeConfidentBlueProgressCircle5" destination="tQd-9F-AWf" id="f04-93-X8f"/>
+                <outlet property="largeConfidentBlueProgressCircle6" destination="A8c-DX-R3b" id="zJT-dZ-eVH"/>
+                <outlet property="largeTitleLabel" destination="ASq-ks-amd" id="St3-GJ-l3H"/>
+                <outlet property="largeTrustedNavyBlueProgressCircle1" destination="KVt-ru-gR9" id="RBy-9F-HYQ"/>
+                <outlet property="largeTrustedNavyBlueProgressCircle2" destination="t0N-6b-vb1" id="FG8-YJ-HNF"/>
+                <outlet property="largeTrustedNavyBlueProgressCircle3" destination="yca-42-CS3" id="vCC-vi-nME"/>
+                <outlet property="largeTrustedNavyBlueProgressCircle4" destination="Xsc-YB-351" id="VIZ-2b-84L"/>
+                <outlet property="largeTrustedNavyBlueProgressCircle5" destination="SAz-3P-hmD" id="VyI-Oc-qfg"/>
+                <outlet property="largeTrustedNavyBlueProgressCircle6" destination="bg5-lw-G2e" id="NZj-56-qSP"/>
+                <outlet property="mediumConfidentBlueProgressCircle1" destination="pgY-Pv-90P" id="i5l-ZX-lRE"/>
+                <outlet property="mediumConfidentBlueProgressCircle2" destination="xhs-hf-VXg" id="vd7-KD-Xl5"/>
+                <outlet property="mediumConfidentBlueProgressCircle3" destination="mAH-yB-yab" id="NlY-98-XL6"/>
+                <outlet property="mediumTitleLabel" destination="Fne-k8-U2c" id="R6w-jR-vRX"/>
+                <outlet property="mediumTrustedNavyBlueProgressCircle1" destination="qIM-x1-lfd" id="Kji-PT-WUo"/>
+                <outlet property="mediumTrustedNavyBlueProgressCircle2" destination="vpx-RW-hTy" id="nPQ-S5-RrS"/>
+                <outlet property="mediumTrustedNavyBlueProgressCircle3" destination="gmO-xk-TDy" id="cTL-B1-A7g"/>
+                <outlet property="navigationBarView" destination="8Vh-DW-L36" id="ASd-SY-cIU"/>
+                <outlet property="primaryButton" destination="GS1-jh-DlM" id="eZY-K7-NqR"/>
+                <outlet property="smallProgressCircle1" destination="DMO-Pf-gdf" id="NAS-7C-LoB"/>
+                <outlet property="smallProgressCircle2" destination="xGt-Kq-6cK" id="GVx-9Z-Hvg"/>
+                <outlet property="smallProgressCircle3" destination="Rp7-5a-NsG" id="kyO-ZF-mHp"/>
+                <outlet property="smallProgressCircle4" destination="bXv-h8-ZIp" id="dge-lj-kiH"/>
+                <outlet property="smallTitleLabel" destination="DBU-qC-4il" id="7Ck-Tc-Sli"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Vh-DW-L36" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="KW0-Wa-5u5"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="xuk-n4-Mmt">
+                    <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Qvw-xo-PVD">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="983"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUZ-i9-ZQp" userLabel="Input view">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="207.33333333333334"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress Circle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yv8-X5-gXf">
+                                            <rect key="frame" x="16" y="15.999999999999998" width="361" height="20.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="14u-GO-C35" customClass="DSTextField" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="52.333333333333343" width="361" height="73"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="GS1-jh-DlM" customClass="DSPrimaryButton" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="141.33333333333334" width="361" height="50"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <connections>
+                                                <action selector="inputButtonDidTapped:" destination="-1" eventType="touchUpInside" id="bXG-O2-t56"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="14u-GO-C35" firstAttribute="leading" secondItem="rUZ-i9-ZQp" secondAttribute="leading" constant="16" id="0ep-wV-6IG"/>
+                                        <constraint firstAttribute="bottom" secondItem="GS1-jh-DlM" secondAttribute="bottom" constant="16" id="1jg-aO-MvF"/>
+                                        <constraint firstItem="14u-GO-C35" firstAttribute="top" secondItem="yv8-X5-gXf" secondAttribute="bottom" constant="16" id="RKT-cx-fpa"/>
+                                        <constraint firstItem="GS1-jh-DlM" firstAttribute="leading" secondItem="rUZ-i9-ZQp" secondAttribute="leading" constant="16" id="RvS-BQ-woK"/>
+                                        <constraint firstAttribute="trailing" secondItem="GS1-jh-DlM" secondAttribute="trailing" constant="16" id="UE8-tB-Xke"/>
+                                        <constraint firstItem="GS1-jh-DlM" firstAttribute="top" secondItem="14u-GO-C35" secondAttribute="bottom" constant="16" id="gve-ma-4YS"/>
+                                        <constraint firstItem="yv8-X5-gXf" firstAttribute="leading" secondItem="rUZ-i9-ZQp" secondAttribute="leading" constant="16" id="jif-vM-dJg"/>
+                                        <constraint firstAttribute="trailing" secondItem="14u-GO-C35" secondAttribute="trailing" constant="16" id="lQ6-TO-eyb"/>
+                                        <constraint firstItem="yv8-X5-gXf" firstAttribute="top" secondItem="rUZ-i9-ZQp" secondAttribute="top" constant="16" id="s0X-WY-eKB"/>
+                                        <constraint firstAttribute="trailing" secondItem="yv8-X5-gXf" secondAttribute="trailing" constant="16" id="yfc-Ii-AMK"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="940-Jn-6WF">
+                                    <rect key="frame" x="0.0" y="207.33333333333331" width="393" height="180.33333333333331"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Small" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBU-qC-4il">
+                                            <rect key="frame" x="16" y="0.0" width="361" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QtV-Ff-ENx">
+                                            <rect key="frame" x="16" y="36.333333333333371" width="216" height="128"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="DMO-Pf-gdf" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="48" height="128"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="xGt-Kq-6cK" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="56" y="0.0" width="48" height="128"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="Rp7-5a-NsG" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="112" y="0.0" width="48" height="128"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="bXv-h8-ZIp" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="168" y="0.0" width="48" height="128"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="QtV-Ff-ENx" firstAttribute="leading" secondItem="940-Jn-6WF" secondAttribute="leading" constant="16" id="A48-zC-Uek"/>
+                                        <constraint firstAttribute="trailing" secondItem="DBU-qC-4il" secondAttribute="trailing" constant="16" id="LEZ-8d-xmR"/>
+                                        <constraint firstItem="DBU-qC-4il" firstAttribute="leading" secondItem="940-Jn-6WF" secondAttribute="leading" constant="16" id="bH9-9g-guf"/>
+                                        <constraint firstAttribute="bottom" secondItem="QtV-Ff-ENx" secondAttribute="bottom" constant="16" id="cCO-Aa-m2c"/>
+                                        <constraint firstItem="QtV-Ff-ENx" firstAttribute="top" secondItem="DBU-qC-4il" secondAttribute="bottom" constant="16" id="qxX-zz-TI1"/>
+                                        <constraint firstItem="DBU-qC-4il" firstAttribute="top" secondItem="940-Jn-6WF" secondAttribute="top" id="vKt-wR-afZ"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4g7-nG-IaR">
+                                    <rect key="frame" x="0.0" y="387.66666666666669" width="393" height="175.00000000000006"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fne-k8-U2c">
+                                            <rect key="frame" x="16" y="0.0" width="361" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4L2-4V-xee">
+                                            <rect key="frame" x="16" y="36.333333333333314" width="160" height="58.666666666666657"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="pgY-Pv-90P" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="48" height="58.666666666666664"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="xhs-hf-VXg" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="56" y="0.0" width="48" height="58.666666666666664"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="mAH-yB-yab" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="112" y="0.0" width="48" height="58.666666666666664"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="o4W-eV-DOX">
+                                            <rect key="frame" x="16" y="110.99999999999994" width="160" height="48"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="qIM-x1-lfd" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="vpx-RW-hTy" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="56" y="0.0" width="48" height="48"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="gmO-xk-TDy" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="112" y="0.0" width="48" height="48"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="Fne-k8-U2c" firstAttribute="leading" secondItem="4g7-nG-IaR" secondAttribute="leading" constant="16" id="2fy-sp-svU"/>
+                                        <constraint firstItem="4L2-4V-xee" firstAttribute="top" secondItem="Fne-k8-U2c" secondAttribute="bottom" constant="16" id="BDd-ZU-vCO"/>
+                                        <constraint firstAttribute="bottom" secondItem="o4W-eV-DOX" secondAttribute="bottom" constant="16" id="BVd-ZL-0AM"/>
+                                        <constraint firstItem="Fne-k8-U2c" firstAttribute="top" secondItem="4g7-nG-IaR" secondAttribute="top" id="Jkf-YF-BXl"/>
+                                        <constraint firstItem="o4W-eV-DOX" firstAttribute="leading" secondItem="4g7-nG-IaR" secondAttribute="leading" constant="16" id="c5t-Pb-j7J"/>
+                                        <constraint firstAttribute="trailing" secondItem="Fne-k8-U2c" secondAttribute="trailing" constant="16" id="g93-bi-wbZ"/>
+                                        <constraint firstItem="4L2-4V-xee" firstAttribute="leading" secondItem="4g7-nG-IaR" secondAttribute="leading" constant="16" id="hvl-zF-iDZ"/>
+                                        <constraint firstItem="o4W-eV-DOX" firstAttribute="top" secondItem="4L2-4V-xee" secondAttribute="bottom" constant="16" id="qio-I1-kHL"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Tb-D9-3nQ">
+                                    <rect key="frame" x="0.0" y="562.66666666666663" width="393" height="420.33333333333337"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Large" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASq-ks-amd">
+                                            <rect key="frame" x="16" y="0.0" width="361" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Dcg-oa-42X">
+                                            <rect key="frame" x="16" y="36.333333333333371" width="104" height="368"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tEO-JO-soX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="104" height="48"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="MEm-Cm-Chb" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="KVt-ru-gR9" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="56" y="0.0" width="48" height="48"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ckm-ef-Ffk">
+                                                    <rect key="frame" x="0.0" y="64" width="104" height="48"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="iMu-Ot-XBx" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="t0N-6b-vb1" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="56" y="0.0" width="48" height="48"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1cZ-rw-4wb">
+                                                    <rect key="frame" x="0.0" y="128" width="104" height="48"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="aLn-ts-7GL" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="yca-42-CS3" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="56" y="0.0" width="48" height="48"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UAg-SE-1Aj">
+                                                    <rect key="frame" x="0.0" y="192" width="104" height="48"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="VDt-Mr-cUa" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="Xsc-YB-351" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="56" y="0.0" width="48" height="48"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Mk7-qV-xOd">
+                                                    <rect key="frame" x="0.0" y="256" width="104" height="48"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="tQd-9F-AWf" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="SAz-3P-hmD" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="56" y="0.0" width="48" height="48"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AnB-Zd-qSI">
+                                                    <rect key="frame" x="0.0" y="320" width="104" height="48"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="A8c-DX-R3b" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="48" placeholderIntrinsicHeight="48" translatesAutoresizingMaskIntoConstraints="NO" id="bg5-lw-G2e" customClass="DSProgressCircle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="56" y="0.0" width="48" height="48"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Dcg-oa-42X" secondAttribute="bottom" constant="16" id="6Lh-8J-XrH"/>
+                                        <constraint firstItem="ASq-ks-amd" firstAttribute="top" secondItem="6Tb-D9-3nQ" secondAttribute="top" id="Jww-af-rho"/>
+                                        <constraint firstItem="Dcg-oa-42X" firstAttribute="leading" secondItem="6Tb-D9-3nQ" secondAttribute="leading" constant="16" id="Mgl-rD-7kP"/>
+                                        <constraint firstItem="ASq-ks-amd" firstAttribute="leading" secondItem="6Tb-D9-3nQ" secondAttribute="leading" constant="16" id="VaD-tb-tYB"/>
+                                        <constraint firstItem="Dcg-oa-42X" firstAttribute="top" secondItem="ASq-ks-amd" secondAttribute="bottom" constant="16" id="cst-Oc-6X3"/>
+                                        <constraint firstAttribute="trailing" secondItem="ASq-ks-amd" secondAttribute="trailing" constant="16" id="kza-Qq-UTW"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Qvw-xo-PVD" secondAttribute="trailing" id="Aa2-hr-4qq"/>
+                        <constraint firstItem="Qvw-xo-PVD" firstAttribute="top" secondItem="xuk-n4-Mmt" secondAttribute="top" id="FcI-SS-Ujt"/>
+                        <constraint firstAttribute="bottom" secondItem="Qvw-xo-PVD" secondAttribute="bottom" id="ME3-8B-UHk"/>
+                        <constraint firstItem="Qvw-xo-PVD" firstAttribute="leading" secondItem="xuk-n4-Mmt" secondAttribute="leading" id="SeE-iB-SLu"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8Vh-DW-L36" secondAttribute="trailing" id="5MC-Bk-VRf"/>
+                <constraint firstItem="Qvw-xo-PVD" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Hwh-dj-BzV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xuk-n4-Mmt" secondAttribute="trailing" id="bAZ-kq-PdY"/>
+                <constraint firstItem="8Vh-DW-L36" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bTa-89-8QP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xuk-n4-Mmt" secondAttribute="bottom" id="bZ5-lT-AHF"/>
+                <constraint firstItem="xuk-n4-Mmt" firstAttribute="top" secondItem="8Vh-DW-L36" secondAttribute="bottom" id="ltn-WO-Ghd"/>
+                <constraint firstItem="xuk-n4-Mmt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xXK-y0-38M"/>
+                <constraint firstItem="8Vh-DW-L36" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xaD-mJ-vK0"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

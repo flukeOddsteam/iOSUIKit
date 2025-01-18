@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsStepProgressViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="currentTextField" destination="0ZI-XK-sde" id="dVK-nk-0kI"/>
+                <outlet property="navBar" destination="lkN-8F-ZiH" id="UPT-y9-Aan"/>
+                <outlet property="percentageTextField" destination="ejF-QS-rK8" id="rlL-H8-eaR"/>
+                <outlet property="stepProgressBarView" destination="Oya-Rt-0dh" id="Gzw-yp-ZS4"/>
+                <outlet property="submitButton" destination="dOJ-Ag-edg" id="EPb-ci-zAN"/>
+                <outlet property="titleTextField" destination="g3o-oE-h4c" id="80r-AI-C7a"/>
+                <outlet property="totalTextField" destination="dRL-zf-HVZ" id="J6U-eq-G7G"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lkN-8F-ZiH" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="IeR-aA-5op"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1KQ-Xb-Wgz">
+                    <rect key="frame" x="0.0" y="109" width="393" height="410"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="meu-Ma-lNx">
+                            <rect key="frame" x="16" y="2" width="361" height="248"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Step Title [EX. Step Title]" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g3o-oE-h4c" userLabel="Title Text Field">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="ssw-hE-g4V"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Percentage (0-100) [EX. 70]" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ejF-QS-rK8" userLabel="Percentage Text Field">
+                                    <rect key="frame" x="0.0" y="48" width="361" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="NPy-xb-vzW"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Current (Current/X) [EX. 2]" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ZI-XK-sde" userLabel="Current Text Field">
+                                    <rect key="frame" x="0.0" y="96" width="361" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="0ag-rH-gKH"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Total (x/Total) [EX. 5]" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dRL-zf-HVZ" userLabel="Total Text Field">
+                                    <rect key="frame" x="0.0" y="144" width="361" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="uJU-2L-QSp"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BE2-Dz-d1H">
+                                    <rect key="frame" x="0.0" y="192" width="361" height="56"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOJ-Ag-edg" customClass="DSPrimaryButton" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="8" width="361" height="48"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="95O-ej-4ph"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="onTapSubmit:" destination="-1" eventType="touchUpInside" id="4Ne-rt-3ac"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="dOJ-Ag-edg" firstAttribute="top" secondItem="BE2-Dz-d1H" secondAttribute="top" constant="8" id="31M-jI-ChD"/>
+                                        <constraint firstItem="dOJ-Ag-edg" firstAttribute="leading" secondItem="BE2-Dz-d1H" secondAttribute="leading" id="OhV-NL-rEv"/>
+                                        <constraint firstAttribute="bottom" secondItem="dOJ-Ag-edg" secondAttribute="bottom" id="oXl-JZ-zG3"/>
+                                        <constraint firstAttribute="trailing" secondItem="dOJ-Ag-edg" secondAttribute="trailing" id="sTU-al-McC"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="Oya-Rt-0dh" customClass="DSStepProgressBarView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="16" y="266" width="361" height="128"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Oya-Rt-0dh" firstAttribute="leading" secondItem="1KQ-Xb-Wgz" secondAttribute="leading" constant="16" id="6Re-NB-OWm"/>
+                        <constraint firstAttribute="trailing" secondItem="meu-Ma-lNx" secondAttribute="trailing" constant="16" id="7bz-aw-cTU"/>
+                        <constraint firstItem="meu-Ma-lNx" firstAttribute="top" secondItem="1KQ-Xb-Wgz" secondAttribute="top" constant="2" id="Az5-kw-XZW"/>
+                        <constraint firstAttribute="bottom" secondItem="Oya-Rt-0dh" secondAttribute="bottom" constant="16" id="NdN-PY-ScH"/>
+                        <constraint firstItem="Oya-Rt-0dh" firstAttribute="top" secondItem="meu-Ma-lNx" secondAttribute="bottom" constant="16" id="Nxu-3B-luH"/>
+                        <constraint firstItem="meu-Ma-lNx" firstAttribute="leading" secondItem="1KQ-Xb-Wgz" secondAttribute="leading" constant="16" id="Z5z-NJ-qYr"/>
+                        <constraint firstAttribute="trailing" secondItem="Oya-Rt-0dh" secondAttribute="trailing" constant="16" id="kIR-Hb-cVX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lkN-8F-ZiH" secondAttribute="trailing" id="6mC-nQ-FPS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="leading" secondItem="1KQ-Xb-Wgz" secondAttribute="leading" id="8pT-Sm-C3T"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1KQ-Xb-Wgz" secondAttribute="trailing" id="Scl-uD-jfP"/>
+                <constraint firstItem="1KQ-Xb-Wgz" firstAttribute="top" secondItem="lkN-8F-ZiH" secondAttribute="bottom" id="SwY-EY-tbT"/>
+                <constraint firstItem="lkN-8F-ZiH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gdB-m2-TUV"/>
+                <constraint firstItem="lkN-8F-ZiH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="x9B-nP-xBo"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="63"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Oya-Rt-0dh">
+            <size key="intrinsicContentSize" width="382" height="128"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

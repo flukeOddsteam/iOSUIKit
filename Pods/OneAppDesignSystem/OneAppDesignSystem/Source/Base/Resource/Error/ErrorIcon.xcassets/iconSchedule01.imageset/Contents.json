@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "iconSchedule01.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

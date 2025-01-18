@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IllusCollectionViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="zGp-fa-0hY" id="XkG-ep-wG2"/>
+                <outlet property="heightCollectionView" destination="6Cm-gJ-qvS" id="WnI-Uo-tvd"/>
+                <outlet property="navigationBarView" destination="0rr-ia-R2B" id="wmT-dK-9mu"/>
+                <outlet property="scrollView" destination="izG-C7-Fhd" id="Coi-yY-58F"/>
+                <outlet property="searchTextField" destination="fc7-Zh-uU5" id="cxj-YJ-mFJ"/>
+                <outlet property="view" destination="eFf-1i-a1b" id="Mh0-XO-KVA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="eFf-1i-a1b">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="izG-C7-Fhd">
+                    <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v75-yz-sJX">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="118"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="fc7-Zh-uU5" customClass="DSTextFieldSearch" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="24" width="361" height="70"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvS-13-eFr">
+                                    <rect key="frame" x="0.0" y="118" width="393" height="0.0"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zGp-fa-0hY">
+                                            <rect key="frame" x="16" y="0.0" width="361" height="0.0"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="6Cm-gJ-qvS"/>
+                                            </constraints>
+                                            <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="FbD-8l-Tgt" customClass="AlignedCollectionViewFlowLayout" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                <size key="itemSize" width="128" height="128"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                        </collectionView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="zGp-fa-0hY" firstAttribute="leading" secondItem="mvS-13-eFr" secondAttribute="leading" constant="16" id="Axi-Sm-Fzx"/>
+                                        <constraint firstItem="zGp-fa-0hY" firstAttribute="top" secondItem="mvS-13-eFr" secondAttribute="top" id="VDZ-2I-Ytb"/>
+                                        <constraint firstAttribute="trailing" secondItem="zGp-fa-0hY" secondAttribute="trailing" constant="16" id="xvP-VH-UXo"/>
+                                        <constraint firstAttribute="bottom" secondItem="zGp-fa-0hY" secondAttribute="bottom" id="zgc-fI-U36"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="fc7-Zh-uU5" firstAttribute="top" secondItem="v75-yz-sJX" secondAttribute="top" constant="24" id="1hH-WS-niW"/>
+                                <constraint firstItem="mvS-13-eFr" firstAttribute="leading" secondItem="v75-yz-sJX" secondAttribute="leading" id="JBW-TV-LVi"/>
+                                <constraint firstItem="mvS-13-eFr" firstAttribute="top" secondItem="fc7-Zh-uU5" secondAttribute="bottom" constant="24" id="L2s-ky-kUc"/>
+                                <constraint firstAttribute="trailing" secondItem="mvS-13-eFr" secondAttribute="trailing" id="b8F-fG-pIg"/>
+                                <constraint firstItem="fc7-Zh-uU5" firstAttribute="leading" secondItem="v75-yz-sJX" secondAttribute="leading" constant="16" id="hMh-44-hEw"/>
+                                <constraint firstAttribute="height" priority="250" id="jaK-5j-y1z"/>
+                                <constraint firstAttribute="bottom" secondItem="mvS-13-eFr" secondAttribute="bottom" id="kw5-rO-BfJ"/>
+                                <constraint firstAttribute="trailing" secondItem="fc7-Zh-uU5" secondAttribute="trailing" constant="16" id="vXL-Zv-hb2"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="xY0-Rg-DVg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="v75-yz-sJX" firstAttribute="leading" secondItem="izG-C7-Fhd" secondAttribute="leading" id="UYW-Yf-ECh"/>
+                        <constraint firstAttribute="bottom" secondItem="v75-yz-sJX" secondAttribute="bottom" id="akA-9m-5Fw"/>
+                        <constraint firstItem="v75-yz-sJX" firstAttribute="width" secondItem="izG-C7-Fhd" secondAttribute="width" id="bqw-pk-fNb"/>
+                        <constraint firstAttribute="trailing" secondItem="v75-yz-sJX" secondAttribute="trailing" id="q2R-gu-5SJ"/>
+                        <constraint firstItem="v75-yz-sJX" firstAttribute="top" secondItem="izG-C7-Fhd" secondAttribute="top" id="v1a-NP-mTA"/>
+                    </constraints>
+                </scrollView>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="0rr-ia-R2B" customClass="DSNavBar" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="24c-cZ-2hm"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="izG-C7-Fhd" firstAttribute="leading" secondItem="24c-cZ-2hm" secondAttribute="leading" id="2qk-wP-z2f"/>
+                <constraint firstItem="izG-C7-Fhd" firstAttribute="top" secondItem="0rr-ia-R2B" secondAttribute="bottom" id="Abh-gH-pAO"/>
+                <constraint firstItem="24c-cZ-2hm" firstAttribute="trailing" secondItem="0rr-ia-R2B" secondAttribute="trailing" id="Ebj-ZS-cjK"/>
+                <constraint firstItem="24c-cZ-2hm" firstAttribute="trailing" secondItem="izG-C7-Fhd" secondAttribute="trailing" id="Noh-mD-MZh"/>
+                <constraint firstItem="0rr-ia-R2B" firstAttribute="top" secondItem="24c-cZ-2hm" secondAttribute="top" id="Pl7-jG-vW6"/>
+                <constraint firstItem="0rr-ia-R2B" firstAttribute="leading" secondItem="24c-cZ-2hm" secondAttribute="leading" id="moD-Vi-ua9"/>
+                <constraint firstItem="24c-cZ-2hm" firstAttribute="bottom" secondItem="izG-C7-Fhd" secondAttribute="bottom" id="uwA-KU-u9j"/>
+            </constraints>
+            <point key="canvasLocation" x="-15" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

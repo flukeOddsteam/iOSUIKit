@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20037"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSTabPill" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="contentContainerView" destination="GkW-nN-kiZ" id="Pij-y7-aWe"/>
+                <outlet property="heightMenuContainerViewConstraint" destination="Cul-ms-VQD" id="H3X-hu-1ID"/>
+                <outlet property="menuContainerView" destination="goQ-Td-8Hq" id="FQM-FV-5qN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="goQ-Td-8Hq">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Cul-ms-VQD"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GkW-nN-kiZ">
+                    <rect key="frame" x="0.0" y="40" width="414" height="856"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="goQ-Td-8Hq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="030-6K-ZNu"/>
+                <constraint firstItem="goQ-Td-8Hq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4Zd-in-PB8"/>
+                <constraint firstItem="GkW-nN-kiZ" firstAttribute="top" secondItem="goQ-Td-8Hq" secondAttribute="bottom" id="7cQ-to-7aR"/>
+                <constraint firstAttribute="trailing" secondItem="GkW-nN-kiZ" secondAttribute="trailing" id="88p-OS-zne"/>
+                <constraint firstAttribute="trailing" secondItem="goQ-Td-8Hq" secondAttribute="trailing" id="SsT-eA-r7g"/>
+                <constraint firstAttribute="bottom" secondItem="GkW-nN-kiZ" secondAttribute="bottom" id="YuK-sd-TeR"/>
+                <constraint firstItem="GkW-nN-kiZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lT2-sd-YyJ"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="110"/>
+        </view>
+    </objects>
+</document>

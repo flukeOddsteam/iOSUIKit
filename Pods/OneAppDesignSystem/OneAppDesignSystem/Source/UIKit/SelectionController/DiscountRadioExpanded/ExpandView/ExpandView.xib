@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExpandView" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="bulletNoteContainerView" destination="z9T-Pg-7DA" id="TXA-Pv-S8d"/>
+                <outlet property="bulletNotesView" destination="7UD-V8-jgl" id="5op-aD-6A3"/>
+                <outlet property="ghostButton" destination="Aqg-fV-2uA" id="ssx-gQ-fmI"/>
+                <outlet property="ghostButtonContainerView" destination="ES6-xb-P3d" id="mcG-Ym-2Jp"/>
+                <outlet property="stackView" destination="m30-0f-Ymm" id="SOJ-Qb-2zZ"/>
+                <outlet property="tableView" destination="MD9-Tz-Maw" id="zMH-Lh-5kP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OIm-hT-b2f">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="410"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="m30-0f-Ymm">
+                    <rect key="frame" x="0.0" y="0.0" width="434" height="410"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jYK-OB-819">
+                            <rect key="frame" x="0.0" y="59" width="434" height="249"/>
+                            <subviews>
+                                <tableView contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MD9-Tz-Maw" customClass="IntrinsicTableView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="434" height="202"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ES6-xb-P3d">
+                                    <rect key="frame" x="0.0" y="202" width="434" height="47"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="117" placeholderIntrinsicHeight="56" translatesAutoresizingMaskIntoConstraints="NO" id="Aqg-fV-2uA" customClass="DSGhostButton" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="0.0" width="117" height="47"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="ghostButtonDidTapped:" destination="-1" eventType="touchUpInside" id="QWD-L6-eB9"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="Aqg-fV-2uA" firstAttribute="top" secondItem="ES6-xb-P3d" secondAttribute="top" id="11Q-0w-RZR"/>
+                                        <constraint firstItem="Aqg-fV-2uA" firstAttribute="leading" secondItem="ES6-xb-P3d" secondAttribute="leading" constant="16" id="gP9-2D-d4v"/>
+                                        <constraint firstAttribute="height" constant="47" id="gkp-lc-EX1"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Aqg-fV-2uA" secondAttribute="trailing" constant="16" id="qg1-UY-h4o"/>
+                                        <constraint firstAttribute="bottom" secondItem="Aqg-fV-2uA" secondAttribute="bottom" id="yXR-Jt-5EV"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9T-Pg-7DA">
+                            <rect key="frame" x="0.0" y="316" width="434" height="52"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="402" placeholderIntrinsicHeight="52" translatesAutoresizingMaskIntoConstraints="NO" id="7UD-V8-jgl" customClass="SelectionRemarkView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="434" height="44"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="7UD-V8-jgl" secondAttribute="trailing" id="400-IC-XdM"/>
+                                <constraint firstItem="7UD-V8-jgl" firstAttribute="leading" secondItem="z9T-Pg-7DA" secondAttribute="leading" id="4Nk-Bx-BwU"/>
+                                <constraint firstItem="7UD-V8-jgl" firstAttribute="top" secondItem="z9T-Pg-7DA" secondAttribute="top" id="kH0-iT-AM1"/>
+                                <constraint firstAttribute="bottom" secondItem="7UD-V8-jgl" secondAttribute="bottom" constant="8" id="oE8-xs-s4I"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="0.0" bottom="8" trailing="0.0"/>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="m30-0f-Ymm" firstAttribute="leading" secondItem="OIm-hT-b2f" secondAttribute="leading" id="4TD-74-vIW"/>
+                <constraint firstItem="m30-0f-Ymm" firstAttribute="top" secondItem="OIm-hT-b2f" secondAttribute="top" id="8Ra-Ur-nR5"/>
+                <constraint firstAttribute="bottom" secondItem="m30-0f-Ymm" secondAttribute="bottom" id="8hD-Eb-24k"/>
+                <constraint firstAttribute="trailing" secondItem="m30-0f-Ymm" secondAttribute="trailing" id="AY1-43-0fI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="151.14503816793894" y="304.22535211267609"/>
+        </view>
+    </objects>
+</document>

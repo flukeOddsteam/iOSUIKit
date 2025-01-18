@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsCarouselSelectionSlipViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="carouselSelectionView" destination="fdB-3J-DEf" id="awe-J7-auP"/>
+                <outlet property="navBar" destination="aNW-hA-85n" id="rgL-aS-FEn"/>
+                <outlet property="stickyButton" destination="cvr-Ex-Cao" id="vlU-Pw-dge"/>
+                <outlet property="tabPill" destination="n5t-Q2-ubY" id="6qv-Ja-QHM"/>
+                <outlet property="view" destination="iN0-l3-epB" id="7y9-et-N9B"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNW-hA-85n" customClass="DSNavBar" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="EiF-Dk-YBe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="n5t-Q2-ubY" customClass="DSTabPill" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="16" y="123" width="361" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="dff-9J-73F"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdB-3J-DEf" customClass="DSCarouselSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="179" width="393" height="479"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="vFn-fr-u6V"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvr-Ex-Cao" customClass="DSStickyButtonView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="666" width="393" height="152"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="152" id="UT7-iD-asg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cvr-Ex-Cao" secondAttribute="trailing" id="0zo-mo-fA9"/>
+                <constraint firstItem="cvr-Ex-Cao" firstAttribute="top" secondItem="fdB-3J-DEf" secondAttribute="bottom" constant="8" id="6Tq-Ct-yx4"/>
+                <constraint firstItem="aNW-hA-85n" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="D2Q-bk-tzp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aNW-hA-85n" secondAttribute="trailing" id="Vj8-db-EDb"/>
+                <constraint firstItem="fdB-3J-DEf" firstAttribute="top" secondItem="n5t-Q2-ubY" secondAttribute="bottom" constant="16" id="WBb-qv-566"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="cvr-Ex-Cao" secondAttribute="bottom" id="cvf-rc-ZS1"/>
+                <constraint firstItem="n5t-Q2-ubY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="gCe-wA-06x"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fdB-3J-DEf" secondAttribute="trailing" id="mQR-Yt-f9p"/>
+                <constraint firstItem="aNW-hA-85n" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="o4K-tz-cFK"/>
+                <constraint firstItem="cvr-Ex-Cao" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="oNS-oA-syL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="n5t-Q2-ubY" secondAttribute="trailing" constant="16" id="qog-lI-nDx"/>
+                <constraint firstItem="fdB-3J-DEf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rGf-a6-KcL"/>
+                <constraint firstItem="n5t-Q2-ubY" firstAttribute="top" secondItem="aNW-hA-85n" secondAttribute="bottom" constant="24" id="wCF-Ra-ENn"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,24 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="28.8" y1="5.8" x2="28.8" y2="9.66734" stroke="#7D8999" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="46.811" y1="13.1311" x2="44.1311" y2="15.9195" stroke="#7D8999" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="12.1314" y1="12" x2="14.866" y2="14.7346" stroke="#7D8999" stroke-width="1.6" stroke-linecap="round"/>
+<circle opacity="0.7" cx="44.8333" cy="30.8333" r="5.83333" fill="#DFE6EC"/>
+<circle opacity="0.7" cx="16.8333" cy="37.8333" r="5.83333" fill="#DFE6EC"/>
+<circle cx="21.2526" cy="15.2526" r="3.25259" fill="#DFE6EC"/>
+<circle cx="11.75" cy="25.75" r="1.75" fill="#DFE6EC"/>
+<circle cx="5.16667" cy="19.1667" r="0.916667" stroke="#7D8999" stroke-width="0.5"/>
+<circle cx="46.1667" cy="40.1667" r="0.916667" stroke="#7D8999" stroke-width="0.5"/>
+<line x1="48.5" y1="22.6681" x2="50.7526" y2="22.6681" stroke="#7D8999" stroke-linecap="round"/>
+<line x1="49.5841" y1="21.5" x2="49.5841" y2="23.7526" stroke="#7D8999" stroke-linecap="round"/>
+<line x1="39.5" y1="10.6681" x2="41.7526" y2="10.6681" stroke="#7D8999" stroke-linecap="round"/>
+<line x1="40.5841" y1="9.5" x2="40.5841" y2="11.7526" stroke="#7D8999" stroke-linecap="round"/>
+<line x1="7.5" y1="30.6689" x2="9.75259" y2="30.6689" stroke="#7D8999" stroke-linecap="round"/>
+<line x1="8.58406" y1="29.5" x2="8.58406" y2="31.7526" stroke="#7D8999" stroke-linecap="round"/>
+<rect x="19.4341" y="15.0603" width="21.566" height="34.0844" rx="3" transform="rotate(-0.269246 19.4341 15.0603)" fill="#7D8899"/>
+<rect x="18" y="17.2327" width="21" height="33" rx="3" fill="#AEB7C3"/>
+<rect x="20" y="20.0002" width="17" height="25" rx="2" fill="#DFE6EC"/>
+<circle cx="28.6263" cy="47.6265" r="1.62629" fill="#7D8999"/>
+<path d="M23 32C23 31.4477 23.4477 31 24 31H33C33.5523 31 34 31.4477 34 32V38C34 38.5523 33.5523 39 33 39H24C23.4477 39 23 38.5523 23 38V32Z" fill="#7D8999"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M25 28.5C25 26.567 26.567 25 28.5 25C30.433 25 32 26.567 32 28.5V35H30V28.5C30 27.6716 29.3284 27 28.5 27C27.6716 27 27 27.6716 27 28.5V35H25V28.5Z" fill="#7D8999"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29 35.9146C29.5826 35.7087 30 35.1531 30 34.5C30 33.6716 29.3284 33 28.5 33C27.6716 33 27 33.6716 27 34.5C27 35.1531 27.4174 35.7087 28 35.9146V36.5C28 36.7761 28.2239 37 28.5 37C28.7761 37 29 36.7761 29 36.5V35.9146Z" fill="#DFE6EC"/>
+</svg>

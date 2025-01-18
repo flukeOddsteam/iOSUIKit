@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsInboxViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="navigationBar" destination="14x-8D-Vxa" id="S6C-4f-Nnd"/>
+                <outlet property="stackView" destination="vNN-iL-xnb" id="dOC-ft-bkL"/>
+                <outlet property="view" destination="JnF-TH-1MW" id="clK-ht-c3p"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="JnF-TH-1MW">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="14x-8D-Vxa" customClass="DSNavBar" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6j-9W-FBF">
+                    <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCL-Y8-4SG">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="709"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vNN-iL-xnb">
+                                    <rect key="frame" x="16" y="24" width="361" height="669"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="vNN-iL-xnb" secondAttribute="trailing" constant="16" id="5WJ-TR-zlp"/>
+                                <constraint firstItem="vNN-iL-xnb" firstAttribute="top" secondItem="bCL-Y8-4SG" secondAttribute="top" constant="24" id="XHd-Ve-JcW"/>
+                                <constraint firstAttribute="bottom" secondItem="vNN-iL-xnb" secondAttribute="bottom" constant="16" id="Zw6-tk-OA0"/>
+                                <constraint firstItem="vNN-iL-xnb" firstAttribute="leading" secondItem="bCL-Y8-4SG" secondAttribute="leading" constant="16" id="nJl-ef-Ccb"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="bCL-Y8-4SG" firstAttribute="height" relation="greaterThanOrEqual" secondItem="h6j-9W-FBF" secondAttribute="height" id="9hZ-Lz-CYr"/>
+                        <constraint firstItem="bCL-Y8-4SG" firstAttribute="width" secondItem="h6j-9W-FBF" secondAttribute="width" id="DXD-Up-Mfc"/>
+                        <constraint firstAttribute="trailing" secondItem="bCL-Y8-4SG" secondAttribute="trailing" id="PQW-JV-5lA"/>
+                        <constraint firstItem="bCL-Y8-4SG" firstAttribute="leading" secondItem="h6j-9W-FBF" secondAttribute="leading" id="YT5-c8-rGb"/>
+                        <constraint firstItem="bCL-Y8-4SG" firstAttribute="top" secondItem="h6j-9W-FBF" secondAttribute="top" id="eXO-yd-rOq"/>
+                        <constraint firstItem="bCL-Y8-4SG" firstAttribute="height" secondItem="h6j-9W-FBF" secondAttribute="height" priority="250" id="eal-3V-JMe"/>
+                        <constraint firstAttribute="bottom" secondItem="bCL-Y8-4SG" secondAttribute="bottom" id="yZw-xZ-FHy"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="SPJ-jE-Ai4"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="h6j-9W-FBF" firstAttribute="leading" secondItem="SPJ-jE-Ai4" secondAttribute="leading" id="4oi-it-8vf"/>
+                <constraint firstItem="SPJ-jE-Ai4" firstAttribute="trailing" secondItem="14x-8D-Vxa" secondAttribute="trailing" id="BMg-HI-Vgb"/>
+                <constraint firstItem="h6j-9W-FBF" firstAttribute="trailing" secondItem="SPJ-jE-Ai4" secondAttribute="trailing" id="LuC-YX-gVR"/>
+                <constraint firstItem="14x-8D-Vxa" firstAttribute="leading" secondItem="SPJ-jE-Ai4" secondAttribute="leading" id="Omf-yG-WM7"/>
+                <constraint firstItem="h6j-9W-FBF" firstAttribute="bottom" secondItem="SPJ-jE-Ai4" secondAttribute="bottom" id="UmD-qR-MXv"/>
+                <constraint firstItem="SPJ-jE-Ai4" firstAttribute="top" secondItem="14x-8D-Vxa" secondAttribute="top" id="oIG-NH-DLp"/>
+                <constraint firstItem="h6j-9W-FBF" firstAttribute="top" secondItem="14x-8D-Vxa" secondAttribute="bottom" id="w4n-6c-ozg"/>
+            </constraints>
+            <point key="canvasLocation" x="8.3969465648854964" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

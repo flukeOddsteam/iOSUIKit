@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon24OutlineLeaveGeneral.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

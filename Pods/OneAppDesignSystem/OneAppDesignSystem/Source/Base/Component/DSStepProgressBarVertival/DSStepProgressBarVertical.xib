@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSStepProgressBarVertical" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="circleView" destination="DZr-Op-GWt" id="Nyp-RO-V17"/>
+                <outlet property="iconImageView" destination="xff-FA-MJq" id="isH-qy-JQX"/>
+                <outlet property="lineView" destination="fA0-Oa-h9d" id="gvv-Ar-VIA"/>
+                <outlet property="textLabel" destination="4i9-us-uHp" id="Rld-RH-quj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="agi-Rq-kkb">
+            <rect key="frame" x="0.0" y="0.0" width="299" height="248"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZr-Op-GWt" userLabel="CircleProgressView">
+                    <rect key="frame" x="141.66666666666666" y="4" width="16" height="16"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4i9-us-uHp">
+                            <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xff-FA-MJq">
+                            <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="0LD-Ng-7Id"/>
+                        <constraint firstAttribute="width" secondItem="DZr-Op-GWt" secondAttribute="height" multiplier="1:1" id="2gS-ad-87W"/>
+                        <constraint firstAttribute="trailing" secondItem="xff-FA-MJq" secondAttribute="trailing" id="64a-4E-Zk8"/>
+                        <constraint firstItem="xff-FA-MJq" firstAttribute="leading" secondItem="DZr-Op-GWt" secondAttribute="leading" id="9zh-st-Rk2"/>
+                        <constraint firstItem="4i9-us-uHp" firstAttribute="leading" secondItem="DZr-Op-GWt" secondAttribute="leading" id="Ebi-8q-HwP"/>
+                        <constraint firstAttribute="height" constant="16" id="F4m-q0-tOz"/>
+                        <constraint firstAttribute="trailing" secondItem="4i9-us-uHp" secondAttribute="trailing" id="Pe6-wp-mBq"/>
+                        <constraint firstAttribute="bottom" secondItem="xff-FA-MJq" secondAttribute="bottom" id="ZNV-ss-lFF"/>
+                        <constraint firstAttribute="bottom" secondItem="4i9-us-uHp" secondAttribute="bottom" id="biE-PM-exY"/>
+                        <constraint firstItem="xff-FA-MJq" firstAttribute="top" secondItem="DZr-Op-GWt" secondAttribute="top" id="u24-SQ-xbd"/>
+                        <constraint firstItem="4i9-us-uHp" firstAttribute="top" secondItem="DZr-Op-GWt" secondAttribute="top" id="ytD-0W-oUd"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="2" placeholderIntrinsicHeight="221" translatesAutoresizingMaskIntoConstraints="NO" id="fA0-Oa-h9d" userLabel="lineView">
+                    <rect key="frame" x="148.66666666666666" y="24" width="2" height="220"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="2" id="GlN-zv-nAT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="fA0-Oa-h9d" firstAttribute="centerX" secondItem="DZr-Op-GWt" secondAttribute="centerX" id="Ary-5x-ziJ"/>
+                <constraint firstItem="fA0-Oa-h9d" firstAttribute="top" secondItem="DZr-Op-GWt" secondAttribute="bottom" constant="4" id="eEt-dz-ztC"/>
+                <constraint firstItem="DZr-Op-GWt" firstAttribute="top" secondItem="agi-Rq-kkb" secondAttribute="top" constant="4" id="h1e-7V-uMf"/>
+                <constraint firstItem="DZr-Op-GWt" firstAttribute="centerX" secondItem="agi-Rq-kkb" secondAttribute="centerX" id="qSz-39-5Vn"/>
+                <constraint firstAttribute="bottom" secondItem="fA0-Oa-h9d" secondAttribute="bottom" constant="4" id="xMe-4n-FN7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-177.86259541984731" y="-661.26760563380287"/>
+        </view>
+    </objects>
+</document>

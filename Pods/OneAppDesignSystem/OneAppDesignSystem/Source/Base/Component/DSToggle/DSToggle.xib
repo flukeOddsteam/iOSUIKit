@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSToggle" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="circleView" destination="pNg-kH-ED2" id="s4z-8J-m7w"/>
+                <outlet property="leftIconImageView" destination="zhx-99-RSJ" id="c7G-mC-b6R"/>
+                <outlet property="rightIconImageView" destination="qIQ-58-M0h" id="ygL-qC-zM0"/>
+                <outlet property="selectedLeftConstaint" destination="9sp-IK-TBJ" id="Kvv-g3-LHZ"/>
+                <outlet property="selectedRightConstaint" destination="gBO-ev-fJ1" id="7kY-Ma-PqI"/>
+                <outlet property="toggleView" destination="TDS-ir-oEr" id="aNj-mu-gLI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="24"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDS-ir-oEr">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="24"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zhx-99-RSJ" userLabel="check icon">
+                            <rect key="frame" x="8" y="6" width="12" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="12" id="eqN-mR-WvN"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qIQ-58-M0h" userLabel="close icon">
+                            <rect key="frame" x="30" y="6" width="12" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="12" id="Bht-ww-wAX"/>
+                                <constraint firstAttribute="height" constant="12" id="Uee-tv-oeW"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNg-kH-ED2">
+                            <rect key="frame" x="2" y="2" width="20" height="20"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="pNg-kH-ED2" secondAttribute="height" multiplier="1:1" id="f2r-Pt-898"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="qIQ-58-M0h" firstAttribute="top" secondItem="TDS-ir-oEr" secondAttribute="top" constant="6" id="7iD-No-VBO"/>
+                        <constraint firstItem="pNg-kH-ED2" firstAttribute="leading" secondItem="TDS-ir-oEr" secondAttribute="leading" priority="999" constant="2" id="9sp-IK-TBJ"/>
+                        <constraint firstAttribute="trailing" secondItem="qIQ-58-M0h" secondAttribute="trailing" constant="8" id="Srb-dv-7Om"/>
+                        <constraint firstAttribute="width" constant="50" id="X7L-dT-btP"/>
+                        <constraint firstItem="zhx-99-RSJ" firstAttribute="top" secondItem="TDS-ir-oEr" secondAttribute="top" constant="6" id="YCR-Xs-D9J"/>
+                        <constraint firstAttribute="bottom" secondItem="zhx-99-RSJ" secondAttribute="bottom" constant="6" id="a2W-le-fRA"/>
+                        <constraint firstAttribute="trailing" secondItem="pNg-kH-ED2" secondAttribute="trailing" priority="900" constant="2" id="gBO-ev-fJ1"/>
+                        <constraint firstAttribute="bottom" secondItem="qIQ-58-M0h" secondAttribute="bottom" constant="6" id="lqV-sK-Prs"/>
+                        <constraint firstItem="zhx-99-RSJ" firstAttribute="leading" secondItem="TDS-ir-oEr" secondAttribute="leading" constant="8" id="wRG-r7-mbz"/>
+                        <constraint firstAttribute="height" constant="24" id="xhQ-zK-KEL"/>
+                        <constraint firstAttribute="bottom" secondItem="pNg-kH-ED2" secondAttribute="bottom" constant="2" id="yNe-m4-39S"/>
+                        <constraint firstItem="pNg-kH-ED2" firstAttribute="top" secondItem="TDS-ir-oEr" secondAttribute="top" constant="2" id="zqJ-L1-ELO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TDS-ir-oEr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="A2a-4u-kDY"/>
+                <constraint firstAttribute="bottom" secondItem="TDS-ir-oEr" secondAttribute="bottom" id="HYX-AK-qMD"/>
+                <constraint firstAttribute="trailing" secondItem="TDS-ir-oEr" secondAttribute="trailing" id="Pqh-YZ-wkN"/>
+                <constraint firstItem="TDS-ir-oEr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QuN-ci-YJb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-200" y="-270.49763033175356"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

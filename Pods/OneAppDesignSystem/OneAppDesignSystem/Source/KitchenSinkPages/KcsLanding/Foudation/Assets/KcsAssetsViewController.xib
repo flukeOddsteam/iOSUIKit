@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsAssetsViewController">
+            <connections>
+                <outlet property="listAction" destination="Xqi-OQ-rnX" id="DEU-5Z-9MW"/>
+                <outlet property="navigationBar" destination="SM0-dw-Z6u" id="Q6U-Ge-uAt"/>
+                <outlet property="view" destination="29s-O9-RHg" id="M9N-k4-iaQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="29s-O9-RHg">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="SM0-dw-Z6u" customClass="DSNavBar" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xqi-OQ-rnX" customClass="DSListActionView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="SZv-UA-Rbl"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Xqi-OQ-rnX" firstAttribute="top" secondItem="SM0-dw-Z6u" secondAttribute="bottom" id="4h9-6R-fAp"/>
+                <constraint firstItem="SZv-UA-Rbl" firstAttribute="trailing" secondItem="SM0-dw-Z6u" secondAttribute="trailing" id="HHf-fI-Tzw"/>
+                <constraint firstItem="SM0-dw-Z6u" firstAttribute="leading" secondItem="SZv-UA-Rbl" secondAttribute="leading" id="Mie-sX-6NH"/>
+                <constraint firstItem="Xqi-OQ-rnX" firstAttribute="bottom" secondItem="SZv-UA-Rbl" secondAttribute="bottom" id="QTe-Ez-O2u"/>
+                <constraint firstItem="SZv-UA-Rbl" firstAttribute="leading" secondItem="Xqi-OQ-rnX" secondAttribute="leading" id="bqB-hN-ZGo"/>
+                <constraint firstItem="SZv-UA-Rbl" firstAttribute="top" secondItem="SM0-dw-Z6u" secondAttribute="top" id="keZ-PG-nc5"/>
+                <constraint firstItem="Xqi-OQ-rnX" firstAttribute="trailing" secondItem="SZv-UA-Rbl" secondAttribute="trailing" id="qlB-CY-UwI"/>
+            </constraints>
+            <point key="canvasLocation" x="9" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

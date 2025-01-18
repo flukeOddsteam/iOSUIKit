@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsBulletOnDarkViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="bulletPointOnDark" destination="u6c-kf-HmE" id="pMe-e4-qfw"/>
+                <outlet property="labelView" destination="3fQ-yI-K9R" id="Ttc-Cv-tIs"/>
+                <outlet property="navigationBarView" destination="PSZ-fJ-Nem" id="xvM-m7-l4n"/>
+                <outlet property="stackView" destination="fky-qT-eoo" id="mlr-ad-bQk"/>
+                <outlet property="titleLabel" destination="ctN-Br-pAU" id="19q-PU-8QY"/>
+                <outlet property="view" destination="FBY-YE-iyd" id="com-r5-sMC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="FBY-YE-iyd">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="50" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSZ-fJ-Nem" customClass="DSNavBar" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuC-6R-8Ja">
+                    <rect key="frame" x="0.0" y="109" width="393" height="743"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fky-qT-eoo">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="220.66666666666666"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fQ-yI-K9R">
+                                    <rect key="frame" x="16" y="15.999999999999996" width="361" height="60.666666666666657"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctN-Br-pAU">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="44.666666666666664"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="ctN-Br-pAU" firstAttribute="top" secondItem="3fQ-yI-K9R" secondAttribute="top" id="1Xn-Xl-2Xq"/>
+                                        <constraint firstItem="ctN-Br-pAU" firstAttribute="leading" secondItem="3fQ-yI-K9R" secondAttribute="leading" id="3OP-tZ-NeE"/>
+                                        <constraint firstAttribute="bottom" secondItem="ctN-Br-pAU" secondAttribute="bottom" constant="16" id="ElR-t8-FFu"/>
+                                        <constraint firstAttribute="trailing" secondItem="ctN-Br-pAU" secondAttribute="trailing" id="YXt-Hb-GPc"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="u6c-kf-HmE" customClass="DSBulletList" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="76.666666666666657" width="361" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="fky-qT-eoo" secondAttribute="trailing" id="913-qf-NSk"/>
+                        <constraint firstItem="fky-qT-eoo" firstAttribute="top" secondItem="fuC-6R-8Ja" secondAttribute="top" id="ADe-EM-gnN"/>
+                        <constraint firstItem="fky-qT-eoo" firstAttribute="leading" secondItem="fuC-6R-8Ja" secondAttribute="leading" id="hbJ-FQ-C1o"/>
+                        <constraint firstAttribute="bottom" secondItem="fky-qT-eoo" secondAttribute="bottom" id="jEo-qS-RsR"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="q8D-AQ-WlO"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="PSZ-fJ-Nem" firstAttribute="trailing" secondItem="q8D-AQ-WlO" secondAttribute="trailing" id="E9c-m2-Z8O"/>
+                <constraint firstAttribute="trailing" secondItem="fuC-6R-8Ja" secondAttribute="trailing" id="Gmx-5s-98V"/>
+                <constraint firstItem="fuC-6R-8Ja" firstAttribute="leading" secondItem="FBY-YE-iyd" secondAttribute="leading" id="I3i-PB-68r"/>
+                <constraint firstItem="PSZ-fJ-Nem" firstAttribute="leading" secondItem="q8D-AQ-WlO" secondAttribute="leading" id="W1h-gm-90L"/>
+                <constraint firstItem="fuC-6R-8Ja" firstAttribute="top" secondItem="PSZ-fJ-Nem" secondAttribute="bottom" id="eAv-CH-LWr"/>
+                <constraint firstItem="PSZ-fJ-Nem" firstAttribute="top" secondItem="q8D-AQ-WlO" secondAttribute="top" id="inX-xp-qby"/>
+                <constraint firstAttribute="bottom" secondItem="fuC-6R-8Ja" secondAttribute="bottom" id="kaB-bh-U5d"/>
+                <constraint firstItem="fky-qT-eoo" firstAttribute="width" secondItem="FBY-YE-iyd" secondAttribute="width" id="laG-70-xqs"/>
+            </constraints>
+            <point key="canvasLocation" x="-29" y="21"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="PSZ-fJ-Nem">
+            <size key="intrinsicContentSize" width="393" height="50"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

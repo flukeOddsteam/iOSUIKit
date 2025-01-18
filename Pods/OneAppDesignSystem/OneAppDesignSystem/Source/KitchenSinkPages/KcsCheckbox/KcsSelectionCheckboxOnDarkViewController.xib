@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ekachon-Bold.ttf">
+            <string>Ekachon-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsSelectionCheckboxOnDarkViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="checkboxLabel1" destination="nca-HT-Pu5" id="UqM-eo-gSr"/>
+                <outlet property="checkboxLabel2" destination="kNL-BN-Dao" id="M8b-Mx-ixT"/>
+                <outlet property="contentView1" destination="y6c-CT-8IN" id="Dvr-RP-TBC"/>
+                <outlet property="contentView10" destination="z6J-8F-ztb" id="zOz-oa-z1P"/>
+                <outlet property="contentView2" destination="e5z-Qs-nvo" id="zz2-n2-CRi"/>
+                <outlet property="contentView3" destination="uFR-0a-dfk" id="v29-fb-tUn"/>
+                <outlet property="contentView4" destination="wNZ-Aa-ab5" id="clJ-K8-ZOS"/>
+                <outlet property="contentView5" destination="MDa-LW-t2K" id="eFI-Os-0yZ"/>
+                <outlet property="contentView6" destination="RwN-Yt-KJl" id="7kk-O0-Y9U"/>
+                <outlet property="contentView7" destination="W0e-wi-sn8" id="1WN-GE-lOS"/>
+                <outlet property="contentView8" destination="UfR-pY-fhk" id="GPH-u2-xn8"/>
+                <outlet property="contentView9" destination="ygh-cL-jyo" id="Va0-XI-Nlt"/>
+                <outlet property="navigationBarView" destination="k6s-xo-ew6" id="ijO-Za-W0p"/>
+                <outlet property="selectionCheckbox1" destination="0gt-aq-ree" id="7NG-ZQ-trW"/>
+                <outlet property="selectionCheckbox2" destination="yYB-Ta-iO1" id="ULu-38-fBI"/>
+                <outlet property="selectionCheckbox3" destination="9iX-nX-7Hd" id="GbZ-iB-uaO"/>
+                <outlet property="selectionCheckbox4" destination="GwB-0M-LSf" id="glH-VG-LvE"/>
+                <outlet property="selectionCheckbox5" destination="WWs-E5-y8X" id="Q7X-KC-LwB"/>
+                <outlet property="selectionCheckbox6" destination="bjx-do-bJX" id="707-Ik-gch"/>
+                <outlet property="selectionCheckbox7" destination="oSv-Ky-GkJ" id="AqC-cg-26h"/>
+                <outlet property="selectionCheckbox8" destination="lWQ-yB-xAc" id="L1n-ke-7ca"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6s-xo-ew6" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="VBI-lJ-Gam"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLQ-x4-jwf">
+                    <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DjF-VA-SYk">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="1118"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6c-CT-8IN">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="36"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkbox / LabelOnDark" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nca-HT-Pu5">
+                                            <rect key="frame" x="16" y="2" width="361" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="26" id="eyB-Nr-rai"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Ekachon-Bold" family="Ekachon" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstItem="nca-HT-Pu5" firstAttribute="leading" secondItem="y6c-CT-8IN" secondAttribute="leading" constant="16" id="Nha-x6-a9G"/>
+                                        <constraint firstItem="nca-HT-Pu5" firstAttribute="top" secondItem="y6c-CT-8IN" secondAttribute="top" constant="2" id="koN-Uy-8cZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="nca-HT-Pu5" secondAttribute="trailing" constant="16" id="piT-uh-yuF"/>
+                                        <constraint firstAttribute="bottom" secondItem="nca-HT-Pu5" secondAttribute="bottom" constant="8" id="q46-SF-OSd"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="e5z-Qs-nvo">
+                                    <rect key="frame" x="0.0" y="36" width="393" height="128"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gt-aq-ree" customClass="DSCheckboxView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="8" width="361" height="112"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="0gt-aq-ree" secondAttribute="bottom" constant="8" id="LRI-QW-5fd"/>
+                                        <constraint firstAttribute="trailing" secondItem="0gt-aq-ree" secondAttribute="trailing" constant="16" id="iQX-4u-YgJ"/>
+                                        <constraint firstItem="0gt-aq-ree" firstAttribute="top" secondItem="e5z-Qs-nvo" secondAttribute="top" constant="8" id="mqj-OL-D4M"/>
+                                        <constraint firstItem="0gt-aq-ree" firstAttribute="leading" secondItem="e5z-Qs-nvo" secondAttribute="leading" constant="16" id="uIL-Ib-kC5"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="uFR-0a-dfk">
+                                    <rect key="frame" x="0.0" y="164" width="393" height="128"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYB-Ta-iO1" customClass="DSCheckboxView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="8" width="361" height="112"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="yYB-Ta-iO1" secondAttribute="trailing" constant="16" id="EuH-X9-VmO"/>
+                                        <constraint firstItem="yYB-Ta-iO1" firstAttribute="leading" secondItem="uFR-0a-dfk" secondAttribute="leading" constant="16" id="GTR-KP-Nf3"/>
+                                        <constraint firstAttribute="bottom" secondItem="yYB-Ta-iO1" secondAttribute="bottom" constant="8" id="iMM-53-p4T"/>
+                                        <constraint firstItem="yYB-Ta-iO1" firstAttribute="top" secondItem="uFR-0a-dfk" secondAttribute="top" constant="8" id="zt1-Si-pza"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="wNZ-Aa-ab5">
+                                    <rect key="frame" x="0.0" y="292" width="393" height="128"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9iX-nX-7Hd" customClass="DSCheckboxView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="8" width="361" height="112"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstItem="9iX-nX-7Hd" firstAttribute="top" secondItem="wNZ-Aa-ab5" secondAttribute="top" constant="8" id="5Fq-fA-1rH"/>
+                                        <constraint firstItem="9iX-nX-7Hd" firstAttribute="leading" secondItem="wNZ-Aa-ab5" secondAttribute="leading" constant="16" id="Egy-Go-9gl"/>
+                                        <constraint firstAttribute="bottom" secondItem="9iX-nX-7Hd" secondAttribute="bottom" constant="8" id="TfF-zt-Hdb"/>
+                                        <constraint firstAttribute="trailing" secondItem="9iX-nX-7Hd" secondAttribute="trailing" constant="16" id="zHg-CL-UVH"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="MDa-LW-t2K">
+                                    <rect key="frame" x="0.0" y="420" width="393" height="128"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GwB-0M-LSf" customClass="DSCheckboxView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="8" width="361" height="112"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="GwB-0M-LSf" secondAttribute="trailing" constant="16" id="0Dj-xJ-uNW"/>
+                                        <constraint firstItem="GwB-0M-LSf" firstAttribute="leading" secondItem="MDa-LW-t2K" secondAttribute="leading" constant="16" id="222-8t-8a3"/>
+                                        <constraint firstAttribute="bottom" secondItem="GwB-0M-LSf" secondAttribute="bottom" constant="8" id="j44-nG-DKq"/>
+                                        <constraint firstItem="GwB-0M-LSf" firstAttribute="top" secondItem="MDa-LW-t2K" secondAttribute="top" constant="8" id="ufb-Lb-yGR"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RwN-Yt-KJl">
+                                    <rect key="frame" x="0.0" y="548" width="393" height="58"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkbox / LabelSoftOnDark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNL-BN-Dao">
+                                            <rect key="frame" x="16" y="24" width="361" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="26" id="a5z-tj-7Wg"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Ekachon-Bold" family="Ekachon" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstItem="kNL-BN-Dao" firstAttribute="leading" secondItem="RwN-Yt-KJl" secondAttribute="leading" constant="16" id="CKj-WC-d1k"/>
+                                        <constraint firstItem="kNL-BN-Dao" firstAttribute="top" secondItem="RwN-Yt-KJl" secondAttribute="top" constant="24" id="H52-uA-mQa"/>
+                                        <constraint firstAttribute="bottom" secondItem="kNL-BN-Dao" secondAttribute="bottom" constant="8" id="dGs-Z1-851"/>
+                                        <constraint firstAttribute="trailing" secondItem="kNL-BN-Dao" secondAttribute="trailing" constant="16" id="ppa-ac-TpX"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="W0e-wi-sn8">
+                                    <rect key="frame" x="0.0" y="606" width="393" height="128"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WWs-E5-y8X" customClass="DSCheckboxView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="8" width="361" height="112"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="WWs-E5-y8X" secondAttribute="trailing" constant="16" id="1o2-i0-bjz"/>
+                                        <constraint firstItem="WWs-E5-y8X" firstAttribute="top" secondItem="W0e-wi-sn8" secondAttribute="top" constant="8" id="7zb-2R-NQY"/>
+                                        <constraint firstItem="WWs-E5-y8X" firstAttribute="leading" secondItem="W0e-wi-sn8" secondAttribute="leading" constant="16" id="exq-s8-tsb"/>
+                                        <constraint firstAttribute="bottom" secondItem="WWs-E5-y8X" secondAttribute="bottom" constant="8" id="g9g-7l-ZuA"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="UfR-pY-fhk">
+                                    <rect key="frame" x="0.0" y="734" width="393" height="128"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjx-do-bJX" customClass="DSCheckboxView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="8" width="361" height="112"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstItem="bjx-do-bJX" firstAttribute="leading" secondItem="UfR-pY-fhk" secondAttribute="leading" constant="16" id="3B6-7R-3FH"/>
+                                        <constraint firstAttribute="trailing" secondItem="bjx-do-bJX" secondAttribute="trailing" constant="16" id="XKS-zA-zsE"/>
+                                        <constraint firstAttribute="bottom" secondItem="bjx-do-bJX" secondAttribute="bottom" constant="8" id="dzc-yT-Jg4"/>
+                                        <constraint firstItem="bjx-do-bJX" firstAttribute="top" secondItem="UfR-pY-fhk" secondAttribute="top" constant="8" id="e48-lB-PxI"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="ygh-cL-jyo">
+                                    <rect key="frame" x="0.0" y="862" width="393" height="128"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSv-Ky-GkJ" customClass="DSCheckboxView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="8" width="361" height="112"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstItem="oSv-Ky-GkJ" firstAttribute="top" secondItem="ygh-cL-jyo" secondAttribute="top" constant="8" id="8FN-mf-ig3"/>
+                                        <constraint firstItem="oSv-Ky-GkJ" firstAttribute="leading" secondItem="ygh-cL-jyo" secondAttribute="leading" constant="16" id="QQn-IT-G9a"/>
+                                        <constraint firstAttribute="bottom" secondItem="oSv-Ky-GkJ" secondAttribute="bottom" constant="8" id="i9G-Ce-7fc"/>
+                                        <constraint firstAttribute="trailing" secondItem="oSv-Ky-GkJ" secondAttribute="trailing" constant="16" id="nbd-Pg-6af"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="z6J-8F-ztb">
+                                    <rect key="frame" x="0.0" y="990" width="393" height="128"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lWQ-yB-xAc" customClass="DSCheckboxView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="8" width="361" height="112"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="lWQ-yB-xAc" secondAttribute="bottom" constant="8" id="Tmd-Ry-fHU"/>
+                                        <constraint firstItem="lWQ-yB-xAc" firstAttribute="leading" secondItem="z6J-8F-ztb" secondAttribute="leading" constant="16" id="hol-eP-0UO"/>
+                                        <constraint firstItem="lWQ-yB-xAc" firstAttribute="top" secondItem="z6J-8F-ztb" secondAttribute="top" constant="8" id="nJe-nL-ust"/>
+                                        <constraint firstAttribute="trailing" secondItem="lWQ-yB-xAc" secondAttribute="trailing" constant="16" id="y41-5N-49g"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="DjF-VA-SYk" firstAttribute="width" secondItem="sLQ-x4-jwf" secondAttribute="width" id="DM4-gU-LEE"/>
+                        <constraint firstAttribute="bottom" secondItem="DjF-VA-SYk" secondAttribute="bottom" id="Nbc-kx-bJJ"/>
+                        <constraint firstItem="DjF-VA-SYk" firstAttribute="leading" secondItem="sLQ-x4-jwf" secondAttribute="leading" id="cVV-Qt-OdJ"/>
+                        <constraint firstItem="DjF-VA-SYk" firstAttribute="top" secondItem="sLQ-x4-jwf" secondAttribute="top" id="iy2-tY-CDX"/>
+                        <constraint firstAttribute="trailing" secondItem="DjF-VA-SYk" secondAttribute="trailing" id="u4r-67-lGg"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sLQ-x4-jwf" secondAttribute="bottom" id="L76-CW-Tlo"/>
+                <constraint firstItem="k6s-xo-ew6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SIW-oT-Yu1"/>
+                <constraint firstItem="k6s-xo-ew6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="U03-VT-dSO"/>
+                <constraint firstItem="sLQ-x4-jwf" firstAttribute="top" secondItem="k6s-xo-ew6" secondAttribute="bottom" id="bn9-YE-Hyk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="k6s-xo-ew6" secondAttribute="trailing" id="dBp-R8-AUh"/>
+                <constraint firstItem="sLQ-x4-jwf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mci-hh-Qm3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sLQ-x4-jwf" secondAttribute="trailing" id="slS-Tr-xYQ"/>
+            </constraints>
+            <point key="canvasLocation" x="-59" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "HeroPrivilege.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

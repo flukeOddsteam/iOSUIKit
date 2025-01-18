@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsKeyHighlightStatusViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="navBar" destination="xUs-8w-8gr" id="IRL-G2-AxV"/>
+                <outlet property="oneLineKeyHighlightSuccess" destination="985-DH-6MH" id="XXU-SO-U7m"/>
+                <outlet property="oneLineKeyHighlightWarning" destination="drC-3n-D1h" id="yrb-6G-cTg"/>
+                <outlet property="placeholderKeyHighlight" destination="tgw-6F-Uic" id="FqZ-Jb-zdW"/>
+                <outlet property="successLabel" destination="46O-xh-gaI" id="KN7-IJ-Gtr"/>
+                <outlet property="successOneLineLabel" destination="zAh-8k-xI9" id="opV-oV-OLs"/>
+                <outlet property="successThreeLineLabel" destination="ipH-GD-K6e" id="ipD-FO-qfm"/>
+                <outlet property="successTwoLineLabel" destination="x55-Pc-a1N" id="vvt-bE-Z6o"/>
+                <outlet property="threeLineKeyHighlightSuccess" destination="8uq-or-mOC" id="qDE-y8-IAs"/>
+                <outlet property="threeLineKeyHighlightWarning" destination="T46-JU-fQN" id="vgs-1V-DoC"/>
+                <outlet property="twoLineKeyHighlightSuccess" destination="dXQ-AF-cdr" id="91E-is-Ny6"/>
+                <outlet property="twoLineKeyHighlightWarning" destination="yKF-wo-X4i" id="48y-4b-V2P"/>
+                <outlet property="view" destination="qLl-Sd-RHw" id="z6u-0a-pdA"/>
+                <outlet property="warningLabel" destination="6v0-Ap-98i" id="RSY-kz-egL"/>
+                <outlet property="warningOneLineLabel" destination="wEh-mm-fVP" id="LiQ-5d-i2l"/>
+                <outlet property="warningThreeLineLabel" destination="M6B-K9-dcs" id="CjT-1r-oBj"/>
+                <outlet property="warningTwoLineLabel" destination="Ndq-fy-aEV" id="Jtr-N3-tD6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="qLl-Sd-RHw">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="xUs-8w-8gr" customClass="DSNavBar" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HVq-SC-s9S">
+                    <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Crr-WN-Mo4">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="774.66666666666663"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="tgw-6F-Uic" userLabel="Placeholder Key Highlight Warning" customClass="DSKeyHighlightStatus" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="16" width="361" height="44"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9aU-dL-dFr">
+                                    <rect key="frame" x="16" y="84" width="361" height="116.66666666666669"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6v0-Ap-98i">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="20.333333333333314" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEh-mm-fVP">
+                                            <rect key="frame" x="0.0" y="36.333333333333343" width="361" height="20.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="drC-3n-D1h" customClass="DSKeyHighlightStatus" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="72.666666666666686" width="361" height="44"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="07g-K3-IdE">
+                                    <rect key="frame" x="16" y="224.66666666666671" width="361" height="80.333333333333343"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ndq-fy-aEV">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="yKF-wo-X4i" customClass="DSKeyHighlightStatus" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="36.333333333333314" width="361" height="44"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="u3K-wE-V0K">
+                                    <rect key="frame" x="16" y="329" width="361" height="80.333333333333314"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6B-K9-dcs">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="T46-JU-fQN" customClass="DSKeyHighlightStatus" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="36.333333333333314" width="361" height="44"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="L7e-q0-xCz">
+                                    <rect key="frame" x="16" y="433.33333333333337" width="361" height="116.66666666666663"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46O-xh-gaI">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="20.333333333333314" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAh-8k-xI9">
+                                            <rect key="frame" x="0.0" y="36.333333333333258" width="361" height="20.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="985-DH-6MH" customClass="DSKeyHighlightStatus" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="72.666666666666629" width="361" height="44"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jRh-DP-CFA">
+                                    <rect key="frame" x="16" y="574" width="361" height="80.333333333333371"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x55-Pc-a1N">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="dXQ-AF-cdr" customClass="DSKeyHighlightStatus" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="36.333333333333371" width="361" height="44"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="v7w-x7-lhY">
+                                    <rect key="frame" x="16" y="678.33333333333337" width="361" height="80.333333333333371"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipH-GD-K6e">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="8uq-or-mOC" customClass="DSKeyHighlightStatus" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="36.333333333333258" width="361" height="44"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Crr-WN-Mo4" firstAttribute="leading" secondItem="HVq-SC-s9S" secondAttribute="leading" id="51s-6g-lT4"/>
+                        <constraint firstItem="Crr-WN-Mo4" firstAttribute="top" secondItem="HVq-SC-s9S" secondAttribute="top" id="5BX-lR-Jsl"/>
+                        <constraint firstAttribute="bottom" secondItem="Crr-WN-Mo4" secondAttribute="bottom" id="gzF-aP-H8P"/>
+                        <constraint firstAttribute="trailing" secondItem="Crr-WN-Mo4" secondAttribute="trailing" id="nSp-bg-omS"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="sOq-R9-YaU"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="xUs-8w-8gr" firstAttribute="leading" secondItem="sOq-R9-YaU" secondAttribute="leading" id="B1i-FU-Z4N"/>
+                <constraint firstItem="sOq-R9-YaU" firstAttribute="trailing" secondItem="xUs-8w-8gr" secondAttribute="trailing" id="KFe-Tr-kWM"/>
+                <constraint firstItem="HVq-SC-s9S" firstAttribute="top" secondItem="xUs-8w-8gr" secondAttribute="bottom" id="Z9X-ai-cql"/>
+                <constraint firstItem="HVq-SC-s9S" firstAttribute="trailing" secondItem="sOq-R9-YaU" secondAttribute="trailing" id="cqK-87-rlc"/>
+                <constraint firstItem="sOq-R9-YaU" firstAttribute="leading" secondItem="HVq-SC-s9S" secondAttribute="leading" id="hVP-5N-PBC"/>
+                <constraint firstItem="Crr-WN-Mo4" firstAttribute="width" secondItem="qLl-Sd-RHw" secondAttribute="width" id="qw4-uq-Ljh"/>
+                <constraint firstItem="sOq-R9-YaU" firstAttribute="top" secondItem="xUs-8w-8gr" secondAttribute="top" id="v82-oh-TUC"/>
+                <constraint firstItem="HVq-SC-s9S" firstAttribute="bottom" secondItem="sOq-R9-YaU" secondAttribute="bottom" id="xHX-tV-9gG"/>
+            </constraints>
+            <point key="canvasLocation" x="101" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

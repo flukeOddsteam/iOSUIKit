@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsTextFieldSearchViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="9eG-v4-zX3" id="LLF-aT-uJV"/>
+                <outlet property="navigationBar" destination="glp-hS-E7i" id="iif-C3-aKd"/>
+                <outlet property="scrollView" destination="PZ1-de-AW7" id="gpa-2h-4je"/>
+                <outlet property="textFieldSearch1" destination="CEI-5b-ka0" id="i9d-Iy-g14"/>
+                <outlet property="textFieldSearch2" destination="hzi-TP-DIz" id="mlq-qr-d73"/>
+                <outlet property="textFieldSearch3" destination="GLt-Et-Rlv" id="ErF-f0-wd7"/>
+                <outlet property="textFieldSearch4" destination="X5W-dY-ywM" id="rs2-oo-Mkp"/>
+                <outlet property="textFieldSearch5" destination="gIE-Zj-Iy4" id="F0u-6a-dD7"/>
+                <outlet property="textFieldSearch6" destination="b1N-tK-1FR" id="yST-Bg-lcH"/>
+                <outlet property="textFieldSearch7" destination="acn-XM-8RR" id="7il-fu-JMt"/>
+                <outlet property="textFieldSearch8" destination="BYj-tN-z5H" id="OkI-hW-fUN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="glp-hS-E7i" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="47" width="390" height="50"/>
+                    <viewLayoutGuide key="safeArea" id="H47-dX-2Ll"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="0IP-7R-VLj"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZ1-de-AW7">
+                    <rect key="frame" x="0.0" y="97" width="390" height="713"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="prc-49-aeS">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="1208"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="390" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="CEI-5b-ka0" customClass="DSTextFieldSearch" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="16" width="358" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="hzi-TP-DIz" customClass="DSTextFieldSearch" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="160" width="358" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="GLt-Et-Rlv" customClass="DSTextFieldSearch" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="304" width="358" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="X5W-dY-ywM" customClass="DSTextFieldSearch" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="448" width="358" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="358" placeholderIntrinsicHeight="24" translatesAutoresizingMaskIntoConstraints="NO" id="VqB-g0-Dgg">
+                                    <rect key="frame" x="16" y="592" width="358" height="24"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eG-v4-zX3">
+                                            <rect key="frame" x="0.0" y="0.0" width="358" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="9eG-v4-zX3" secondAttribute="trailing" id="7Tz-RU-NCZ"/>
+                                        <constraint firstItem="9eG-v4-zX3" firstAttribute="leading" secondItem="VqB-g0-Dgg" secondAttribute="leading" id="GfE-vd-01b"/>
+                                        <constraint firstAttribute="bottom" secondItem="9eG-v4-zX3" secondAttribute="bottom" id="Gul-3U-ysI"/>
+                                        <constraint firstItem="9eG-v4-zX3" firstAttribute="top" secondItem="VqB-g0-Dgg" secondAttribute="top" id="uja-g7-vU0"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="gIE-Zj-Iy4" customClass="DSTextFieldSearch" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="632" width="358" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="b1N-tK-1FR" customClass="DSTextFieldSearch" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="776" width="358" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="acn-XM-8RR" customClass="DSTextFieldSearch" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="920" width="358" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="BYj-tN-z5H" customClass="DSTextFieldSearch" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="1064" width="358" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="prc-49-aeS" secondAttribute="trailing" id="6Ki-oR-jKm"/>
+                        <constraint firstItem="prc-49-aeS" firstAttribute="leading" secondItem="PZ1-de-AW7" secondAttribute="leading" id="esQ-eG-a58"/>
+                        <constraint firstAttribute="bottom" secondItem="prc-49-aeS" secondAttribute="bottom" id="nkE-0Y-YLR"/>
+                        <constraint firstItem="prc-49-aeS" firstAttribute="top" secondItem="PZ1-de-AW7" secondAttribute="top" id="rwB-K0-aE0"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="PZ1-de-AW7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="914-GM-dB1"/>
+                <constraint firstItem="PZ1-de-AW7" firstAttribute="top" secondItem="glp-hS-E7i" secondAttribute="bottom" id="DRh-cQ-oOQ"/>
+                <constraint firstItem="glp-hS-E7i" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ExK-sI-4kd"/>
+                <constraint firstItem="glp-hS-E7i" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="IE4-qt-uL1"/>
+                <constraint firstItem="prc-49-aeS" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Jxe-Wt-gKh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="PZ1-de-AW7" secondAttribute="bottom" id="Vx3-4h-5Of"/>
+                <constraint firstAttribute="trailing" secondItem="glp-hS-E7i" secondAttribute="trailing" id="kjy-Dq-Qfk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PZ1-de-AW7" secondAttribute="trailing" id="km7-Vy-7RJ"/>
+            </constraints>
+            <point key="canvasLocation" x="67" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

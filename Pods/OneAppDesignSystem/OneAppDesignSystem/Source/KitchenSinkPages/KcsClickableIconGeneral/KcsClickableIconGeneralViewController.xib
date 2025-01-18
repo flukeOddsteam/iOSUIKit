@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsClickableIconGeneralViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="darkClickable1" destination="KF9-5Z-AuJ" id="bfB-2T-UgJ"/>
+                <outlet property="darkClickable2" destination="Hwe-Ep-PED" id="vys-rO-MvC"/>
+                <outlet property="darkClickable3" destination="mBP-74-QWy" id="xyC-xo-3S8"/>
+                <outlet property="darkContainerView" destination="9Su-dX-KNw" id="a2m-3O-AdM"/>
+                <outlet property="lightClickable1" destination="ji3-Gp-Qe7" id="tVt-jb-cNM"/>
+                <outlet property="lightClickable2" destination="TYt-lz-LYc" id="bfG-rV-7Ra"/>
+                <outlet property="lightClickable3" destination="cCP-gS-j2r" id="Dnd-Il-LFJ"/>
+                <outlet property="lightContainerView" destination="YSY-K5-O3f" id="lRB-tF-HdL"/>
+                <outlet property="navigationBarView" destination="ugl-F2-SOR" id="90k-f5-2xI"/>
+                <outlet property="titleDarkLabel" destination="Twc-lQ-zgA" id="Gag-Oh-HrQ"/>
+                <outlet property="titleLightLabel" destination="Q7p-ju-jJS" id="G7I-0i-ley"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugl-F2-SOR" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Yr7-gS-BRi"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JOg-9g-ahJ">
+                    <rect key="frame" x="0.0" y="109" width="393" height="256.66666666666669"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YSY-K5-O3f">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="128.33333333333334"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With Frame On Light" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7p-ju-jJS">
+                                    <rect key="frame" x="16" y="24" width="361" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="ji3-Gp-Qe7" customClass="DSClickableIconGeneral" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="60.333333333333343" width="48" height="60"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="f9P-u1-OJ2"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="TYt-lz-LYc" customClass="DSClickableIconGeneral" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="80" y="60.333333333333343" width="48" height="60"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="0ch-7D-dne"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="cCP-gS-j2r" customClass="DSClickableIconGeneral" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="144" y="60.333333333333343" width="48" height="60"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="7Hr-Dz-A9o"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="ji3-Gp-Qe7" secondAttribute="bottom" constant="8" id="P35-O1-en6"/>
+                                <constraint firstItem="ji3-Gp-Qe7" firstAttribute="leading" secondItem="YSY-K5-O3f" secondAttribute="leading" constant="16" id="PKI-wh-upw"/>
+                                <constraint firstItem="TYt-lz-LYc" firstAttribute="leading" secondItem="ji3-Gp-Qe7" secondAttribute="trailing" constant="16" id="Pya-FP-Frh"/>
+                                <constraint firstItem="Q7p-ju-jJS" firstAttribute="top" secondItem="YSY-K5-O3f" secondAttribute="top" constant="24" id="Q4p-oM-4MN"/>
+                                <constraint firstAttribute="bottom" secondItem="TYt-lz-LYc" secondAttribute="bottom" constant="8" id="a3e-gV-Y3F"/>
+                                <constraint firstItem="Q7p-ju-jJS" firstAttribute="leading" secondItem="YSY-K5-O3f" secondAttribute="leading" constant="16" id="ffs-3R-HhE"/>
+                                <constraint firstItem="cCP-gS-j2r" firstAttribute="leading" secondItem="TYt-lz-LYc" secondAttribute="trailing" constant="16" id="g9K-oa-bPf"/>
+                                <constraint firstAttribute="bottom" secondItem="cCP-gS-j2r" secondAttribute="bottom" constant="8" id="kc5-dw-hkG"/>
+                                <constraint firstItem="ji3-Gp-Qe7" firstAttribute="top" secondItem="Q7p-ju-jJS" secondAttribute="bottom" constant="16" id="nvO-7t-pLQ"/>
+                                <constraint firstItem="TYt-lz-LYc" firstAttribute="top" secondItem="Q7p-ju-jJS" secondAttribute="bottom" constant="16" id="qRp-ux-MqQ"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cCP-gS-j2r" secondAttribute="trailing" constant="16" id="rUc-NK-g9R"/>
+                                <constraint firstAttribute="trailing" secondItem="Q7p-ju-jJS" secondAttribute="trailing" constant="16" id="vJ4-jQ-AzM"/>
+                                <constraint firstItem="cCP-gS-j2r" firstAttribute="top" secondItem="Q7p-ju-jJS" secondAttribute="bottom" constant="16" id="zsj-vA-SGl"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Su-dX-KNw">
+                            <rect key="frame" x="0.0" y="128.33333333333331" width="393" height="128.33333333333331"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With Frame On Dark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twc-lQ-zgA">
+                                    <rect key="frame" x="16" y="15.999999999999998" width="361" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="Hwe-Ep-PED" customClass="DSClickableIconGeneral" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="80" y="52.333333333333343" width="48" height="68"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="zWN-P7-IY0"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="mBP-74-QWy" customClass="DSClickableIconGeneral" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="144" y="52.333333333333343" width="48" height="68"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="mLa-Ro-8RR"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="KF9-5Z-AuJ" customClass="DSClickableIconGeneral" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="52.333333333333343" width="48" height="68"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="mXS-rj-dyZ"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Hwe-Ep-PED" firstAttribute="top" secondItem="Twc-lQ-zgA" secondAttribute="bottom" constant="16" id="09G-fA-NZc"/>
+                                <constraint firstAttribute="bottom" secondItem="mBP-74-QWy" secondAttribute="bottom" constant="8" id="MQD-09-vnR"/>
+                                <constraint firstAttribute="trailing" secondItem="Twc-lQ-zgA" secondAttribute="trailing" constant="16" id="MQq-xH-1r1"/>
+                                <constraint firstAttribute="bottom" secondItem="KF9-5Z-AuJ" secondAttribute="bottom" constant="8" id="VJE-L3-UhO"/>
+                                <constraint firstItem="mBP-74-QWy" firstAttribute="leading" secondItem="Hwe-Ep-PED" secondAttribute="trailing" constant="16" id="Vw6-pB-bLO"/>
+                                <constraint firstItem="KF9-5Z-AuJ" firstAttribute="leading" secondItem="9Su-dX-KNw" secondAttribute="leading" constant="16" id="WlN-Us-yoY"/>
+                                <constraint firstItem="Twc-lQ-zgA" firstAttribute="leading" secondItem="9Su-dX-KNw" secondAttribute="leading" constant="16" id="Yi5-HY-hcf"/>
+                                <constraint firstItem="mBP-74-QWy" firstAttribute="top" secondItem="Twc-lQ-zgA" secondAttribute="bottom" constant="16" id="ZtY-rZ-yky"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mBP-74-QWy" secondAttribute="trailing" constant="16" id="dmr-0x-Vet"/>
+                                <constraint firstItem="Twc-lQ-zgA" firstAttribute="top" secondItem="9Su-dX-KNw" secondAttribute="top" constant="16" id="eMA-hk-ERG"/>
+                                <constraint firstItem="Hwe-Ep-PED" firstAttribute="leading" secondItem="KF9-5Z-AuJ" secondAttribute="trailing" constant="16" id="liX-Qw-KTB"/>
+                                <constraint firstAttribute="bottom" secondItem="Hwe-Ep-PED" secondAttribute="bottom" constant="8" id="xue-7Y-LKQ"/>
+                                <constraint firstItem="KF9-5Z-AuJ" firstAttribute="top" secondItem="Twc-lQ-zgA" secondAttribute="bottom" constant="16" id="z1A-Qp-ec8"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ugl-F2-SOR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8Pg-zG-Uwn"/>
+                <constraint firstItem="ugl-F2-SOR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LgF-Ko-Iun"/>
+                <constraint firstItem="JOg-9g-ahJ" firstAttribute="top" secondItem="ugl-F2-SOR" secondAttribute="bottom" id="ODF-Hh-7HL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JOg-9g-ahJ" secondAttribute="trailing" id="gA9-UA-9nr"/>
+                <constraint firstItem="JOg-9g-ahJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lO2-tJ-C2j"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ugl-F2-SOR" secondAttribute="trailing" id="lWN-kO-TVv"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

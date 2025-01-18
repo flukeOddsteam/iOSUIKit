@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsRadioCardAccordionViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="exampleGroup1Label1" destination="hdM-oq-Fvu" id="AcZ-70-RyO"/>
+                <outlet property="exampleGroup1Label2" destination="5hW-5B-aWp" id="IeH-ur-yBI"/>
+                <outlet property="navBar" destination="PeB-tg-4ku" id="cJj-np-SxB"/>
+                <outlet property="radioCardAccordion1" destination="Qif-ut-X9w" id="tAk-Vu-Obz"/>
+                <outlet property="radioCardAccordion2" destination="lQO-Xe-1iR" id="qeV-67-VmN"/>
+                <outlet property="radioCardAccordion3" destination="VHS-m2-gXM" id="ojB-mc-sSD"/>
+                <outlet property="radioCardAccordion4" destination="CZv-BY-vdz" id="TFa-g3-EkF"/>
+                <outlet property="radioCardAccordion5" destination="sMi-LM-kq3" id="DDb-e5-lfu"/>
+                <outlet property="radioCardExpandLabel" destination="MoO-md-ocW" id="bYr-ux-d5x"/>
+                <outlet property="view" destination="boT-yD-za9" id="31M-iH-0lq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="boT-yD-za9">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="43" translatesAutoresizingMaskIntoConstraints="NO" id="PeB-tg-4ku" customClass="DSNavBar" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="43"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ssz-G5-yZ6">
+                    <rect key="frame" x="0.0" y="102" width="393" height="716"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAI-fR-M2c" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="3937"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="fEh-dY-tme">
+                                    <rect key="frame" x="16" y="24" width="361" height="3913"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RadioCard Expand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoO-md-ocW">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fiF-mw-3Mu" userLabel="Radio Card Accordion StackView">
+                                            <rect key="frame" x="0.0" y="44.333333333333258" width="361" height="3716.666666666667"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example Group 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdM-oq-Fvu">
+                                                    <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="tmh-p9-6zr">
+                                                    <rect key="frame" x="0.0" y="36.333333333333258" width="361" height="2180"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="716" translatesAutoresizingMaskIntoConstraints="NO" id="Qif-ut-X9w" userLabel="Radio Card Accordion 1 View" customClass="DSRadioCardAccordionView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="361" height="716"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="716" translatesAutoresizingMaskIntoConstraints="NO" id="lQO-Xe-1iR" userLabel="Radio Card Accordion 2 View" customClass="DSRadioCardAccordionView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="732" width="361" height="716"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="716" translatesAutoresizingMaskIntoConstraints="NO" id="VHS-m2-gXM" userLabel="Radio Card Accordion 3 View" customClass="DSRadioCardAccordionView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="1464" width="361" height="716"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example Group 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hW-5B-aWp" userLabel="Example Group 2">
+                                                    <rect key="frame" x="0.0" y="2232.333333333333" width="361" height="20.333333333333485"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mI9-Qg-RFx">
+                                                    <rect key="frame" x="0.0" y="2268.6666666666665" width="361" height="1448"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="716" translatesAutoresizingMaskIntoConstraints="NO" id="CZv-BY-vdz" userLabel="Radio Card Accordion 4 View" customClass="DSRadioCardAccordionView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="361" height="716"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="716" translatesAutoresizingMaskIntoConstraints="NO" id="sMi-LM-kq3" userLabel="Radio Card Accordion 5 View" customClass="DSRadioCardAccordionView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="732" width="361" height="716"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gz3-1x-qR9">
+                                            <rect key="frame" x="0.0" y="3785" width="361" height="128"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="bZ7-gs-nsG"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="fEh-dY-tme" firstAttribute="top" secondItem="bAI-fR-M2c" secondAttribute="top" constant="24" id="6Z6-ag-jKe"/>
+                                <constraint firstItem="fEh-dY-tme" firstAttribute="leading" secondItem="bAI-fR-M2c" secondAttribute="leading" constant="16" id="Hcd-Rw-eJq"/>
+                                <constraint firstAttribute="bottom" secondItem="fEh-dY-tme" secondAttribute="bottom" id="bn9-Km-KYG"/>
+                                <constraint firstAttribute="trailing" secondItem="fEh-dY-tme" secondAttribute="trailing" constant="16" id="qhA-ea-lgv"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="bAI-fR-M2c" firstAttribute="top" secondItem="Ssz-G5-yZ6" secondAttribute="top" id="BT6-8G-OHL"/>
+                        <constraint firstAttribute="trailing" secondItem="bAI-fR-M2c" secondAttribute="trailing" id="Iqx-6s-o1E"/>
+                        <constraint firstItem="bAI-fR-M2c" firstAttribute="height" secondItem="Ssz-G5-yZ6" secondAttribute="height" priority="250" id="JBD-W5-cEW"/>
+                        <constraint firstItem="bAI-fR-M2c" firstAttribute="width" secondItem="Ssz-G5-yZ6" secondAttribute="width" id="Obd-7M-wBT"/>
+                        <constraint firstItem="bAI-fR-M2c" firstAttribute="leading" secondItem="Ssz-G5-yZ6" secondAttribute="leading" id="V8M-hH-nyW"/>
+                        <constraint firstAttribute="bottom" secondItem="bAI-fR-M2c" secondAttribute="bottom" id="hcP-VG-uYL"/>
+                        <constraint firstItem="bAI-fR-M2c" firstAttribute="height" relation="greaterThanOrEqual" secondItem="Ssz-G5-yZ6" secondAttribute="height" id="xVj-h5-kN6"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="agT-4X-RZh"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Ssz-G5-yZ6" firstAttribute="top" secondItem="PeB-tg-4ku" secondAttribute="bottom" id="KRf-gV-21U"/>
+                <constraint firstItem="agT-4X-RZh" firstAttribute="bottom" secondItem="Ssz-G5-yZ6" secondAttribute="bottom" id="YTY-KG-5fZ"/>
+                <constraint firstItem="agT-4X-RZh" firstAttribute="trailing" secondItem="Ssz-G5-yZ6" secondAttribute="trailing" id="Yav-3O-pyQ"/>
+                <constraint firstItem="agT-4X-RZh" firstAttribute="trailing" secondItem="PeB-tg-4ku" secondAttribute="trailing" id="YlK-zk-DOg"/>
+                <constraint firstItem="Ssz-G5-yZ6" firstAttribute="leading" secondItem="agT-4X-RZh" secondAttribute="leading" id="lXO-jD-aor"/>
+                <constraint firstItem="PeB-tg-4ku" firstAttribute="leading" secondItem="agT-4X-RZh" secondAttribute="leading" id="vgZ-7j-IF8"/>
+                <constraint firstItem="PeB-tg-4ku" firstAttribute="top" secondItem="agT-4X-RZh" secondAttribute="top" id="yVr-4U-sIg"/>
+            </constraints>
+            <point key="canvasLocation" x="-25.190839694656489" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20037"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSScrollingPageControl" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="scrollingPageControl" destination="Ksr-TZ-phT" id="Bzh-c2-7wl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="735" height="6"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85r-jY-MyE">
+                    <rect key="frame" x="0.0" y="0.0" width="735" height="6"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="241" placeholderIntrinsicHeight="6" translatesAutoresizingMaskIntoConstraints="NO" id="Ksr-TZ-phT" userLabel="scrollingPageControl" customClass="ScrollingPageControl" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="247" y="0.0" width="241" height="6"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="6" id="8Ij-gP-iIg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Ksr-TZ-phT" firstAttribute="top" secondItem="85r-jY-MyE" secondAttribute="top" id="A1Y-8x-AM1"/>
+                        <constraint firstItem="Ksr-TZ-phT" firstAttribute="centerX" secondItem="85r-jY-MyE" secondAttribute="centerX" id="V0F-2G-uNd"/>
+                        <constraint firstAttribute="bottom" secondItem="Ksr-TZ-phT" secondAttribute="bottom" id="phS-N0-Pen"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="85r-jY-MyE" secondAttribute="bottom" id="0gV-lM-6rH"/>
+                <constraint firstItem="85r-jY-MyE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8PL-nb-SsC"/>
+                <constraint firstItem="85r-jY-MyE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="A6F-4s-IXf"/>
+                <constraint firstAttribute="trailing" secondItem="85r-jY-MyE" secondAttribute="trailing" id="zqK-mE-sHD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="25.362318840579711" y="-10.379464285714285"/>
+        </view>
+    </objects>
+</document>

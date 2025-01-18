@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSCheckboxListMessageExpandable" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="checkboxView" destination="fgs-FU-IGL" id="GZ2-fB-yTF"/>
+                <outlet property="descriptionContentView" destination="57l-Ea-WXv" id="lth-C7-v6b"/>
+                <outlet property="divider" destination="qOX-w7-wbX" id="mBX-Uc-Koc"/>
+                <outlet property="expandContainerView" destination="QzD-ei-ygw" id="T5E-5k-Z9v"/>
+                <outlet property="pillContentView" destination="caY-7f-K9V" id="OGR-m8-LqT"/>
+                <outlet property="titleContentView" destination="Arb-aZ-CGI" id="jEh-2i-b3n"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TMD-j2-66r">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="250"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jx0-xV-oEO">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="249"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O2t-1d-dbN">
+                                    <rect key="frame" x="16" y="16" width="24" height="24"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" placeholderIntrinsicWidth="24" placeholderIntrinsicHeight="24" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgs-FU-IGL" customClass="DSInputCheckBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="4" y="4" width="16" height="16"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="16" id="OVH-hy-vgL"/>
+                                                <constraint firstAttribute="height" constant="16" id="hza-5J-c4G"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="fgs-FU-IGL" secondAttribute="bottom" constant="4" id="6P7-ve-KZx"/>
+                                        <constraint firstAttribute="trailing" secondItem="fgs-FU-IGL" secondAttribute="trailing" constant="4" id="BcR-Qf-EHf"/>
+                                        <constraint firstItem="fgs-FU-IGL" firstAttribute="leading" secondItem="O2t-1d-dbN" secondAttribute="leading" constant="4" id="dPc-gx-Sb9"/>
+                                        <constraint firstItem="fgs-FU-IGL" firstAttribute="top" secondItem="O2t-1d-dbN" secondAttribute="top" constant="4" id="eBJ-hV-s3E"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rkB-dl-nhK">
+                                    <rect key="frame" x="48" y="16" width="329" height="151"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dKk-BZ-IQb">
+                                            <rect key="frame" x="0.0" y="0.0" width="329" height="104"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="329" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="Arb-aZ-CGI" customClass="CheckboxListExpandTitleContentView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="329" height="50"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="329" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="57l-Ea-WXv" customClass="CheckboxListExpandDescriptionContentView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="54" width="329" height="50"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="329" placeholderIntrinsicHeight="39" translatesAutoresizingMaskIntoConstraints="NO" id="caY-7f-K9V" customClass="DSMessageContentPillView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="112" width="329" height="39"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="rkB-dl-nhK" firstAttribute="leading" secondItem="O2t-1d-dbN" secondAttribute="trailing" constant="8" id="1HW-T1-VdA"/>
+                                <constraint firstAttribute="trailing" secondItem="rkB-dl-nhK" secondAttribute="trailing" constant="16" id="TQw-GE-dxR"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rkB-dl-nhK" secondAttribute="bottom" constant="16" id="VxR-5e-6am"/>
+                                <constraint firstItem="O2t-1d-dbN" firstAttribute="top" secondItem="jx0-xV-oEO" secondAttribute="top" constant="16" id="kUh-ho-jFO"/>
+                                <constraint firstItem="O2t-1d-dbN" firstAttribute="leading" secondItem="jx0-xV-oEO" secondAttribute="leading" constant="16" id="oUd-58-89X"/>
+                                <constraint firstItem="rkB-dl-nhK" firstAttribute="top" secondItem="jx0-xV-oEO" secondAttribute="top" constant="16" id="sGp-vs-tML"/>
+                            </constraints>
+                        </view>
+                        <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="QzD-ei-ygw">
+                            <rect key="frame" x="0.0" y="249" width="393" height="0.0"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qOX-w7-wbX">
+                            <rect key="frame" x="0.0" y="249" width="393" height="1"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="54s-sH-LOo"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TMD-j2-66r" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="P8b-Mw-Q0q"/>
+                <constraint firstAttribute="bottom" secondItem="TMD-j2-66r" secondAttribute="bottom" id="lXC-vK-eXa"/>
+                <constraint firstItem="TMD-j2-66r" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="p31-N7-1ie"/>
+                <constraint firstAttribute="trailing" secondItem="TMD-j2-66r" secondAttribute="trailing" id="y3A-Nw-k4F"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139.69465648854961" y="260.56338028169017"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSPillRadio" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="mz7-27-Iaf" id="l9e-P4-aXv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vgg-4V-fsg">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="224"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xxJ-G8-tVJ">
+                    <rect key="frame" x="0.0" y="0.0" width="410" height="224"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mz7-27-Iaf" customClass="IntrinsicCollectionView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="410" height="224"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LWY-w7-yVv">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="mz7-27-Iaf" secondAttribute="trailing" id="1nz-Pw-ddG"/>
+                        <constraint firstItem="mz7-27-Iaf" firstAttribute="top" secondItem="xxJ-G8-tVJ" secondAttribute="top" id="JSY-IY-EpG"/>
+                        <constraint firstItem="mz7-27-Iaf" firstAttribute="leading" secondItem="xxJ-G8-tVJ" secondAttribute="leading" id="WL5-i0-pj5"/>
+                        <constraint firstAttribute="bottom" secondItem="mz7-27-Iaf" secondAttribute="bottom" id="qVL-Sz-AMr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xxJ-G8-tVJ" secondAttribute="trailing" id="NPo-QS-Knw"/>
+                <constraint firstItem="xxJ-G8-tVJ" firstAttribute="top" secondItem="vgg-4V-fsg" secondAttribute="top" id="dIG-Bg-PO1"/>
+                <constraint firstAttribute="bottom" secondItem="xxJ-G8-tVJ" secondAttribute="bottom" id="m6K-n0-vc2"/>
+                <constraint firstItem="xxJ-G8-tVJ" firstAttribute="leading" secondItem="vgg-4V-fsg" secondAttribute="leading" id="yIo-TP-Ge3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="112.30769230769231" y="-191.9431279620853"/>
+        </view>
+    </objects>
+</document>

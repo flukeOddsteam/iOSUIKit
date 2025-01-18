@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RemarkBulletPointView" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="circleView" destination="MNl-Ue-sQM" id="8CD-iM-8sH"/>
+                <outlet property="contentView" destination="8Qe-7J-WRT" id="XlB-3u-hqY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mBb-3R-m0L">
+            <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Qe-7J-WRT">
+                    <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNl-Ue-sQM">
+                            <rect key="frame" x="4" y="4" width="4" height="4"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="4" id="OuW-av-tkC"/>
+                                <constraint firstAttribute="width" constant="4" id="vme-G3-HJX"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="9VE-bz-EGs"/>
+                        <constraint firstItem="MNl-Ue-sQM" firstAttribute="centerX" secondItem="8Qe-7J-WRT" secondAttribute="centerX" id="JbX-9N-lGB"/>
+                        <constraint firstItem="MNl-Ue-sQM" firstAttribute="centerY" secondItem="8Qe-7J-WRT" secondAttribute="centerY" id="LEt-W2-NZG"/>
+                        <constraint firstAttribute="height" constant="12" id="hcW-I2-Zjx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8Qe-7J-WRT" firstAttribute="leading" secondItem="mBb-3R-m0L" secondAttribute="leading" id="He3-NC-ebL"/>
+                <constraint firstItem="8Qe-7J-WRT" firstAttribute="top" secondItem="mBb-3R-m0L" secondAttribute="top" id="aXa-vd-CW8"/>
+                <constraint firstAttribute="bottom" secondItem="8Qe-7J-WRT" secondAttribute="bottom" id="d15-iP-d4a"/>
+                <constraint firstAttribute="trailing" secondItem="8Qe-7J-WRT" secondAttribute="trailing" id="twX-tA-qlT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-52" y="21"/>
+        </view>
+    </objects>
+</document>

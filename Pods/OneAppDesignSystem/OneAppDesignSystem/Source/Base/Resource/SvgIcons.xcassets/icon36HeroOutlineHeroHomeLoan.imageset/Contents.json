@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "HeroHomeLoan.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

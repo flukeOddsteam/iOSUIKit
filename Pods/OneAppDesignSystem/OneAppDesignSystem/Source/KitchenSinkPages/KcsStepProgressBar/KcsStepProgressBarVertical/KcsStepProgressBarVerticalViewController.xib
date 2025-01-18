@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsStepProgressBarVerticalViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="lineDropdown" destination="4O1-Gd-UZc" id="lsX-F2-GuG"/>
+                <outlet property="navBar" destination="WkX-d0-Bbj" id="7Yq-kp-1RJ"/>
+                <outlet property="stateDropdown" destination="eNw-H0-Mx8" id="XSY-he-ZmK"/>
+                <outlet property="stepProgressBarView" destination="1hA-Sg-IJr" id="RfH-Fc-Vs6"/>
+                <outlet property="submitButton" destination="biC-nw-EkQ" id="uAa-ND-EkM"/>
+                <outlet property="titleLabel" destination="4oT-Rp-3Z3" id="Wjn-vq-iF4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="subLabel" destination="hQF-z3-Cej" collectionClass="NSMutableArray" id="Paz-QJ-wcW"/>
+                <outletCollection property="subLabel" destination="VDj-yR-cJ8" collectionClass="NSMutableArray" id="x5N-r7-5Oz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WkX-d0-Bbj" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="rEO-WX-KtX"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เลือก State และ Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oT-Rp-3Z3">
+                    <rect key="frame" x="16" y="133" width="361" height="20.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="VuL-jh-OHB">
+                    <rect key="frame" x="16" y="169.33333333333334" width="361" height="256.66666666666663"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="D22-tc-ZIO">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="88.333333333333329"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQF-z3-Cej">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNw-H0-Mx8" customClass="DSDropdown" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="28.333333333333314" width="361" height="60"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="Mw3-Wx-qRn"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="hQF-z3-Cej" firstAttribute="leading" secondItem="D22-tc-ZIO" secondAttribute="leading" id="Mgt-fj-goB"/>
+                                <constraint firstItem="eNw-H0-Mx8" firstAttribute="leading" secondItem="D22-tc-ZIO" secondAttribute="leading" id="Pia-k5-8YE"/>
+                                <constraint firstAttribute="trailing" secondItem="eNw-H0-Mx8" secondAttribute="trailing" id="sYw-cW-4EQ"/>
+                                <constraint firstAttribute="trailing" secondItem="hQF-z3-Cej" secondAttribute="trailing" id="vUL-lG-EEF"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iIg-Nf-Rux">
+                            <rect key="frame" x="0.0" y="104.33333333333334" width="361" height="88.333333333333343"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDj-yR-cJ8">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4O1-Gd-UZc" customClass="DSDropdown" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="28.333333333333314" width="361" height="60"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="qdU-MJ-LVf"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="4O1-Gd-UZc" firstAttribute="leading" secondItem="iIg-Nf-Rux" secondAttribute="leading" id="0V4-zc-LBg"/>
+                                <constraint firstAttribute="trailing" secondItem="4O1-Gd-UZc" secondAttribute="trailing" id="Ado-t1-cRu"/>
+                                <constraint firstItem="VDj-yR-cJ8" firstAttribute="leading" secondItem="iIg-Nf-Rux" secondAttribute="leading" id="TWM-OA-iS6"/>
+                                <constraint firstAttribute="trailing" secondItem="VDj-yR-cJ8" secondAttribute="trailing" id="vhl-h4-VJ8"/>
+                            </constraints>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="biC-nw-EkQ" customClass="DSPrimaryButton" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="208.66666666666666" width="361" height="47.999999999999972"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="YFL-b8-Eru"/>
+                            </constraints>
+                            <connections>
+                                <action selector="submitButtonDidTapped:" destination="-1" eventType="touchUpInside" id="PKt-99-EsQ"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="biC-nw-EkQ" firstAttribute="leading" secondItem="VuL-jh-OHB" secondAttribute="leading" id="NMB-iI-EXJ"/>
+                        <constraint firstItem="D22-tc-ZIO" firstAttribute="leading" secondItem="VuL-jh-OHB" secondAttribute="leading" id="XvW-xv-xwG"/>
+                        <constraint firstAttribute="trailing" secondItem="biC-nw-EkQ" secondAttribute="trailing" id="bsY-Pf-WPD"/>
+                        <constraint firstItem="iIg-Nf-Rux" firstAttribute="leading" secondItem="VuL-jh-OHB" secondAttribute="leading" id="do6-xi-JvU"/>
+                        <constraint firstAttribute="trailing" secondItem="iIg-Nf-Rux" secondAttribute="trailing" id="fpX-zX-UVe"/>
+                        <constraint firstAttribute="trailing" secondItem="D22-tc-ZIO" secondAttribute="trailing" id="nPp-SY-D9s"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="1hA-Sg-IJr" customClass="DSStepProgressBarVertical" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="76.666666666666686" y="496" width="240" height="128"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="amv-XY-YMe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1hA-Sg-IJr" firstAttribute="top" secondItem="VuL-jh-OHB" secondAttribute="bottom" constant="70" id="DW5-1a-kVk"/>
+                <constraint firstItem="VuL-jh-OHB" firstAttribute="top" secondItem="4oT-Rp-3Z3" secondAttribute="bottom" constant="16" id="MfD-qL-gr1"/>
+                <constraint firstAttribute="trailing" secondItem="WkX-d0-Bbj" secondAttribute="trailing" id="Y9E-un-j4V"/>
+                <constraint firstItem="4oT-Rp-3Z3" firstAttribute="top" secondItem="WkX-d0-Bbj" secondAttribute="bottom" constant="24" id="Ysy-Fn-zjf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VuL-jh-OHB" secondAttribute="trailing" constant="16" id="aq3-B5-qkC"/>
+                <constraint firstItem="4oT-Rp-3Z3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="bvY-GR-Klq"/>
+                <constraint firstItem="1hA-Sg-IJr" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="f7l-o5-eit"/>
+                <constraint firstItem="WkX-d0-Bbj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="siE-MY-wb0"/>
+                <constraint firstItem="WkX-d0-Bbj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="t6r-0v-3kV"/>
+                <constraint firstItem="VuL-jh-OHB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="xGA-c6-WXf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4oT-Rp-3Z3" secondAttribute="trailing" constant="16" id="yC2-XG-J6t"/>
+            </constraints>
+            <point key="canvasLocation" x="96" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "credit_card_placeholder_xsmall.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSAmountRadioCardExpandable" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="headerContent" destination="U9h-B1-bed" id="Qoi-UV-8Yd"/>
+                <outlet property="inputContent" destination="mv9-V2-Qwq" id="sPC-c6-fCs"/>
+                <outlet property="stackView" destination="CW7-zd-kX7" id="Rj8-WK-Xer"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="258"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CW7-zd-kX7">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="258"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="U9h-B1-bed" customClass="AmountRadioHeaderContent" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="202" translatesAutoresizingMaskIntoConstraints="NO" id="mv9-V2-Qwq" userLabel="Input" customClass="AmountRadioInputContent" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="56" width="393" height="202"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CW7-zd-kX7" secondAttribute="trailing" id="2BF-S3-chi"/>
+                <constraint firstItem="CW7-zd-kX7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BFi-Lm-2Bx"/>
+                <constraint firstItem="CW7-zd-kX7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="e3W-7H-Sap"/>
+                <constraint firstAttribute="bottom" secondItem="CW7-zd-kX7" secondAttribute="bottom" id="efd-HX-7ok"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139.69465648854961" y="229.57746478873241"/>
+        </view>
+    </objects>
+</document>

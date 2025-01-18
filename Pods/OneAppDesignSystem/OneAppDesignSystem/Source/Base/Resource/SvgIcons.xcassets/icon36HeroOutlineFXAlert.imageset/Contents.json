@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "FX Alert.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

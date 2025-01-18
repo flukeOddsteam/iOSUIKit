@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <accessibilityOverrides/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSNavBar" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="hRp-A7-JR1" id="XED-1p-jmA"/>
+                <outlet property="betaPill" destination="u9C-0f-tBL" id="Wak-sH-YyZ"/>
+                <outlet property="closeButton" destination="ohO-f4-8eh" id="SuM-We-5pD"/>
+                <outlet property="ghostButton" destination="GEO-Zr-4OG" id="vfy-4m-mvY"/>
+                <outlet property="leftContainerView" destination="161-6J-RKI" id="ohj-Zk-Qbu"/>
+                <outlet property="primaryRightButton" destination="L4t-SX-JKr" id="0i4-CT-kqb"/>
+                <outlet property="rightHorizontalStackView" destination="Uly-yD-xv8" id="ve6-Tl-Tch"/>
+                <outlet property="secondaryRightButton" destination="kIy-CH-kg2" id="kkC-D3-xnR"/>
+                <outlet property="titleLabel" destination="qls-ae-nMI" id="sWH-Vj-qts"/>
+                <outlet property="topContentConstraint" destination="aIL-2s-UXu" id="orl-K5-aAk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z3O-lV-zhX">
+            <rect key="frame" x="0.0" y="0.0" width="459" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tHm-mf-KaR">
+                    <rect key="frame" x="0.0" y="0.0" width="459" height="40"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dpp-30-iAi">
+                            <rect key="frame" x="8" y="0.0" width="443" height="40"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="161-6J-RKI">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="40"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRp-A7-JR1" customClass="DSClickableIconBadge" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="QHp-gP-cG0"/>
+                                                <constraint firstAttribute="width" constant="40" id="jP1-jH-OjE"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="backButtonDidTapped:" destination="-1" eventType="touchUpInside" id="jOz-kA-Zq9"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="hRp-A7-JR1" firstAttribute="top" secondItem="161-6J-RKI" secondAttribute="top" id="2gy-IL-0hC"/>
+                                        <constraint firstItem="hRp-A7-JR1" firstAttribute="leading" secondItem="161-6J-RKI" secondAttribute="leading" id="UuT-l7-0DT"/>
+                                        <constraint firstAttribute="bottom" secondItem="hRp-A7-JR1" secondAttribute="bottom" id="XOj-vk-cV7"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hRp-A7-JR1" secondAttribute="trailing" id="fn5-yd-hrj"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CN3-d8-rA8">
+                                    <rect key="frame" x="58" y="0.0" width="217" height="40"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fGX-hL-V2P">
+                                            <rect key="frame" x="68" y="9.9999999999999982" width="81" height="20.333333333333329"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" horizontalCompressionResistancePriority="748" text="Navigation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qls-ae-nMI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="81" height="20.333333333333332"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="252" horizontalCompressionResistancePriority="752" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="u9C-0f-tBL" customClass="DSPill" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="-10" width="0.0" height="40"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="fGX-hL-V2P" firstAttribute="top" relation="greaterThanOrEqual" secondItem="CN3-d8-rA8" secondAttribute="top" id="5cL-Ph-n5x"/>
+                                        <constraint firstItem="fGX-hL-V2P" firstAttribute="centerX" secondItem="CN3-d8-rA8" secondAttribute="centerX" id="7TO-rL-wN2"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fGX-hL-V2P" secondAttribute="bottom" id="Hwe-PY-o3V"/>
+                                        <constraint firstItem="fGX-hL-V2P" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CN3-d8-rA8" secondAttribute="leading" id="TWh-tp-eSL"/>
+                                        <constraint firstItem="fGX-hL-V2P" firstAttribute="centerY" secondItem="CN3-d8-rA8" secondAttribute="centerY" id="XuG-bo-7jg"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fGX-hL-V2P" secondAttribute="trailing" id="xOc-GN-hAI"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" placeholderIntrinsicWidth="210" placeholderIntrinsicHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="Uly-yD-xv8">
+                                    <rect key="frame" x="283" y="0.0" width="160" height="40"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" horizontalHuggingPriority="253" placeholderIntrinsicWidth="50" placeholderIntrinsicHeight="40" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEO-Zr-4OG" customClass="DSGhostButton" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="ghostButtonDidTapped:" destination="-1" eventType="touchUpInside" id="oeq-G1-dlU"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4t-SX-JKr" customClass="DSClickableIconBadge" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="40" y="0.0" width="40" height="40"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="rNB-mg-qaZ"/>
+                                                <constraint firstAttribute="height" constant="40" id="tIx-jq-bnj"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="primaryRightButtonDidTapped:" destination="-1" eventType="touchUpInside" id="0UE-W4-EUv"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIy-CH-kg2" customClass="DSClickableIconBadge" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="80" y="0.0" width="40" height="40"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="e2W-Nq-ued"/>
+                                                <constraint firstAttribute="width" constant="40" id="sBs-Bd-omg"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="secondaryRightButtonDidTapped:" destination="-1" eventType="touchUpInside" id="NRx-bw-i2p"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohO-f4-8eh" customClass="DSClickableIconBadge" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="120" y="0.0" width="40" height="40"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="Lep-0S-45i"/>
+                                                <constraint firstAttribute="width" constant="40" id="npQ-bd-Ra4"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="closeButtonDidTapped:" destination="-1" eventType="touchUpInside" id="Fxa-Sr-vOO"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Uly-yD-xv8" firstAttribute="width" secondItem="161-6J-RKI" secondAttribute="width" priority="750" id="Yl5-c7-x66"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="dpp-30-iAi" firstAttribute="leading" secondItem="tHm-mf-KaR" secondAttribute="leading" constant="8" id="1S8-V6-ISk"/>
+                        <constraint firstAttribute="height" constant="40" id="CUy-rh-PfC"/>
+                        <constraint firstAttribute="trailing" secondItem="dpp-30-iAi" secondAttribute="trailing" constant="8" id="OUW-7o-hoI"/>
+                        <constraint firstItem="dpp-30-iAi" firstAttribute="top" secondItem="tHm-mf-KaR" secondAttribute="top" id="XpR-Cg-WUN"/>
+                        <constraint firstAttribute="bottom" secondItem="dpp-30-iAi" secondAttribute="bottom" id="ZpG-gk-rN7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="tHm-mf-KaR" firstAttribute="leading" secondItem="Z3O-lV-zhX" secondAttribute="leading" id="W8I-Ie-vqJ"/>
+                <constraint firstItem="tHm-mf-KaR" firstAttribute="top" secondItem="Z3O-lV-zhX" secondAttribute="top" id="aIL-2s-UXu"/>
+                <constraint firstAttribute="trailing" secondItem="tHm-mf-KaR" secondAttribute="trailing" id="hxT-LX-8N4"/>
+                <constraint firstAttribute="bottom" secondItem="tHm-mf-KaR" secondAttribute="bottom" id="zyH-g9-AYw"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="129.00763358778624" y="230.28169014084509"/>
+        </view>
+    </objects>
+</document>

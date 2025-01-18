@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsWaitingScreenViewController" customModule="ONE_oneapp_designsystem_ios_UIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="listAction" destination="9ao-Ra-jhM" id="Mfr-SJ-hby"/>
+                <outlet property="navBar" destination="Abz-4l-hwH" id="CDB-1O-byb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="Abz-4l-hwH" customClass="DSNavBar" customModule="OneAppDesignSystem">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ao-Ra-jhM" customClass="DSListActionView" customModule="OneAppDesignSystem">
+                    <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9ao-Ra-jhM" firstAttribute="top" secondItem="Abz-4l-hwH" secondAttribute="bottom" id="BWX-4V-nBD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9ao-Ra-jhM" secondAttribute="bottom" id="GgL-ss-Yq9"/>
+                <constraint firstItem="Abz-4l-hwH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="H0P-6n-LNa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Abz-4l-hwH" secondAttribute="trailing" id="azX-4h-jQj"/>
+                <constraint firstItem="Abz-4l-hwH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wVe-DW-36T"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9ao-Ra-jhM" secondAttribute="trailing" id="xL1-go-42r"/>
+                <constraint firstItem="9ao-Ra-jhM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zMX-fS-Qh3"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

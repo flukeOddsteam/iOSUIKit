@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsCommonPaymentValueRadioViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="headerLabel" destination="Ud3-rv-Pi1" id="2ra-IU-5Px"/>
+                <outlet property="navBar" destination="cAk-m4-U8x" id="eD1-eY-Et3"/>
+                <outlet property="radio1Group1" destination="zb2-vt-JND" id="wr6-NE-KSb"/>
+                <outlet property="radio1Group2" destination="8OO-rD-tBd" id="eIT-xG-bHR"/>
+                <outlet property="radio1Group3" destination="gwU-0d-zbc" id="sJa-UE-sTp"/>
+                <outlet property="radio1Group4" destination="PEZ-4s-9RN" id="U7c-7O-A4f"/>
+                <outlet property="radio2Group1" destination="J4d-ou-iI6" id="p9z-bW-rc3"/>
+                <outlet property="radio2Group2" destination="FsB-z7-2VS" id="kcN-8H-dA0"/>
+                <outlet property="radio2Group3" destination="vD4-Dc-FAY" id="0yt-tU-agK"/>
+                <outlet property="radio3Group1" destination="n8q-B3-W9F" id="ZCi-eB-xIe"/>
+                <outlet property="radio3Group2" destination="5HT-p4-Jfi" id="Hdh-4N-FHs"/>
+                <outlet property="radio4Group2" destination="oEv-Em-FHY" id="6l8-wr-Ky3"/>
+                <outlet property="stackView" destination="y6O-A8-pAC" id="cv6-fH-esm"/>
+                <outlet property="title1Label" destination="Q93-IM-Z0G" id="gq5-qo-bfb"/>
+                <outlet property="title2Label" destination="pbl-Ek-EuT" id="gwv-JC-PfZ"/>
+                <outlet property="title3Label" destination="akh-pK-1Oc" id="QES-Sf-sn6"/>
+                <outlet property="title4Label" destination="gLN-Gi-il6" id="zW7-fd-xGr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="43" translatesAutoresizingMaskIntoConstraints="NO" id="cAk-m4-U8x" customClass="DSNavBar" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="43"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="yCx-qB-4aM"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J32-tn-lds">
+                    <rect key="frame" x="0.0" y="102" width="393" height="715.99999999999977"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud3-rv-Pi1">
+                            <rect key="frame" x="16" y="24" width="361" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q93-IM-Z0G" userLabel="Example Group1">
+                            <rect key="frame" x="16" y="60.33333333333335" width="361" height="20.333333333333336"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="y6O-A8-pAC">
+                            <rect key="frame" x="0.0" y="96.666666666666629" width="393" height="1494"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="zb2-vt-JND" userLabel="ValueRadio1" customClass="DSCommonPaymentValueRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="J4d-ou-iI6" userLabel="ValueRadio2" customClass="DSCommonPaymentValueRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="132.00000000000003" width="393" height="100"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="n8q-B3-W9F" userLabel="ValueRadio3" customClass="DSCommonPaymentValueRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="264" width="393" height="100"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R49-ty-5FQ" userLabel="ExampleGroup2View">
+                                    <rect key="frame" x="0.0" y="396" width="393" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbl-Ek-EuT" userLabel="Example Group2">
+                                            <rect key="frame" x="16" y="0.0" width="361" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="pbl-Ek-EuT" firstAttribute="leading" secondItem="R49-ty-5FQ" secondAttribute="leading" constant="16" id="P1F-Cm-txR"/>
+                                        <constraint firstAttribute="trailing" secondItem="pbl-Ek-EuT" secondAttribute="trailing" constant="16" id="Vba-UV-ajs"/>
+                                        <constraint firstAttribute="bottom" secondItem="pbl-Ek-EuT" secondAttribute="bottom" id="bPx-yh-jIJ"/>
+                                        <constraint firstItem="pbl-Ek-EuT" firstAttribute="top" secondItem="R49-ty-5FQ" secondAttribute="top" id="pN8-NX-aZ2"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ge8-wj-6Y8">
+                                    <rect key="frame" x="0.0" y="478" width="393" height="448"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="8OO-rD-tBd" userLabel="ValueRadio1Group2" customClass="DSCommonPaymentValueRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="FsB-z7-2VS" userLabel="ValueRadio2Group2" customClass="DSCommonPaymentValueRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="116" width="393" height="100"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="5HT-p4-Jfi" userLabel="ValueRadio3Group2" customClass="DSCommonPaymentValueRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="232" width="393" height="100"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="oEv-Em-FHY" userLabel="ValueRadio4Group2" customClass="DSCommonPaymentValueRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="348.00000000000011" width="393" height="100"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xu4-je-SmG" userLabel="ExampleGroup3View">
+                                    <rect key="frame" x="0.0" y="958.00000000000011" width="393" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akh-pK-1Oc" userLabel="Example Group3">
+                                            <rect key="frame" x="16" y="0.0" width="361" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="akh-pK-1Oc" firstAttribute="leading" secondItem="Xu4-je-SmG" secondAttribute="leading" constant="16" id="2Ok-c7-N5h"/>
+                                        <constraint firstAttribute="trailing" secondItem="akh-pK-1Oc" secondAttribute="trailing" constant="16" id="3BD-OI-wFE"/>
+                                        <constraint firstAttribute="bottom" secondItem="akh-pK-1Oc" secondAttribute="bottom" id="EXx-DP-oYm"/>
+                                        <constraint firstItem="akh-pK-1Oc" firstAttribute="top" secondItem="Xu4-je-SmG" secondAttribute="top" id="btY-LF-fBV"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BJR-Ld-lHi">
+                                    <rect key="frame" x="0.0" y="1040" width="393" height="216"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="gwU-0d-zbc" userLabel="ValueRadio1Group3" customClass="DSCommonPaymentValueRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="vD4-Dc-FAY" userLabel="ValueRadio2Group3" customClass="DSCommonPaymentValueRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="116" width="393" height="100"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcE-7A-E8d" userLabel="ExampleGroup4View">
+                                    <rect key="frame" x="0.0" y="1288" width="393" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLN-Gi-il6" userLabel="Example Group4">
+                                            <rect key="frame" x="16" y="0.0" width="361" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="gLN-Gi-il6" secondAttribute="trailing" constant="16" id="6V6-SE-g5W"/>
+                                        <constraint firstItem="gLN-Gi-il6" firstAttribute="top" secondItem="jcE-7A-E8d" secondAttribute="top" id="JsC-z3-VhJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="gLN-Gi-il6" secondAttribute="bottom" id="RB0-dt-XxK"/>
+                                        <constraint firstItem="gLN-Gi-il6" firstAttribute="leading" secondItem="jcE-7A-E8d" secondAttribute="leading" constant="16" id="Ta0-z8-2X7"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gLS-Ee-8Vc">
+                                    <rect key="frame" x="0.0" y="1370" width="393" height="124"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="PEZ-4s-9RN" userLabel="ValueRadio1Group4" customClass="DSCommonPaymentValueRadioView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="24" right="0.0"/>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Q93-IM-Z0G" firstAttribute="top" secondItem="Ud3-rv-Pi1" secondAttribute="bottom" constant="16" id="0d5-LJ-IT9"/>
+                        <constraint firstItem="y6O-A8-pAC" firstAttribute="leading" secondItem="J32-tn-lds" secondAttribute="leading" id="C36-DZ-nnv"/>
+                        <constraint firstAttribute="trailing" secondItem="Ud3-rv-Pi1" secondAttribute="trailing" constant="16" id="MaB-ak-nXV"/>
+                        <constraint firstAttribute="trailing" secondItem="y6O-A8-pAC" secondAttribute="trailing" id="Xzg-tc-Fdr"/>
+                        <constraint firstItem="Q93-IM-Z0G" firstAttribute="leading" secondItem="J32-tn-lds" secondAttribute="leading" constant="16" id="b5b-uN-N8v"/>
+                        <constraint firstItem="y6O-A8-pAC" firstAttribute="top" secondItem="Q93-IM-Z0G" secondAttribute="bottom" constant="16" id="cVI-92-nRz"/>
+                        <constraint firstItem="Ud3-rv-Pi1" firstAttribute="top" secondItem="J32-tn-lds" secondAttribute="top" constant="24" id="gCs-yF-Sdh"/>
+                        <constraint firstItem="Ud3-rv-Pi1" firstAttribute="leading" secondItem="J32-tn-lds" secondAttribute="leading" constant="16" id="gMs-NY-LWC"/>
+                        <constraint firstAttribute="bottom" secondItem="y6O-A8-pAC" secondAttribute="bottom" id="gYh-Ov-0eD"/>
+                        <constraint firstAttribute="trailing" secondItem="Q93-IM-Z0G" secondAttribute="trailing" constant="16" id="oyu-H7-a5L"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="J32-tn-lds" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7mv-aw-xIS"/>
+                <constraint firstItem="cAk-m4-U8x" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="AuY-S2-lZF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="J32-tn-lds" secondAttribute="trailing" id="B8Q-Ag-jUV"/>
+                <constraint firstItem="y6O-A8-pAC" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="LUR-l3-j8T"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cAk-m4-U8x" secondAttribute="trailing" id="N56-bz-lBk"/>
+                <constraint firstItem="J32-tn-lds" firstAttribute="top" secondItem="cAk-m4-U8x" secondAttribute="bottom" id="PIx-sK-PrX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="J32-tn-lds" secondAttribute="bottom" id="PVx-cK-9Tx"/>
+                <constraint firstItem="cAk-m4-U8x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zMP-oj-jkK"/>
+            </constraints>
+            <point key="canvasLocation" x="58.778625954198468" y="0.0"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

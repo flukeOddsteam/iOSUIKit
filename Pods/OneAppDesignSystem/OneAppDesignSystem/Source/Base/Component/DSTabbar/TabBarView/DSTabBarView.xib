@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSTabBarView" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="contentStackView" destination="Vb7-56-ig7" id="91B-Zh-loe"/>
+                <outlet property="contentView" destination="O9B-IQ-yqA" id="vo8-22-fvu"/>
+                <outlet property="tabBarSegmentView" destination="4aA-fZ-ehI" id="pDK-cv-lgt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O9B-IQ-yqA" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xJW-oZ-dGq">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="4aA-fZ-ehI" customClass="TabBarSegmentedView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vb7-56-ig7">
+                                    <rect key="frame" x="0.0" y="66" width="414" height="830"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="xJW-oZ-dGq" secondAttribute="trailing" id="Poo-3N-bAU"/>
+                        <constraint firstAttribute="bottom" secondItem="xJW-oZ-dGq" secondAttribute="bottom" id="Ppl-ue-PtA"/>
+                        <constraint firstItem="xJW-oZ-dGq" firstAttribute="top" secondItem="O9B-IQ-yqA" secondAttribute="top" id="U9a-ne-lrq"/>
+                        <constraint firstItem="xJW-oZ-dGq" firstAttribute="leading" secondItem="O9B-IQ-yqA" secondAttribute="leading" id="uY1-Br-jz3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="O9B-IQ-yqA" secondAttribute="bottom" id="J73-xC-9OI"/>
+                <constraint firstAttribute="trailing" secondItem="O9B-IQ-yqA" secondAttribute="trailing" id="YcU-4r-arh"/>
+                <constraint firstItem="O9B-IQ-yqA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="flz-NS-xdn"/>
+                <constraint firstItem="O9B-IQ-yqA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fuh-MN-j8m"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="94"/>
+        </view>
+    </objects>
+</document>

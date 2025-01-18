@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSClickableIconFavorite" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="tOn-m9-P8a" id="cjO-Ib-wf9"/>
+                <outlet property="iconImageView" destination="FHD-Iu-BJG" id="RKN-LV-Z4t"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="142" height="106"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tOn-m9-P8a">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FHD-Iu-BJG">
+                            <rect key="frame" x="8" y="8" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="ax2-Vh-XDf"/>
+                                <constraint firstAttribute="width" constant="24" id="pKW-6Z-gcn"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="FHD-Iu-BJG" firstAttribute="centerY" secondItem="tOn-m9-P8a" secondAttribute="centerY" id="PES-Ki-Rh0"/>
+                        <constraint firstAttribute="height" constant="40" id="ayZ-ds-bbV"/>
+                        <constraint firstAttribute="width" constant="40" id="dcf-X6-TP1"/>
+                        <constraint firstItem="FHD-Iu-BJG" firstAttribute="centerX" secondItem="tOn-m9-P8a" secondAttribute="centerX" id="n6Z-wn-Rdx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tOn-m9-P8a" secondAttribute="trailing" id="R21-72-bCG"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="tOn-m9-P8a" secondAttribute="bottom" id="aEJ-Wh-wPq"/>
+                <constraint firstItem="tOn-m9-P8a" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="inX-zc-EYS"/>
+                <constraint firstItem="tOn-m9-P8a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rbC-1N-9v5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-447.32824427480915" y="277.46478873239437"/>
+        </view>
+    </objects>
+</document>

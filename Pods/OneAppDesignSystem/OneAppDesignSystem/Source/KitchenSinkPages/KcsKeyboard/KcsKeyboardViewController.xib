@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ekachon-Bold.ttf">
+            <string>Ekachon-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsKeyboardViewController" customModule="OneApp" customModuleProvider="target">
+            <connections>
+                <outlet property="navigationBar" destination="Q4y-le-mNC" id="a2A-d3-mt3"/>
+                <outlet property="textField1" destination="ibT-mT-rR7" id="pX3-EQ-aSc"/>
+                <outlet property="textField2" destination="Mht-wD-O2P" id="Bbr-eG-vEP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4y-le-mNC" customClass="KitchenSinkNavigationView" customModule="OneApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="QAu-HB-FHu"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6v-i4-e7M">
+                    <rect key="frame" x="0.0" y="40" width="414" height="831"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Rd-ik-TnP">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keyboard Default" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBq-oD-7WJ">
+                                    <rect key="frame" x="16" y="16" width="382" height="19"/>
+                                    <fontDescription key="fontDescription" name="Ekachon-Bold" family="Ekachon" pointSize="16"/>
+                                    <color key="textColor" red="0.0" green="0.31372549020000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="ibT-mT-rR7" customClass="DSTextField" customModule="OneApp" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="43" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keyboard Number Decimal (.)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQl-Gm-JLZ">
+                                    <rect key="frame" x="16" y="179" width="382" height="19"/>
+                                    <fontDescription key="fontDescription" name="Ekachon-Bold" family="Ekachon" pointSize="16"/>
+                                    <color key="textColor" red="0.0" green="0.31372549020000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="Mht-wD-O2P" customClass="DSTextField" customModule="OneApp" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="206" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="2Rd-ik-TnP" secondAttribute="trailing" id="3gB-GR-91J"/>
+                        <constraint firstAttribute="bottom" secondItem="2Rd-ik-TnP" secondAttribute="bottom" id="54K-Rd-Nhp"/>
+                        <constraint firstItem="2Rd-ik-TnP" firstAttribute="top" secondItem="B6v-i4-e7M" secondAttribute="top" id="5cZ-Ws-1rC"/>
+                        <constraint firstItem="2Rd-ik-TnP" firstAttribute="leading" secondItem="B6v-i4-e7M" secondAttribute="leading" id="SDH-5D-I3t"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2Rd-ik-TnP" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="2US-wi-QJ6"/>
+                <constraint firstItem="Q4y-le-mNC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9nU-Io-n0S"/>
+                <constraint firstItem="Q4y-le-mNC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="AZC-gl-lP2"/>
+                <constraint firstItem="B6v-i4-e7M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f6q-u0-NAr"/>
+                <constraint firstAttribute="trailing" secondItem="B6v-i4-e7M" secondAttribute="trailing" id="ndu-XR-dkd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Q4y-le-mNC" secondAttribute="trailing" id="nfE-m2-E1a"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="B6v-i4-e7M" secondAttribute="bottom" constant="25" id="qMS-NL-gH9"/>
+                <constraint firstItem="B6v-i4-e7M" firstAttribute="top" secondItem="Q4y-le-mNC" secondAttribute="bottom" id="xyg-S8-Qit"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="59"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

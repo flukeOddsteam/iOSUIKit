@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A17D5171B6986F379A28CCF /* Pods_iOSUIKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE49BF35D82057CBF2E4E506 /* Pods_iOSUIKitTests.framework */; };
+		2A0BDD6465430859079072C1 /* Pods_iOSUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D96C97E5FC76F77C3279692 /* Pods_iOSUIKit.framework */; };
+		37EDD8D58DAFC545D348CF1A /* Pods_iOSUIKit_iOSUIKitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F66EB17B955AFF83FBF373B /* Pods_iOSUIKit_iOSUIKitUITests.framework */; };
 		52BE6A642D3A1970009C34C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6A632D3A1970009C34C1 /* AppDelegate.swift */; };
 		52BE6A662D3A1970009C34C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6A652D3A1970009C34C1 /* SceneDelegate.swift */; };
 		52BE6A682D3A1970009C34C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6A672D3A1970009C34C1 /* ViewController.swift */; };
@@ -16,6 +19,27 @@
 		52BE6A7B2D3A1972009C34C1 /* iOSUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6A7A2D3A1972009C34C1 /* iOSUIKitTests.swift */; };
 		52BE6A852D3A1972009C34C1 /* iOSUIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6A842D3A1972009C34C1 /* iOSUIKitUITests.swift */; };
 		52BE6A872D3A1972009C34C1 /* iOSUIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6A862D3A1972009C34C1 /* iOSUIKitUITestsLaunchTests.swift */; };
+		52BE6AB52D3B3E02009C34C1 /* DSWaitingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6A932D3B3E02009C34C1 /* DSWaitingScreenViewController.swift */; };
+		52BE6AB62D3B3E02009C34C1 /* DSWaitingScreenAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6A952D3B3E02009C34C1 /* DSWaitingScreenAccessibility.swift */; };
+		52BE6AB72D3B3E02009C34C1 /* DSWaitingScreenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6A962D3B3E02009C34C1 /* DSWaitingScreenDelegate.swift */; };
+		52BE6AB82D3B3E02009C34C1 /* DSWaitingScreenInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6A972D3B3E02009C34C1 /* DSWaitingScreenInterface.swift */; };
+		52BE6AB92D3B3E02009C34C1 /* DSWaitingScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6A982D3B3E02009C34C1 /* DSWaitingScreenViewModel.swift */; };
+		52BE6ABA2D3B3E02009C34C1 /* WaitingScreenMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6A9A2D3B3E02009C34C1 /* WaitingScreenMediaView.swift */; };
+		52BE6ABB2D3B3E02009C34C1 /* DSWaitingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6A9C2D3B3E02009C34C1 /* DSWaitingScreen.swift */; };
+		52BE6ABC2D3B3E02009C34C1 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6A9F2D3B3E02009C34C1 /* UIImageViewExtension.swift */; };
+		52BE6ABD2D3B3E02009C34C1 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6AA02D3B3E02009C34C1 /* UIStackViewExtension.swift */; };
+		52BE6ABE2D3B3E02009C34C1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6AA12D3B3E02009C34C1 /* UIViewExtension.swift */; };
+		52BE6ABF2D3B3E02009C34C1 /* KcsUIKitFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6AA32D3B3E02009C34C1 /* KcsUIKitFlowViewController.swift */; };
+		52BE6AC02D3B3E02009C34C1 /* KcsUIKitFlowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BE6AA42D3B3E02009C34C1 /* KcsUIKitFlowViewController.xib */; };
+		52BE6AC12D3B3E02009C34C1 /* KcsLandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6AA62D3B3E02009C34C1 /* KcsLandingViewController.swift */; };
+		52BE6AC22D3B3E02009C34C1 /* KcsLandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BE6AA72D3B3E02009C34C1 /* KcsLandingViewController.xib */; };
+		52BE6AC32D3B3E02009C34C1 /* KcsWaitingScreenEntryPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6AA92D3B3E02009C34C1 /* KcsWaitingScreenEntryPointViewController.swift */; };
+		52BE6AC42D3B3E02009C34C1 /* KcsWaitingScreenEntryPointViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BE6AAA2D3B3E02009C34C1 /* KcsWaitingScreenEntryPointViewController.xib */; };
+		52BE6AC52D3B3E02009C34C1 /* KcsWaitingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6AAB2D3B3E02009C34C1 /* KcsWaitingScreenViewController.swift */; };
+		52BE6AC62D3B3E02009C34C1 /* KcsWaitingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BE6AAC2D3B3E02009C34C1 /* KcsWaitingScreenViewController.xib */; };
+		52BE6AC72D3B3E02009C34C1 /* KitchenSinkNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6AAE2D3B3E02009C34C1 /* KitchenSinkNavigationView.swift */; };
+		52BE6AC82D3B3E02009C34C1 /* KitchenSinkNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BE6AAF2D3B3E02009C34C1 /* KitchenSinkNavigationView.xib */; };
+		52BE6AC92D3B3E02009C34C1 /* UIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE6AB22D3B3E02009C34C1 /* UIKitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		340FD72ED0D08CD9342B54C2 /* Pods-iOSUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSUIKit.debug.xcconfig"; path = "Target Support Files/Pods-iOSUIKit/Pods-iOSUIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		44BAD09AFD6442BC38E5919E /* Pods-iOSUIKit-iOSUIKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSUIKit-iOSUIKitUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSUIKit-iOSUIKitUITests/Pods-iOSUIKit-iOSUIKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		52BE6A602D3A1970009C34C1 /* iOSUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52BE6A632D3A1970009C34C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52BE6A652D3A1970009C34C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +75,34 @@
 		52BE6A802D3A1972009C34C1 /* iOSUIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSUIKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52BE6A842D3A1972009C34C1 /* iOSUIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSUIKitUITests.swift; sourceTree = "<group>"; };
 		52BE6A862D3A1972009C34C1 /* iOSUIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSUIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		52BE6A932D3B3E02009C34C1 /* DSWaitingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSWaitingScreenViewController.swift; sourceTree = "<group>"; };
+		52BE6A952D3B3E02009C34C1 /* DSWaitingScreenAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSWaitingScreenAccessibility.swift; sourceTree = "<group>"; };
+		52BE6A962D3B3E02009C34C1 /* DSWaitingScreenDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSWaitingScreenDelegate.swift; sourceTree = "<group>"; };
+		52BE6A972D3B3E02009C34C1 /* DSWaitingScreenInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSWaitingScreenInterface.swift; sourceTree = "<group>"; };
+		52BE6A982D3B3E02009C34C1 /* DSWaitingScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSWaitingScreenViewModel.swift; sourceTree = "<group>"; };
+		52BE6A9A2D3B3E02009C34C1 /* WaitingScreenMediaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingScreenMediaView.swift; sourceTree = "<group>"; };
+		52BE6A9C2D3B3E02009C34C1 /* DSWaitingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSWaitingScreen.swift; sourceTree = "<group>"; };
+		52BE6A9F2D3B3E02009C34C1 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		52BE6AA02D3B3E02009C34C1 /* UIStackViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
+		52BE6AA12D3B3E02009C34C1 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		52BE6AA32D3B3E02009C34C1 /* KcsUIKitFlowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KcsUIKitFlowViewController.swift; sourceTree = "<group>"; };
+		52BE6AA42D3B3E02009C34C1 /* KcsUIKitFlowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KcsUIKitFlowViewController.xib; sourceTree = "<group>"; };
+		52BE6AA62D3B3E02009C34C1 /* KcsLandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KcsLandingViewController.swift; sourceTree = "<group>"; };
+		52BE6AA72D3B3E02009C34C1 /* KcsLandingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KcsLandingViewController.xib; sourceTree = "<group>"; };
+		52BE6AA92D3B3E02009C34C1 /* KcsWaitingScreenEntryPointViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KcsWaitingScreenEntryPointViewController.swift; sourceTree = "<group>"; };
+		52BE6AAA2D3B3E02009C34C1 /* KcsWaitingScreenEntryPointViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KcsWaitingScreenEntryPointViewController.xib; sourceTree = "<group>"; };
+		52BE6AAB2D3B3E02009C34C1 /* KcsWaitingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KcsWaitingScreenViewController.swift; sourceTree = "<group>"; };
+		52BE6AAC2D3B3E02009C34C1 /* KcsWaitingScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KcsWaitingScreenViewController.xib; sourceTree = "<group>"; };
+		52BE6AAE2D3B3E02009C34C1 /* KitchenSinkNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KitchenSinkNavigationView.swift; sourceTree = "<group>"; };
+		52BE6AAF2D3B3E02009C34C1 /* KitchenSinkNavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KitchenSinkNavigationView.xib; sourceTree = "<group>"; };
+		52BE6AB22D3B3E02009C34C1 /* UIKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitViewController.swift; sourceTree = "<group>"; };
+		55C5497C0D82C002EC5AB8F3 /* Pods-iOSUIKit-iOSUIKitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSUIKit-iOSUIKitUITests.release.xcconfig"; path = "Target Support Files/Pods-iOSUIKit-iOSUIKitUITests/Pods-iOSUIKit-iOSUIKitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		57EEEF9853D1AF3A652C7018 /* Pods-iOSUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSUIKit.release.xcconfig"; path = "Target Support Files/Pods-iOSUIKit/Pods-iOSUIKit.release.xcconfig"; sourceTree = "<group>"; };
+		5D96C97E5FC76F77C3279692 /* Pods_iOSUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85CE3423D55962BC1CD91589 /* Pods-iOSUIKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSUIKitTests.debug.xcconfig"; path = "Target Support Files/Pods-iOSUIKitTests/Pods-iOSUIKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F66EB17B955AFF83FBF373B /* Pods_iOSUIKit_iOSUIKitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSUIKit_iOSUIKitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE49BF35D82057CBF2E4E506 /* Pods_iOSUIKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSUIKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCBCEA6EAE94E6001BBB38A6 /* Pods-iOSUIKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSUIKitTests.release.xcconfig"; path = "Target Support Files/Pods-iOSUIKitTests/Pods-iOSUIKitTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A0BDD6465430859079072C1 /* Pods_iOSUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A17D5171B6986F379A28CCF /* Pods_iOSUIKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EDD8D58DAFC545D348CF1A /* Pods_iOSUIKit_iOSUIKitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +140,8 @@
 				52BE6A792D3A1972009C34C1 /* iOSUIKitTests */,
 				52BE6A832D3A1972009C34C1 /* iOSUIKitUITests */,
 				52BE6A612D3A1970009C34C1 /* Products */,
+				847C3D738CCBC0507E8CC67D /* Pods */,
+				6DD9B5A11BA12547C2652C47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +158,7 @@
 		52BE6A622D3A1970009C34C1 /* iOSUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				52BE6AB42D3B3E02009C34C1 /* Source */,
 				52BE6A632D3A1970009C34C1 /* AppDelegate.swift */,
 				52BE6A652D3A1970009C34C1 /* SceneDelegate.swift */,
 				52BE6A672D3A1970009C34C1 /* ViewController.swift */,
@@ -127,6 +187,153 @@
 			path = iOSUIKitUITests;
 			sourceTree = "<group>";
 		};
+		52BE6A942D3B3E02009C34C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52BE6A932D3B3E02009C34C1 /* DSWaitingScreenViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52BE6A992D3B3E02009C34C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52BE6A952D3B3E02009C34C1 /* DSWaitingScreenAccessibility.swift */,
+				52BE6A962D3B3E02009C34C1 /* DSWaitingScreenDelegate.swift */,
+				52BE6A972D3B3E02009C34C1 /* DSWaitingScreenInterface.swift */,
+				52BE6A982D3B3E02009C34C1 /* DSWaitingScreenViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52BE6A9B2D3B3E02009C34C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52BE6A9A2D3B3E02009C34C1 /* WaitingScreenMediaView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52BE6A9D2D3B3E02009C34C1 /* DSWaitingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				52BE6A942D3B3E02009C34C1 /* Controller */,
+				52BE6A992D3B3E02009C34C1 /* Model */,
+				52BE6A9B2D3B3E02009C34C1 /* View */,
+				52BE6A9C2D3B3E02009C34C1 /* DSWaitingScreen.swift */,
+			);
+			path = DSWaitingScreen;
+			sourceTree = "<group>";
+		};
+		52BE6A9E2D3B3E02009C34C1 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				52BE6A9D2D3B3E02009C34C1 /* DSWaitingScreen */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		52BE6AA22D3B3E02009C34C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52BE6A9F2D3B3E02009C34C1 /* UIImageViewExtension.swift */,
+				52BE6AA02D3B3E02009C34C1 /* UIStackViewExtension.swift */,
+				52BE6AA12D3B3E02009C34C1 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		52BE6AA52D3B3E02009C34C1 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				52BE6AA32D3B3E02009C34C1 /* KcsUIKitFlowViewController.swift */,
+				52BE6AA42D3B3E02009C34C1 /* KcsUIKitFlowViewController.xib */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		52BE6AA82D3B3E02009C34C1 /* KcsLanding */ = {
+			isa = PBXGroup;
+			children = (
+				52BE6AA52D3B3E02009C34C1 /* UIKit */,
+				52BE6AA62D3B3E02009C34C1 /* KcsLandingViewController.swift */,
+				52BE6AA72D3B3E02009C34C1 /* KcsLandingViewController.xib */,
+			);
+			path = KcsLanding;
+			sourceTree = "<group>";
+		};
+		52BE6AAD2D3B3E02009C34C1 /* KcsWaitingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				52BE6AA92D3B3E02009C34C1 /* KcsWaitingScreenEntryPointViewController.swift */,
+				52BE6AAA2D3B3E02009C34C1 /* KcsWaitingScreenEntryPointViewController.xib */,
+				52BE6AAB2D3B3E02009C34C1 /* KcsWaitingScreenViewController.swift */,
+				52BE6AAC2D3B3E02009C34C1 /* KcsWaitingScreenViewController.xib */,
+			);
+			path = KcsWaitingScreen;
+			sourceTree = "<group>";
+		};
+		52BE6AB02D3B3E02009C34C1 /* KitchenSinkNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				52BE6AAE2D3B3E02009C34C1 /* KitchenSinkNavigationView.swift */,
+				52BE6AAF2D3B3E02009C34C1 /* KitchenSinkNavigationView.xib */,
+			);
+			path = KitchenSinkNavigationBar;
+			sourceTree = "<group>";
+		};
+		52BE6AB12D3B3E02009C34C1 /* KitchenSinkPages */ = {
+			isa = PBXGroup;
+			children = (
+				52BE6AA82D3B3E02009C34C1 /* KcsLanding */,
+				52BE6AAD2D3B3E02009C34C1 /* KcsWaitingScreen */,
+				52BE6AB02D3B3E02009C34C1 /* KitchenSinkNavigationBar */,
+			);
+			path = KitchenSinkPages;
+			sourceTree = "<group>";
+		};
+		52BE6AB32D3B3E02009C34C1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				52BE6AB22D3B3E02009C34C1 /* UIKitViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		52BE6AB42D3B3E02009C34C1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				52BE6A9E2D3B3E02009C34C1 /* Component */,
+				52BE6AA22D3B3E02009C34C1 /* Extensions */,
+				52BE6AB12D3B3E02009C34C1 /* KitchenSinkPages */,
+				52BE6AB32D3B3E02009C34C1 /* ViewController */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		6DD9B5A11BA12547C2652C47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D96C97E5FC76F77C3279692 /* Pods_iOSUIKit.framework */,
+				9F66EB17B955AFF83FBF373B /* Pods_iOSUIKit_iOSUIKitUITests.framework */,
+				AE49BF35D82057CBF2E4E506 /* Pods_iOSUIKitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		847C3D738CCBC0507E8CC67D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				340FD72ED0D08CD9342B54C2 /* Pods-iOSUIKit.debug.xcconfig */,
+				57EEEF9853D1AF3A652C7018 /* Pods-iOSUIKit.release.xcconfig */,
+				44BAD09AFD6442BC38E5919E /* Pods-iOSUIKit-iOSUIKitUITests.debug.xcconfig */,
+				55C5497C0D82C002EC5AB8F3 /* Pods-iOSUIKit-iOSUIKitUITests.release.xcconfig */,
+				85CE3423D55962BC1CD91589 /* Pods-iOSUIKitTests.debug.xcconfig */,
+				DCBCEA6EAE94E6001BBB38A6 /* Pods-iOSUIKitTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +341,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52BE6A8A2D3A1972009C34C1 /* Build configuration list for PBXNativeTarget "iOSUIKit" */;
 			buildPhases = (
+				035AC19AEA3CDA4FBF627119 /* [CP] Check Pods Manifest.lock */,
 				52BE6A5C2D3A1970009C34C1 /* Sources */,
 				52BE6A5D2D3A1970009C34C1 /* Frameworks */,
 				52BE6A5E2D3A1970009C34C1 /* Resources */,
+				C98023F1D8B2973C37EF0700 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +360,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52BE6A8D2D3A1972009C34C1 /* Build configuration list for PBXNativeTarget "iOSUIKitTests" */;
 			buildPhases = (
+				55C0A5B54EA86081E1459A15 /* [CP] Check Pods Manifest.lock */,
 				52BE6A722D3A1972009C34C1 /* Sources */,
 				52BE6A732D3A1972009C34C1 /* Frameworks */,
 				52BE6A742D3A1972009C34C1 /* Resources */,
@@ -169,9 +379,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52BE6A902D3A1972009C34C1 /* Build configuration list for PBXNativeTarget "iOSUIKitUITests" */;
 			buildPhases = (
+				44CD8074B9B06261133FD874 /* [CP] Check Pods Manifest.lock */,
 				52BE6A7C2D3A1972009C34C1 /* Sources */,
 				52BE6A7D2D3A1972009C34C1 /* Frameworks */,
 				52BE6A7E2D3A1972009C34C1 /* Resources */,
+				11E68469CEE2DF7778909773 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,8 +444,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				52BE6A6D2D3A1971009C34C1 /* Assets.xcassets in Resources */,
+				52BE6AC02D3B3E02009C34C1 /* KcsUIKitFlowViewController.xib in Resources */,
 				52BE6A702D3A1971009C34C1 /* Base in Resources */,
+				52BE6AC62D3B3E02009C34C1 /* KcsWaitingScreenViewController.xib in Resources */,
+				52BE6AC82D3B3E02009C34C1 /* KitchenSinkNavigationView.xib in Resources */,
 				52BE6A6B2D3A1970009C34C1 /* Base in Resources */,
+				52BE6AC42D3B3E02009C34C1 /* KcsWaitingScreenEntryPointViewController.xib in Resources */,
+				52BE6AC22D3B3E02009C34C1 /* KcsLandingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +470,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		035AC19AEA3CDA4FBF627119 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSUIKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11E68469CEE2DF7778909773 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSUIKit-iOSUIKitUITests/Pods-iOSUIKit-iOSUIKitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44CD8074B9B06261133FD874 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSUIKit-iOSUIKitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55C0A5B54EA86081E1459A15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSUIKitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C98023F1D8B2973C37EF0700 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSUIKit/Pods-iOSUIKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52BE6A5C2D3A1970009C34C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52BE6AB62D3B3E02009C34C1 /* DSWaitingScreenAccessibility.swift in Sources */,
+				52BE6ABD2D3B3E02009C34C1 /* UIStackViewExtension.swift in Sources */,
+				52BE6AB82D3B3E02009C34C1 /* DSWaitingScreenInterface.swift in Sources */,
+				52BE6ABB2D3B3E02009C34C1 /* DSWaitingScreen.swift in Sources */,
+				52BE6AC12D3B3E02009C34C1 /* KcsLandingViewController.swift in Sources */,
+				52BE6AB72D3B3E02009C34C1 /* DSWaitingScreenDelegate.swift in Sources */,
+				52BE6AC52D3B3E02009C34C1 /* KcsWaitingScreenViewController.swift in Sources */,
 				52BE6A682D3A1970009C34C1 /* ViewController.swift in Sources */,
 				52BE6A642D3A1970009C34C1 /* AppDelegate.swift in Sources */,
+				52BE6AC32D3B3E02009C34C1 /* KcsWaitingScreenEntryPointViewController.swift in Sources */,
+				52BE6AC72D3B3E02009C34C1 /* KitchenSinkNavigationView.swift in Sources */,
+				52BE6ABC2D3B3E02009C34C1 /* UIImageViewExtension.swift in Sources */,
+				52BE6AC92D3B3E02009C34C1 /* UIKitViewController.swift in Sources */,
 				52BE6A662D3A1970009C34C1 /* SceneDelegate.swift in Sources */,
+				52BE6ABE2D3B3E02009C34C1 /* UIViewExtension.swift in Sources */,
+				52BE6AB52D3B3E02009C34C1 /* DSWaitingScreenViewController.swift in Sources */,
+				52BE6ABA2D3B3E02009C34C1 /* WaitingScreenMediaView.swift in Sources */,
+				52BE6ABF2D3B3E02009C34C1 /* KcsUIKitFlowViewController.swift in Sources */,
+				52BE6AB92D3B3E02009C34C1 /* DSWaitingScreenViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,12 +769,14 @@
 		};
 		52BE6A8B2D3A1972009C34C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 340FD72ED0D08CD9342B54C2 /* Pods-iOSUIKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZDU63GUB32;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -465,12 +799,14 @@
 		};
 		52BE6A8C2D3A1972009C34C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57EEEF9853D1AF3A652C7018 /* Pods-iOSUIKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZDU63GUB32;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -493,6 +829,7 @@
 		};
 		52BE6A8E2D3A1972009C34C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85CE3423D55962BC1CD91589 /* Pods-iOSUIKitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +850,7 @@
 		};
 		52BE6A8F2D3A1972009C34C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCBCEA6EAE94E6001BBB38A6 /* Pods-iOSUIKitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +871,7 @@
 		};
 		52BE6A912D3A1972009C34C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44BAD09AFD6442BC38E5919E /* Pods-iOSUIKit-iOSUIKitUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +890,7 @@
 		};
 		52BE6A922D3A1972009C34C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C5497C0D82C002EC5AB8F3 /* Pods-iOSUIKit-iOSUIKitUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

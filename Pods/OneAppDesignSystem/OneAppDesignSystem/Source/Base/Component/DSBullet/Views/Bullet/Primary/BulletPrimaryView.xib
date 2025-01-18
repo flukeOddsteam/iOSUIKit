@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BulletPrimaryView" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="bulletView" destination="UNc-N7-AkU" id="kW0-Pk-OPk"/>
+                <outlet property="containerStackView" destination="BTx-3H-Uyp" id="QfY-9c-pZ2"/>
+                <outlet property="secondaryContainerView" destination="GEj-XZ-prr" id="Mtw-Z4-6aJ"/>
+                <outlet property="secondaryStackView" destination="9XI-bL-zvE" id="eBy-pO-pxV"/>
+                <outlet property="titleLabel" destination="j5O-8R-hlY" id="LG3-39-A1K"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="335"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BTx-3H-Uyp">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="335"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzw-En-J0z">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uvu-vm-w71">
+                                    <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNc-N7-AkU" customClass="BulletView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                            <rect key="frame" x="9" y="9" width="6" height="6"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="6" id="EGG-FC-V7c"/>
+                                                <constraint firstAttribute="width" constant="6" id="H0Z-6J-CL3"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="24" id="dcg-ic-gTc"/>
+                                        <constraint firstAttribute="height" constant="24" id="eL3-8U-cWr"/>
+                                        <constraint firstItem="UNc-N7-AkU" firstAttribute="centerY" secondItem="Uvu-vm-w71" secondAttribute="centerY" id="rCp-bD-1Xi"/>
+                                        <constraint firstItem="UNc-N7-AkU" firstAttribute="centerX" secondItem="Uvu-vm-w71" secondAttribute="centerX" id="rlx-MT-95k"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5O-8R-hlY">
+                                    <rect key="frame" x="28" y="0.0" width="386" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Uvu-vm-w71" firstAttribute="top" secondItem="mzw-En-J0z" secondAttribute="top" id="49D-eb-c0l"/>
+                                <constraint firstItem="Uvu-vm-w71" firstAttribute="leading" secondItem="mzw-En-J0z" secondAttribute="leading" id="WWx-Mq-56O"/>
+                                <constraint firstItem="j5O-8R-hlY" firstAttribute="top" secondItem="mzw-En-J0z" secondAttribute="top" id="XR8-Gy-8HJ"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="j5O-8R-hlY" secondAttribute="bottom" id="gg4-c7-psS"/>
+                                <constraint firstItem="j5O-8R-hlY" firstAttribute="leading" secondItem="Uvu-vm-w71" secondAttribute="trailing" constant="4" id="jcr-Ld-ZUM"/>
+                                <constraint firstAttribute="trailing" secondItem="j5O-8R-hlY" secondAttribute="trailing" id="vlA-hu-MsR"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEj-XZ-prr">
+                            <rect key="frame" x="0.0" y="111" width="414" height="224"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="200" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9XI-bL-zvE">
+                                    <rect key="frame" x="28" y="0.0" width="386" height="224"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="9XI-bL-zvE" secondAttribute="trailing" id="bxm-sL-17s"/>
+                                <constraint firstItem="9XI-bL-zvE" firstAttribute="top" secondItem="GEj-XZ-prr" secondAttribute="top" id="dqU-j5-A1K"/>
+                                <constraint firstAttribute="bottom" secondItem="9XI-bL-zvE" secondAttribute="bottom" id="gUu-dM-Ice"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="9XI-bL-zvE" firstAttribute="leading" secondItem="j5O-8R-hlY" secondAttribute="leading" id="XBP-yN-YjL"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="BTx-3H-Uyp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TfD-Eo-Al2"/>
+                <constraint firstAttribute="bottom" secondItem="BTx-3H-Uyp" secondAttribute="bottom" id="mk7-Xo-shb"/>
+                <constraint firstItem="BTx-3H-Uyp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qu3-EG-Cr2"/>
+                <constraint firstAttribute="trailing" secondItem="BTx-3H-Uyp" secondAttribute="trailing" id="wXd-nO-5Ut"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="310.37946428571428"/>
+        </view>
+    </objects>
+</document>

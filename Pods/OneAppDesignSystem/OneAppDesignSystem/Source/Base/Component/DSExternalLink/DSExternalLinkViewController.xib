@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSExternalLinkViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomSnackBarViewConstraint" destination="4at-Nl-lAZ" id="XFe-gg-rW0"/>
+                <outlet property="navigationBarView" destination="oHW-sf-VuA" id="RLY-Un-jzt"/>
+                <outlet property="snackBarView" destination="fSk-td-rO7" id="aaf-As-I8u"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="DE3-XE-Mcl" id="IV6-G5-JXE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="fSk-td-rO7" customClass="DSSnacksBar" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="718" width="393" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <wkWebView contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DE3-XE-Mcl">
+                    <rect key="frame" x="0.0" y="109" width="393" height="609"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="oHW-sf-VuA" customClass="DSNavBar" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="mO5-W4-kkg"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mO5-W4-kkg" firstAttribute="bottom" secondItem="fSk-td-rO7" secondAttribute="bottom" id="4at-Nl-lAZ"/>
+                <constraint firstItem="fSk-td-rO7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6V0-2P-AfH"/>
+                <constraint firstItem="fSk-td-rO7" firstAttribute="top" secondItem="DE3-XE-Mcl" secondAttribute="bottom" id="76v-ud-Fmz"/>
+                <constraint firstItem="mO5-W4-kkg" firstAttribute="trailing" secondItem="DE3-XE-Mcl" secondAttribute="trailing" id="n54-FS-cHY"/>
+                <constraint firstItem="oHW-sf-VuA" firstAttribute="top" secondItem="mO5-W4-kkg" secondAttribute="top" id="nBM-Oe-Eka"/>
+                <constraint firstItem="DE3-XE-Mcl" firstAttribute="leading" secondItem="mO5-W4-kkg" secondAttribute="leading" id="qw9-Mu-a53"/>
+                <constraint firstAttribute="trailing" secondItem="oHW-sf-VuA" secondAttribute="trailing" id="rLV-tp-KUC"/>
+                <constraint firstItem="oHW-sf-VuA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="v2G-xi-EUL"/>
+                <constraint firstAttribute="trailing" secondItem="fSk-td-rO7" secondAttribute="trailing" id="vxl-mg-2aT"/>
+                <constraint firstItem="DE3-XE-Mcl" firstAttribute="top" secondItem="oHW-sf-VuA" secondAttribute="bottom" id="yKo-pR-LsQ"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="20.422535211267608"/>
+        </view>
+    </objects>
+</document>

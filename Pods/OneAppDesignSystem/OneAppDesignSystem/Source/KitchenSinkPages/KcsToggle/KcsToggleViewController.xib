@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsToggleViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="ZxK-1c-aL2" id="QVC-gg-8U0"/>
+                <outlet property="navigationBarView" destination="oDA-0T-oRx" id="LeR-lU-9R8"/>
+                <outlet property="toggle1" destination="on4-Xj-8nL" id="IoX-wT-0zP"/>
+                <outlet property="toggle2" destination="8Eb-7C-g2K" id="5L4-Xc-yVq"/>
+                <outlet property="toggle3" destination="CR2-Ws-QUB" id="r0a-5o-OIu"/>
+                <outlet property="toggle4" destination="9MI-Zi-4vi" id="XyC-O3-gPb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDA-0T-oRx" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="47" width="390" height="50"/>
+                    <viewLayoutGuide key="safeArea" id="wcl-Fn-EUz"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Nfa-W8-zAc"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State of toggle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxK-1c-aL2">
+                    <rect key="frame" x="15.999999999999993" y="113" width="112.33333333333331" height="20.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="110" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="emm-Nt-aMa">
+                    <rect key="frame" x="24" y="167.33333333333334" width="143" height="24"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="on4-Xj-8nL" customClass="DSToggle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="24"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="B5M-SF-aK8"/>
+                                <constraint firstAttribute="width" constant="50" id="dMu-4g-9Ip"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Eb-7C-g2K" userLabel="Toggle" customClass="DSToggle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="93" y="0.0" width="50" height="24"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="HNs-mr-hRb"/>
+                                <constraint firstAttribute="width" constant="50" id="wlx-FI-ufN"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="110" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="DF3-d4-Msk">
+                    <rect key="frame" x="24" y="215.33333333333334" width="143" height="24"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CR2-Ws-QUB" customClass="DSToggle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="24"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="GxM-s9-Cns"/>
+                                <constraint firstAttribute="height" constant="24" id="S6f-N8-X77"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9MI-Zi-4vi" userLabel="Toggle" customClass="DSToggle" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="93" y="0.0" width="50" height="24"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="EEd-iL-amV"/>
+                                <constraint firstAttribute="height" constant="24" id="HFn-en-0GA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ZxK-1c-aL2" firstAttribute="top" secondItem="oDA-0T-oRx" secondAttribute="bottom" constant="16" id="2YP-f0-7sB"/>
+                <constraint firstItem="DF3-d4-Msk" firstAttribute="top" secondItem="emm-Nt-aMa" secondAttribute="bottom" constant="24" id="ArW-uJ-mt8"/>
+                <constraint firstItem="emm-Nt-aMa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="Fve-DJ-fZ2"/>
+                <constraint firstItem="oDA-0T-oRx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Kb0-92-tl3"/>
+                <constraint firstItem="emm-Nt-aMa" firstAttribute="top" secondItem="ZxK-1c-aL2" secondAttribute="bottom" constant="34" id="QJK-Bi-Laa"/>
+                <constraint firstItem="DF3-d4-Msk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="aKx-fS-b7Z"/>
+                <constraint firstItem="oDA-0T-oRx" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="uLa-pl-G7z"/>
+                <constraint firstItem="oDA-0T-oRx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="vBv-RX-nDb"/>
+                <constraint firstItem="ZxK-1c-aL2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="y96-tQ-9GQ"/>
+            </constraints>
+            <point key="canvasLocation" x="75" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

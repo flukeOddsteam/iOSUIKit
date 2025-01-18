@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icon36WarnningBillPaymentBlock.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

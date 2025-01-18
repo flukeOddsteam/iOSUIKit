@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckboxListExpandTitleContentView" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="titleContainerView" destination="Jqd-qD-N7f" id="WLg-hC-9LU"/>
+                <outlet property="titleLabel" destination="fSy-Fy-vc7" id="7uo-fI-KFC"/>
+                <outlet property="valueExpandView" destination="zxu-8c-bMK" id="XPC-cm-INc"/>
+                <outlet property="widthContainerConstraint" destination="Vty-gw-2Lw" id="6ZE-qe-UAg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qY9-uW-dfQ">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="Jqd-qD-N7f">
+                            <rect key="frame" x="0.0" y="0.0" width="192.66666666666666" height="49"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSy-Fy-vc7">
+                                    <rect key="frame" x="0.0" y="0.0" width="192.66666666666666" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="fSy-Fy-vc7" secondAttribute="trailing" id="My5-Fg-Xhs"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fSy-Fy-vc7" secondAttribute="bottom" id="ZyY-hF-KUH"/>
+                                <constraint firstItem="fSy-Fy-vc7" firstAttribute="leading" secondItem="Jqd-qD-N7f" secondAttribute="leading" id="c8k-dc-vby"/>
+                                <constraint firstItem="fSy-Fy-vc7" firstAttribute="top" secondItem="Jqd-qD-N7f" secondAttribute="top" id="w7u-dw-j9Z"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="175" placeholderIntrinsicHeight="49" translatesAutoresizingMaskIntoConstraints="NO" id="zxu-8c-bMK" customClass="CheckboxValueExpandView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="200.66666666666663" y="0.0" width="192.33333333333337" height="49"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Jqd-qD-N7f" firstAttribute="width" secondItem="zxu-8c-bMK" secondAttribute="width" id="Vty-gw-2Lw"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qY9-uW-dfQ" secondAttribute="trailing" id="6bI-gr-sTW"/>
+                <constraint firstItem="qY9-uW-dfQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Hf9-Hb-lCa"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qY9-uW-dfQ" secondAttribute="bottom" id="Q7P-53-VtP"/>
+                <constraint firstItem="qY9-uW-dfQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="d8r-cf-McE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="122.90076335877862" y="248.23943661971833"/>
+        </view>
+    </objects>
+</document>

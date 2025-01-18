@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "HeroStopCheque.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

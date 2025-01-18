@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RemarkItemView" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="bulletContainerView" destination="68K-JH-iof" id="zqi-X8-Mtg"/>
+                <outlet property="bulletView" destination="TMY-9U-jJU" id="faI-gO-e1g"/>
+                <outlet property="titleLabel" destination="eHD-Hc-XVi" id="lwi-8Y-wfL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hFB-6q-y7Q">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="NMX-Pz-qGv">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="68K-JH-iof">
+                            <rect key="frame" x="0.0" y="0.0" width="12" height="15"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMY-9U-jJU" customClass="RemarkBulletPointView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="3" width="12" height="12"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="12" placeholder="YES" id="7Vt-E7-L17"/>
+                                        <constraint firstAttribute="height" constant="12" placeholder="YES" id="wEH-XP-Wbv"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="TMY-9U-jJU" secondAttribute="bottom" id="8Uo-St-xr8"/>
+                                <constraint firstItem="TMY-9U-jJU" firstAttribute="leading" secondItem="68K-JH-iof" secondAttribute="leading" id="WIQ-ru-cux"/>
+                                <constraint firstItem="TMY-9U-jJU" firstAttribute="top" secondItem="68K-JH-iof" secondAttribute="top" constant="3" id="luz-gd-Isd"/>
+                                <constraint firstAttribute="trailing" secondItem="TMY-9U-jJU" secondAttribute="trailing" id="tA1-no-e0B"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHD-Hc-XVi">
+                            <rect key="frame" x="16" y="0.0" width="398" height="20.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="NMX-Pz-qGv" secondAttribute="bottom" id="6X0-YE-Rxj"/>
+                <constraint firstItem="NMX-Pz-qGv" firstAttribute="top" secondItem="hFB-6q-y7Q" secondAttribute="top" id="Fto-tj-egx"/>
+                <constraint firstItem="NMX-Pz-qGv" firstAttribute="leading" secondItem="hFB-6q-y7Q" secondAttribute="leading" id="WtS-h3-nA6"/>
+                <constraint firstAttribute="trailing" secondItem="NMX-Pz-qGv" secondAttribute="trailing" id="pj9-oC-atj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.40458015267174" y="386.26760563380282"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsClickableLabelViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="clickableLabelNoFrame" destination="1Dj-tQ-3gZ" id="zZy-C3-IBO"/>
+                <outlet property="clickableLabelNoFrameDisable" destination="tTn-nS-QDt" id="7SR-AM-dtm"/>
+                <outlet property="clickableLabelWithFrame" destination="j4h-6O-9U0" id="LrB-R4-sQC"/>
+                <outlet property="clickableLabelWithFrameDisable" destination="xae-JE-mRt" id="NaH-Sg-Ztc"/>
+                <outlet property="navBar" destination="ftW-Yk-cw3" id="hNE-Ju-q9a"/>
+                <outlet property="titleNoFrame" destination="4ND-ga-Rqo" id="tc5-eG-bXK"/>
+                <outlet property="titleWithFrame" destination="oVK-l2-byB" id="uuz-vc-tcd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ftW-Yk-cw3" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="XMR-Jt-48R"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clickable with Frame" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVK-l2-byB">
+                    <rect key="frame" x="16" y="108" width="158" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lZP-VV-vzU">
+                    <rect key="frame" x="16" y="168.5" width="112" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="52" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="j4h-6O-9U0" customClass="DSClickableIconHeroView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="52" height="100"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="52" id="1vy-ZM-wJV"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="52" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="xae-JE-mRt" customClass="DSClickableIconHeroView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="60" y="0.0" width="52" height="100"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="52" id="oAz-aF-ev3"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clickable No Frame" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ND-ga-Rqo" userLabel="Clickable Nobase">
+                    <rect key="frame" x="16" y="308.5" width="148" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ijq-wN-aGY">
+                    <rect key="frame" x="16" y="369" width="112" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="52" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="1Dj-tQ-3gZ" customClass="DSClickableIconHeroView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="52" height="100"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="52" id="NWP-Jc-XhP"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="52" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="tTn-nS-QDt" customClass="DSClickableIconHeroView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                            <rect key="frame" x="60" y="0.0" width="52" height="100"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="52" id="4Cx-Pk-w1o"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Ijq-wN-aGY" firstAttribute="top" secondItem="4ND-ga-Rqo" secondAttribute="bottom" constant="40" id="0ik-11-8Jn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ftW-Yk-cw3" secondAttribute="trailing" id="8RS-ku-qxB"/>
+                <constraint firstItem="4ND-ga-Rqo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="BMF-oG-lPS"/>
+                <constraint firstItem="ftW-Yk-cw3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BN9-JN-S5D"/>
+                <constraint firstItem="ftW-Yk-cw3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="QiE-Mu-vjf"/>
+                <constraint firstItem="4ND-ga-Rqo" firstAttribute="top" secondItem="lZP-VV-vzU" secondAttribute="bottom" constant="40" id="WR3-bF-FEW"/>
+                <constraint firstItem="oVK-l2-byB" firstAttribute="top" secondItem="ftW-Yk-cw3" secondAttribute="bottom" constant="24" id="Xgt-kk-SNY"/>
+                <constraint firstItem="lZP-VV-vzU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Xx7-sf-qVs"/>
+                <constraint firstItem="lZP-VV-vzU" firstAttribute="top" secondItem="oVK-l2-byB" secondAttribute="bottom" constant="40" id="akn-S2-Dpz"/>
+                <constraint firstItem="oVK-l2-byB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="fsa-md-dfn"/>
+                <constraint firstItem="Ijq-wN-aGY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="rvX-SQ-db8"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="61"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

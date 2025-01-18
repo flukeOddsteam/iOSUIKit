@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Error exceeded limit.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

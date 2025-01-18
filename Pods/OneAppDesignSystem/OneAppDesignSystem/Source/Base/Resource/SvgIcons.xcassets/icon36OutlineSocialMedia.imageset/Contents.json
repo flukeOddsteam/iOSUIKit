@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Social Media.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

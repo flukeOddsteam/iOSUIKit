@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsClickableSelectionViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="clickableIconActivated" destination="PK0-fH-1u6" id="3k6-R9-x5u"/>
+                <outlet property="clickableIconActivatedDisable" destination="Q2f-vP-pVb" id="PnX-ox-dDg"/>
+                <outlet property="clickableIconDefault" destination="mOi-i2-yU7" id="EMV-4e-OrS"/>
+                <outlet property="clickableIconDefaultDisable" destination="STB-H0-c2D" id="ye1-qg-MOo"/>
+                <outlet property="clickableIconImage" destination="70H-KN-vfY" id="7bQ-Gh-PYd"/>
+                <outlet property="clickableIconImageActivated" destination="Kfa-8Z-49R" id="gaO-VU-GZZ"/>
+                <outlet property="clickableIconImageActivatedDisable" destination="iHw-YQ-Qis" id="L1W-QI-Chl"/>
+                <outlet property="clickableIconImageDisable" destination="Sci-rt-78z" id="CSK-rX-22n"/>
+                <outlet property="clickableIconImagePlaceholder" destination="C2k-sF-E0B" id="mrI-Ag-Ifl"/>
+                <outlet property="clickableIconImagePlaceholderActivated" destination="FLw-lz-zKy" id="MC0-S5-T6n"/>
+                <outlet property="clickableIconImagePlaceholderSelect" destination="ge1-YB-YgI" id="F1u-4P-Gcg"/>
+                <outlet property="clickableIconImageSelected" destination="Eib-63-t6Q" id="e6P-o7-wx2"/>
+                <outlet property="clickableIconImageSelectedDisable" destination="IMv-CY-nXE" id="PUE-wT-jOg"/>
+                <outlet property="clickableIconImageShapeRounded" destination="4JL-id-Yhr" id="698-bI-yHO"/>
+                <outlet property="clickableIconImageShapeRoundedActivated" destination="VPF-lv-2Fe" id="rlz-Y4-qPH"/>
+                <outlet property="clickableIconImageShapeRoundedActivatedDisable" destination="eyj-3r-LD2" id="Hqe-Eq-ZuO"/>
+                <outlet property="clickableIconImageShapeRoundedDisable" destination="KWy-lA-Gim" id="04q-IZ-zne"/>
+                <outlet property="clickableIconImageShapeRoundedSelect" destination="UUV-FK-V3X" id="5Hr-eX-cVs"/>
+                <outlet property="clickableIconImageShapeRoundedSelectDisable" destination="DiB-hh-BYe" id="AQ9-ZT-yT6"/>
+                <outlet property="clickableIconPlaceholder" destination="Zc9-dg-bBu" id="eCZ-ei-SMA"/>
+                <outlet property="clickableIconPlaceholderActivated" destination="VLj-J4-gxK" id="vag-bp-Kj5"/>
+                <outlet property="clickableIconPlaceholderSelected" destination="TA9-AT-bTt" id="iCb-t1-zDh"/>
+                <outlet property="clickableIconPlaceholderShapeRoundedActivated" destination="301-MF-4gx" id="TsE-E5-kq5"/>
+                <outlet property="clickableIconPlaceholderShapeRoundedDefault" destination="QTv-he-MiE" id="olu-dS-qyI"/>
+                <outlet property="clickableIconPlaceholderShapeRoundedSelect" destination="TDd-5i-FE6" id="GmM-A1-XN3"/>
+                <outlet property="clickableIconSelected" destination="GEA-WI-kZ4" id="Fz7-yu-9OA"/>
+                <outlet property="clickableIconSelectedDisable" destination="aMV-1M-Zk2" id="1Rg-qq-hN7"/>
+                <outlet property="navigationBarView" destination="60Y-CG-js0" id="heP-p3-AFX"/>
+                <outlet property="titleLabel" destination="bnr-f9-Exl" id="DzZ-xl-cnh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="headerSectionLabel" destination="SbQ-jw-qkV" collectionClass="NSMutableArray" id="rw2-Z8-RFf"/>
+                <outletCollection property="headerSectionLabel" destination="IlQ-I5-XWT" collectionClass="NSMutableArray" id="ew7-pU-Ojb"/>
+                <outletCollection property="headerSectionLabel" destination="hz8-kK-yRf" collectionClass="NSMutableArray" id="4gP-q6-f90"/>
+                <outletCollection property="headerSectionLabel" destination="FHZ-xK-pIs" collectionClass="NSMutableArray" id="v4L-0p-izu"/>
+                <outletCollection property="headerSectionLabel" destination="JWW-JE-6ff" collectionClass="NSMutableArray" id="rV9-aZ-gwt"/>
+                <outletCollection property="headerSectionLabel" destination="HWl-Bg-xUL" collectionClass="NSMutableArray" id="h7a-Ku-i9x"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60Y-CG-js0" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="B7d-7O-NJl"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kce-63-dZo">
+                    <rect key="frame" x="0.0" y="109" width="393" height="709"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHd-cP-TUQ">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="1827.6666666666667"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clickable Selection / Icon + Label " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnr-f9-Exl">
+                                    <rect key="frame" x="15.999999999999986" y="24" width="254.66666666666663" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="gBi-TT-9b4">
+                                    <rect key="frame" x="16" y="76.333333333333371" width="361" height="1751.333333333333"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b7b-Gk-YGi">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="292.66666666666669"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9Lj-Wo-6MQ">
+                                                    <rect key="frame" x="0.0" y="64.666666666666657" width="361" height="227.99999999999997"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="KyU-Db-Vx0">
+                                                            <rect key="frame" x="0.0" y="0.0" width="361" height="110"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="mOi-i2-yU7" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="110"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="PK0-fH-1u6" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                                    <rect key="frame" x="125.66666666666666" y="0.0" width="109.66666666666666" height="110"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="GEA-WI-kZ4" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                                    <rect key="frame" x="251.33333333333329" y="0.0" width="109.66666666666666" height="110"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="pne-kE-kUk">
+                                                            <rect key="frame" x="0.0" y="126" width="361" height="102"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="STB-H0-c2D" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="102"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="Q2f-vP-pVb" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                                    <rect key="frame" x="125.66666666666666" y="0.0" width="109.66666666666666" height="102"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="aMV-1M-Zk2" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                                    <rect key="frame" x="251.33333333333329" y="0.0" width="109.66666666666666" height="102"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbQ-jw-qkV">
+                                                    <rect key="frame" x="16" y="0.0" width="142" height="40.666666666666664"/>
+                                                    <string key="text">Clickable with Icon
+Shape: Circle</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="9Lj-Wo-6MQ" firstAttribute="leading" secondItem="b7b-Gk-YGi" secondAttribute="leading" id="1Xf-EM-66i"/>
+                                                <constraint firstAttribute="trailing" secondItem="9Lj-Wo-6MQ" secondAttribute="trailing" id="J6n-OH-hGg"/>
+                                                <constraint firstItem="SbQ-jw-qkV" firstAttribute="leading" secondItem="b7b-Gk-YGi" secondAttribute="leading" constant="16" id="Kq4-Fy-I66"/>
+                                                <constraint firstAttribute="bottom" secondItem="9Lj-Wo-6MQ" secondAttribute="bottom" id="PaY-5A-Mtb"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SbQ-jw-qkV" secondAttribute="trailing" constant="16" id="dkv-Gk-scy"/>
+                                                <constraint firstItem="SbQ-jw-qkV" firstAttribute="top" secondItem="b7b-Gk-YGi" secondAttribute="top" id="ggK-oB-tZs"/>
+                                                <constraint firstItem="9Lj-Wo-6MQ" firstAttribute="top" secondItem="SbQ-jw-qkV" secondAttribute="bottom" constant="24" id="y8G-Hd-ahF"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOs-YO-fio">
+                                            <rect key="frame" x="0.0" y="324.66666666666663" width="361" height="200"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="SHe-5G-d4w">
+                                                    <rect key="frame" x="0.0" y="36.333333333333371" width="361" height="163.66666666666666"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="Zc9-dg-bBu" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="163.66666666666666"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="VLj-J4-gxK" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="125.66666666666666" y="0.0" width="109.66666666666666" height="163.66666666666666"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="TA9-AT-bTt" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="251.33333333333329" y="0.0" width="109.66666666666666" height="163.66666666666666"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clickable with Icon Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IlQ-I5-XWT">
+                                                    <rect key="frame" x="16.000000000000014" y="0.0" width="236.33333333333337" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="SHe-5G-d4w" firstAttribute="top" secondItem="IlQ-I5-XWT" secondAttribute="bottom" constant="16" id="VDn-ZP-ZsV"/>
+                                                <constraint firstAttribute="trailing" secondItem="SHe-5G-d4w" secondAttribute="trailing" id="WH0-vg-M7a"/>
+                                                <constraint firstItem="IlQ-I5-XWT" firstAttribute="top" secondItem="QOs-YO-fio" secondAttribute="top" id="Yep-gt-e9m"/>
+                                                <constraint firstAttribute="bottom" secondItem="SHe-5G-d4w" secondAttribute="bottom" id="aNW-eB-Tto"/>
+                                                <constraint firstItem="IlQ-I5-XWT" firstAttribute="leading" secondItem="QOs-YO-fio" secondAttribute="leading" constant="16" id="anT-oG-xNc"/>
+                                                <constraint firstItem="SHe-5G-d4w" firstAttribute="leading" secondItem="QOs-YO-fio" secondAttribute="leading" id="qMl-WP-4K6"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IlQ-I5-XWT" secondAttribute="trailing" constant="16" id="tS3-qw-C0D"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o09-jf-dEw">
+                                            <rect key="frame" x="0.0" y="556.66666666666663" width="361" height="200"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="aTN-DR-7RT">
+                                                    <rect key="frame" x="0.0" y="56.666666666666643" width="361" height="143.33333333333337"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="70H-KN-vfY" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="143.33333333333334"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="Kfa-8Z-49R" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="125.66666666666666" y="0.0" width="109.66666666666666" height="143.33333333333334"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="Eib-63-t6Q" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="251.33333333333329" y="0.0" width="109.66666666666666" height="143.33333333333334"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clickable with Image  Shape: Circle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz8-kK-yRf">
+                                                    <rect key="frame" x="16" y="0.0" width="160.66666666666666" height="40.666666666666664"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hz8-kK-yRf" secondAttribute="trailing" constant="16" id="0Hw-zh-oJx"/>
+                                                <constraint firstAttribute="bottom" secondItem="aTN-DR-7RT" secondAttribute="bottom" id="0pD-9L-OKF"/>
+                                                <constraint firstItem="hz8-kK-yRf" firstAttribute="leading" secondItem="o09-jf-dEw" secondAttribute="leading" constant="16" id="JVc-k4-ux2"/>
+                                                <constraint firstItem="aTN-DR-7RT" firstAttribute="leading" secondItem="o09-jf-dEw" secondAttribute="leading" id="Kj5-Hj-m2O"/>
+                                                <constraint firstItem="aTN-DR-7RT" firstAttribute="top" secondItem="hz8-kK-yRf" secondAttribute="bottom" constant="16" id="dsp-tP-U1c"/>
+                                                <constraint firstAttribute="trailing" secondItem="aTN-DR-7RT" secondAttribute="trailing" id="ju2-4V-4NF"/>
+                                                <constraint firstItem="hz8-kK-yRf" firstAttribute="top" secondItem="o09-jf-dEw" secondAttribute="top" id="kJ9-cE-JDs"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7X7-cD-VbA">
+                                            <rect key="frame" x="0.0" y="788.66666666666663" width="361" height="122"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="kiH-Zd-bbf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="361" height="122"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="Sci-rt-78z" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="122"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="iHw-YQ-Qis" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="125.66666666666666" y="0.0" width="109.66666666666666" height="122"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="IMv-CY-nXE" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="251.33333333333329" y="0.0" width="109.66666666666666" height="122"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="kiH-Zd-bbf" firstAttribute="top" secondItem="7X7-cD-VbA" secondAttribute="top" id="JzU-GF-e66"/>
+                                                <constraint firstAttribute="trailing" secondItem="kiH-Zd-bbf" secondAttribute="trailing" id="a2d-Hp-ajG"/>
+                                                <constraint firstAttribute="bottom" secondItem="kiH-Zd-bbf" secondAttribute="bottom" id="ewe-T0-183"/>
+                                                <constraint firstItem="kiH-Zd-bbf" firstAttribute="leading" secondItem="7X7-cD-VbA" secondAttribute="leading" id="xdq-nt-TJl"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSt-NR-q2u">
+                                            <rect key="frame" x="0.0" y="942.66666666666652" width="361" height="200"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fOY-jG-l01">
+                                                    <rect key="frame" x="0.0" y="36.333333333333258" width="361" height="163.66666666666666"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="C2k-sF-E0B" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="163.66666666666666"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="FLw-lz-zKy" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="125.66666666666666" y="0.0" width="109.66666666666666" height="163.66666666666666"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="ge1-YB-YgI" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="251.33333333333329" y="0.0" width="109.66666666666666" height="163.66666666666666"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clickable with Image Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHZ-xK-pIs">
+                                                    <rect key="frame" x="15.999999999999986" y="0.0" width="250.66666666666663" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FHZ-xK-pIs" secondAttribute="trailing" constant="16" id="Afz-wW-bmY"/>
+                                                <constraint firstItem="fOY-jG-l01" firstAttribute="top" secondItem="FHZ-xK-pIs" secondAttribute="bottom" constant="16" id="Lko-S2-ABi"/>
+                                                <constraint firstAttribute="trailing" secondItem="fOY-jG-l01" secondAttribute="trailing" id="UrS-tL-vac"/>
+                                                <constraint firstItem="FHZ-xK-pIs" firstAttribute="leading" secondItem="cSt-NR-q2u" secondAttribute="leading" constant="16" id="W6K-Eg-f5O"/>
+                                                <constraint firstItem="FHZ-xK-pIs" firstAttribute="top" secondItem="cSt-NR-q2u" secondAttribute="top" id="bgB-rK-9Im"/>
+                                                <constraint firstItem="fOY-jG-l01" firstAttribute="leading" secondItem="cSt-NR-q2u" secondAttribute="leading" id="lxL-Xd-RQf"/>
+                                                <constraint firstAttribute="bottom" secondItem="fOY-jG-l01" secondAttribute="bottom" id="pwX-0S-7QC"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPr-O3-YBb">
+                                            <rect key="frame" x="0.0" y="1174.6666666666667" width="361" height="292.66666666666674"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gFN-Db-9Co">
+                                                    <rect key="frame" x="0.0" y="56.666666666666742" width="361" height="236"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PP6-h7-pJr">
+                                                            <rect key="frame" x="0.0" y="0.0" width="361" height="118"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="4JL-id-Yhr" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="115" height="118"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="VPF-lv-2Fe" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                                    <rect key="frame" x="123" y="0.0" width="115" height="118"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="UUV-FK-V3X" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                                    <rect key="frame" x="246" y="0.0" width="115" height="118"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1j1-uw-NJU">
+                                                            <rect key="frame" x="0.0" y="134" width="361" height="102"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="KWy-lA-Gim" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="115" height="102"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="eyj-3r-LD2" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                                    <rect key="frame" x="123" y="0.0" width="115" height="102"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="DiB-hh-BYe" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                                    <rect key="frame" x="246" y="0.0" width="115" height="102"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clickable with Icon Shape: Rounded" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWW-JE-6ff" userLabel="Clickable with Icon Shape: Rounded">
+                                                    <rect key="frame" x="16" y="0.0" width="142" height="40.666666666666664"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JWW-JE-6ff" secondAttribute="trailing" constant="16" id="I2u-w4-zUD"/>
+                                                <constraint firstItem="JWW-JE-6ff" firstAttribute="top" secondItem="EPr-O3-YBb" secondAttribute="top" id="KaO-7M-4WK"/>
+                                                <constraint firstAttribute="bottom" secondItem="gFN-Db-9Co" secondAttribute="bottom" id="TKx-GI-5lN"/>
+                                                <constraint firstAttribute="trailing" secondItem="gFN-Db-9Co" secondAttribute="trailing" id="ZEj-pV-rRS"/>
+                                                <constraint firstItem="JWW-JE-6ff" firstAttribute="leading" secondItem="EPr-O3-YBb" secondAttribute="leading" constant="16" id="a2d-cs-epa"/>
+                                                <constraint firstItem="gFN-Db-9Co" firstAttribute="top" secondItem="JWW-JE-6ff" secondAttribute="bottom" constant="16" id="gYn-xe-bOU"/>
+                                                <constraint firstItem="gFN-Db-9Co" firstAttribute="leading" secondItem="EPr-O3-YBb" secondAttribute="leading" id="r06-T1-9vV"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iqt-fA-HvP">
+                                            <rect key="frame" x="0.0" y="1499.3333333333335" width="361" height="200"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="VCE-bJ-DBC">
+                                                    <rect key="frame" x="0.0" y="52.333333333333258" width="361" height="147.66666666666666"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="QTv-he-MiE" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="147.66666666666666"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="TDd-5i-FE6" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="125.66666666666666" y="0.0" width="109.66666666666666" height="147.66666666666666"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="115" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="301-MF-4gx" customClass="DSClickableSelection" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                                            <rect key="frame" x="251.33333333333329" y="0.0" width="109.66666666666666" height="147.66666666666666"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clickable with Icon Placeholder" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWl-Bg-xUL" userLabel="Clickable with Icon Shape: Rounded">
+                                                    <rect key="frame" x="16.000000000000014" y="0.0" width="236.33333333333337" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="HWl-Bg-xUL" firstAttribute="leading" secondItem="Iqt-fA-HvP" secondAttribute="leading" constant="16" id="1oU-P7-uHu"/>
+                                                <constraint firstItem="HWl-Bg-xUL" firstAttribute="top" secondItem="Iqt-fA-HvP" secondAttribute="top" id="DeE-w4-SZH"/>
+                                                <constraint firstItem="VCE-bJ-DBC" firstAttribute="top" secondItem="HWl-Bg-xUL" secondAttribute="bottom" constant="32" id="Khm-Nd-3dR"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HWl-Bg-xUL" secondAttribute="trailing" constant="16" id="NhW-f3-06k"/>
+                                                <constraint firstAttribute="bottom" secondItem="VCE-bJ-DBC" secondAttribute="bottom" id="W5h-Ql-44f"/>
+                                                <constraint firstItem="VCE-bJ-DBC" firstAttribute="leading" secondItem="Iqt-fA-HvP" secondAttribute="leading" id="hsY-Jq-fXM"/>
+                                                <constraint firstAttribute="trailing" secondItem="VCE-bJ-DBC" secondAttribute="trailing" id="w5D-f5-wjh"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOQ-EE-GuM" userLabel="FooterView">
+                                            <rect key="frame" x="0.0" y="1731.3333333333335" width="361" height="20"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="veU-Q1-eCp"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="gBi-TT-9b4" firstAttribute="leading" secondItem="fHd-cP-TUQ" secondAttribute="leading" constant="16" id="7nq-vU-eMR"/>
+                                <constraint firstAttribute="trailing" secondItem="gBi-TT-9b4" secondAttribute="trailing" constant="16" id="H0r-dw-FN8"/>
+                                <constraint firstItem="bnr-f9-Exl" firstAttribute="top" secondItem="fHd-cP-TUQ" secondAttribute="top" constant="24" id="Zym-S2-1jf"/>
+                                <constraint firstItem="bnr-f9-Exl" firstAttribute="leading" secondItem="fHd-cP-TUQ" secondAttribute="leading" constant="16" id="b0V-2B-Wc6"/>
+                                <constraint firstItem="gBi-TT-9b4" firstAttribute="top" secondItem="bnr-f9-Exl" secondAttribute="bottom" constant="32" id="gF2-N7-ofl"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bnr-f9-Exl" secondAttribute="trailing" constant="16" id="hGR-3I-tUm"/>
+                                <constraint firstAttribute="bottom" secondItem="gBi-TT-9b4" secondAttribute="bottom" id="mBV-Ko-25h"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="fHd-cP-TUQ" secondAttribute="bottom" id="1NP-ki-jop"/>
+                        <constraint firstItem="fHd-cP-TUQ" firstAttribute="top" secondItem="kce-63-dZo" secondAttribute="top" id="QLm-A2-KAU"/>
+                        <constraint firstAttribute="trailing" secondItem="fHd-cP-TUQ" secondAttribute="trailing" id="dFQ-rn-Fva"/>
+                        <constraint firstItem="fHd-cP-TUQ" firstAttribute="leading" secondItem="kce-63-dZo" secondAttribute="leading" id="dzr-I5-BZl"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="60Y-CG-js0" secondAttribute="trailing" id="5FC-Qx-THC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kce-63-dZo" secondAttribute="trailing" id="7hO-Lk-ioI"/>
+                <constraint firstItem="kce-63-dZo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DDW-JT-4Nt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kce-63-dZo" secondAttribute="bottom" id="FKr-hT-kke"/>
+                <constraint firstItem="fHd-cP-TUQ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="M6V-hR-HgE"/>
+                <constraint firstItem="60Y-CG-js0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SNb-EL-71I"/>
+                <constraint firstItem="kce-63-dZo" firstAttribute="top" secondItem="60Y-CG-js0" secondAttribute="bottom" id="qJN-PC-7x6"/>
+                <constraint firstItem="60Y-CG-js0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xNe-PO-VeC"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

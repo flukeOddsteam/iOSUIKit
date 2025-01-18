@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Error file format not support.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

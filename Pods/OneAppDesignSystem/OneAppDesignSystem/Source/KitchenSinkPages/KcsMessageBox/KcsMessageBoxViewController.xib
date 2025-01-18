@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsMessageBoxViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="messageBox1" destination="uFG-vf-CQY" id="xgL-KD-Gg3"/>
+                <outlet property="messageBox10" destination="m0V-LN-Un3" id="2y6-ao-Alc"/>
+                <outlet property="messageBox11" destination="ytA-bh-f4v" id="Ran-iR-iXb"/>
+                <outlet property="messageBox12" destination="3Z8-1X-Quv" id="bAg-ZF-3ir"/>
+                <outlet property="messageBox13" destination="DeE-zB-0cX" id="SKz-1Q-fQn"/>
+                <outlet property="messageBox14" destination="8Ak-TA-Ind" id="Iw0-d3-u1V"/>
+                <outlet property="messageBox15" destination="GzG-yL-hPW" id="An0-CS-aOI"/>
+                <outlet property="messageBox16" destination="4tr-i6-AZh" id="kXm-BA-Phu"/>
+                <outlet property="messageBox17" destination="v6I-Q2-6aP" id="JQF-AA-z6M"/>
+                <outlet property="messageBox18" destination="uo1-GP-onp" id="hqJ-JA-Q2n"/>
+                <outlet property="messageBox2" destination="Bl8-iC-nxl" id="7vi-kT-9yw"/>
+                <outlet property="messageBox3" destination="dqh-1T-9tg" id="cQY-xS-MMx"/>
+                <outlet property="messageBox4" destination="FHf-Iz-qnN" id="jGZ-2s-dmG"/>
+                <outlet property="messageBox5" destination="JbS-Ws-0YA" id="HKa-Ut-c7V"/>
+                <outlet property="messageBox6" destination="Jyv-Ia-aPp" id="y1Z-xS-geF"/>
+                <outlet property="messageBox7" destination="Kr2-0m-tEW" id="mc9-C2-RpA"/>
+                <outlet property="messageBox8" destination="YKU-Cd-Ony" id="30T-iC-uDF"/>
+                <outlet property="messageBox9" destination="Ow5-ui-IFu" id="QSf-4L-SXf"/>
+                <outlet property="navigationBarView" destination="uQa-Lj-fW4" id="b3e-jH-LzA"/>
+                <outlet property="scrollView" destination="4Fy-yH-RTH" id="kRh-12-fM1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQa-Lj-fW4" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="q0g-dm-sFk"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fy-yH-RTH">
+                    <rect key="frame" x="16" y="94" width="382" height="768"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="eNt-JB-g6x">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="2576"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="uFG-vf-CQY" userLabel="Message Box1" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="Bl8-iC-nxl" userLabel="Message Box2" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="144" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="dqh-1T-9tg" userLabel="Message Box3" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="288" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="FHf-Iz-qnN" userLabel="Message Box4" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="432" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="JbS-Ws-0YA" userLabel="Message Box5" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="576" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="Jyv-Ia-aPp" userLabel="Message Box6" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="720" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="Kr2-0m-tEW" userLabel="Message Box7" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="864" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="YKU-Cd-Ony" userLabel="Message Box8" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1008" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="Ow5-ui-IFu" userLabel="Message Box9" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1152" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="m0V-LN-Un3" userLabel="Message Box10" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1296" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="ytA-bh-f4v" userLabel="Message Box11" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1440" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="3Z8-1X-Quv" userLabel="Message Box12" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1584" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="DeE-zB-0cX" userLabel="Message Box13" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1728" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="8Ak-TA-Ind" userLabel="Message Box14" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1872" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="GzG-yL-hPW" userLabel="Message Box15" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="2016" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="4tr-i6-AZh" userLabel="Message Box16" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="2160" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="v6I-Q2-6aP" userLabel="Message Box17" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="2304" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="uo1-GP-onp" userLabel="Message Box18" customClass="DSMessageBox" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="2448" width="382" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="eNt-JB-g6x" firstAttribute="width" secondItem="4Fy-yH-RTH" secondAttribute="width" id="3V0-Zc-NV1"/>
+                        <constraint firstItem="eNt-JB-g6x" firstAttribute="leading" secondItem="4Fy-yH-RTH" secondAttribute="leading" id="8Wf-Hy-xUd"/>
+                        <constraint firstItem="eNt-JB-g6x" firstAttribute="top" secondItem="4Fy-yH-RTH" secondAttribute="top" id="bv9-wZ-beL"/>
+                        <constraint firstAttribute="bottom" secondItem="eNt-JB-g6x" secondAttribute="bottom" id="k4R-1W-zUB"/>
+                        <constraint firstAttribute="trailing" secondItem="eNt-JB-g6x" secondAttribute="trailing" id="rU7-SK-gAx"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="RBV-rx-Q9W"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="uQa-Lj-fW4" firstAttribute="leading" secondItem="RBV-rx-Q9W" secondAttribute="leading" id="CYq-Ce-Iim"/>
+                <constraint firstItem="RBV-rx-Q9W" firstAttribute="trailing" secondItem="4Fy-yH-RTH" secondAttribute="trailing" constant="16" id="LvP-91-bAr"/>
+                <constraint firstItem="uQa-Lj-fW4" firstAttribute="top" secondItem="RBV-rx-Q9W" secondAttribute="top" id="Mge-1w-psd"/>
+                <constraint firstAttribute="trailing" secondItem="uQa-Lj-fW4" secondAttribute="trailing" id="jvZ-3z-NtQ"/>
+                <constraint firstItem="RBV-rx-Q9W" firstAttribute="bottom" secondItem="4Fy-yH-RTH" secondAttribute="bottom" id="mCt-xs-9Yy"/>
+                <constraint firstItem="4Fy-yH-RTH" firstAttribute="leading" secondItem="RBV-rx-Q9W" secondAttribute="leading" constant="16" id="qap-QY-4ao"/>
+                <constraint firstItem="4Fy-yH-RTH" firstAttribute="top" secondItem="uQa-Lj-fW4" secondAttribute="bottom" id="s1C-m7-Fm8"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="78"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

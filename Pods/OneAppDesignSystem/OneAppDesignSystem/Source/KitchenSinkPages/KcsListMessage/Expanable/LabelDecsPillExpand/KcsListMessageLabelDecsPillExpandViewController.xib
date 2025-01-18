@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsListMessageLabelDecsPillExpandViewController" customModule="OneAppDesignSystem" customModuleProvider="target">
+            <connections>
+                <outlet property="listMessage1" destination="EWv-Xd-veC" id="j7F-lY-Ocz"/>
+                <outlet property="listMessage10" destination="4Cj-5X-rrc" id="Sxg-H7-To5"/>
+                <outlet property="listMessage11" destination="buZ-y8-7cv" id="Tj7-8v-ILc"/>
+                <outlet property="listMessage12" destination="NVA-7U-iTf" id="Vn9-UA-juI"/>
+                <outlet property="listMessage13" destination="O4F-p9-nBq" id="Puk-ue-zLA"/>
+                <outlet property="listMessage14" destination="KmS-lA-vTi" id="vrZ-y3-oMr"/>
+                <outlet property="listMessage15" destination="59n-6s-N16" id="eJB-d5-yON"/>
+                <outlet property="listMessage16" destination="xEr-dR-BAJ" id="iLb-9g-XxL"/>
+                <outlet property="listMessage2" destination="fN2-68-PMa" id="nDT-5Y-Pss"/>
+                <outlet property="listMessage3" destination="etG-lq-4tW" id="0Pz-zl-oKI"/>
+                <outlet property="listMessage4" destination="ILc-o5-SVK" id="T7t-h7-cQb"/>
+                <outlet property="listMessage5" destination="UoB-ib-GBh" id="x9E-E4-cPx"/>
+                <outlet property="listMessage6" destination="628-wJ-KYp" id="cxr-5W-M6E"/>
+                <outlet property="listMessage7" destination="2B1-j4-pJX" id="NZU-ch-1hh"/>
+                <outlet property="listMessage8" destination="qPh-Xy-Z0g" id="7S5-Ru-2tY"/>
+                <outlet property="listMessage9" destination="Wh3-WV-lhW" id="yaE-fo-yBp"/>
+                <outlet property="navigationBarView" destination="zCf-9Q-zFt" id="sYb-DU-dQl"/>
+                <outlet property="pageTitle" destination="Pm5-ZR-KOf" id="b3T-JO-uKJ"/>
+                <outlet property="shortLabel1" destination="YWC-AJ-pAB" id="ySk-hz-IBW"/>
+                <outlet property="shortLabel2" destination="fB4-CT-0nI" id="Uae-GM-RgR"/>
+                <outlet property="shortLabel3" destination="6aj-Nl-8FI" id="FZ9-lL-2Bj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zCf-9Q-zFt" customClass="KitchenSinkNavigationView" customModule="OneAppDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="48" width="414" height="50"/>
+                    <viewLayoutGuide key="safeArea" id="ucs-J5-Wfa"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" placeholder="YES" id="dmX-yD-n2h"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k57-sd-78e">
+                    <rect key="frame" x="0.0" y="98" width="414" height="798"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HqB-wR-3dg">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1280"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1D-vO-MJi">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List/Message/Large Expandable Label + Desc " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pm5-ZR-KOf">
+                                            <rect key="frame" x="16" y="0.0" width="382" height="94"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="Pm5-ZR-KOf" firstAttribute="top" secondItem="Y1D-vO-MJi" secondAttribute="top" id="TXi-xO-llD"/>
+                                        <constraint firstAttribute="trailing" secondItem="Pm5-ZR-KOf" secondAttribute="trailing" constant="16" id="XGH-3S-C6L"/>
+                                        <constraint firstAttribute="bottom" secondItem="Pm5-ZR-KOf" secondAttribute="bottom" constant="34" id="XnU-gh-lw3"/>
+                                        <constraint firstItem="Pm5-ZR-KOf" firstAttribute="leading" secondItem="Y1D-vO-MJi" secondAttribute="leading" constant="16" id="uAB-13-1WX"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acM-Qr-7M6">
+                                    <rect key="frame" x="0.0" y="128" width="414" height="128"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Short Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWC-AJ-pAB">
+                                            <rect key="frame" x="16" y="0.0" width="382" height="118"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="YWC-AJ-pAB" secondAttribute="trailing" constant="16" id="CES-Fs-FcJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="YWC-AJ-pAB" secondAttribute="bottom" constant="10" id="XAF-KV-TAI"/>
+                                        <constraint firstItem="YWC-AJ-pAB" firstAttribute="leading" secondItem="acM-Qr-7M6" secondAttribute="leading" constant="16" id="Zn6-xV-pa1"/>
+                                        <constraint firstItem="YWC-AJ-pAB" firstAttribute="top" secondItem="acM-Qr-7M6" secondAttribute="top" id="wsH-Jl-kH6"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="768" translatesAutoresizingMaskIntoConstraints="NO" id="EWv-Xd-veC" customClass="DSListMessage" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="256" width="414" height="768"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="fN2-68-PMa" customClass="DSListMessage" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1024" width="414" height="0.0"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="etG-lq-4tW" customClass="DSListMessage" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1024" width="414" height="0.0"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="ILc-o5-SVK" customClass="DSListMessage" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1024" width="414" height="0.0"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="UoB-ib-GBh" customClass="DSListMessage" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1024" width="414" height="0.0"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="628-wJ-KYp" customClass="DSListMessage" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1024" width="414" height="0.0"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="2B1-j4-pJX" customClass="DSListMessage" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1024" width="414" height="0.0"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="qPh-Xy-Z0g" customClass="DSListMessage" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1024" width="414" height="0.0"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="Wh3-WV-lhW" customClass="DSListMessage" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1024" width="414" height="0.0"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="4Cj-5X-rrc" customClass="DSListMessage" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1024" width="414" height="0.0"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2e-i0-acz">
+                                    <rect key="frame" x="0.0" y="1024" width="414" height="128"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fB4-CT-0nI">
+                                            <rect key="frame" x="16" y="34" width="382" height="84"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="fB4-CT-0nI" firstAttribute="leading" secondItem="x2e-i0-acz" secondAttribute="leading" constant="16" id="10T-CO-WuB"/>
+                                        <constraint firstAttribute="trailing" secondItem="fB4-CT-0nI" secondAttribute="trailing" constant="16" id="1PG-eb-KXd"/>
+                                        <constraint firstItem="fB4-CT-0nI" firstAttribute="top" secondItem="x2e-i0-acz" secondAttribute="top" constant="34" id="kiZ-HH-CNg"/>
+                                        <constraint firstAttribute="bottom" secondItem="fB4-CT-0nI" secondAttribute="bottom" constant="10" id="oU7-Xk-rQL"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="buZ-y8-7cv" customClass="DSListMessage" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1152" width="414" height="0.0"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="NVA-7U-iTf" customClass="DSListMessage" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1152" width="414" height="0.0"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="O4F-p9-nBq" customClass="DSListMessage" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1152" width="414" height="0.0"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XbT-ee-eoB">
+                                    <rect key="frame" x="0.0" y="1152" width="414" height="128"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aj-Nl-8FI">
+                                            <rect key="frame" x="16" y="34" width="382" height="84"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="6aj-Nl-8FI" firstAttribute="leading" secondItem="XbT-ee-eoB" secondAttribute="leading" constant="16" id="Ee3-X0-rNA"/>
+                                        <constraint firstItem="6aj-Nl-8FI" firstAttribute="top" secondItem="XbT-ee-eoB" secondAttribute="top" constant="34" id="FJS-dt-V8a"/>
+                                        <constraint firstAttribute="trailing" secondItem="6aj-Nl-8FI" secondAttribute="trailing" constant="16" id="OJM-b2-9oj"/>
+                                        <constraint firstAttribute="bottom" secondItem="6aj-Nl-8FI" secondAttribute="bottom" constant="10" id="tul-xk-ReZ"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="KmS-lA-vTi" customClass="DSListMessage" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1280" width="414" height="0.0"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="59n-6s-N16" customClass="DSListMessage" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1280" width="414" height="0.0"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="xEr-dR-BAJ" customClass="DSListMessage" customModule="OneAppDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1280" width="414" height="0.0"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="HqB-wR-3dg" secondAttribute="trailing" id="ADP-cd-LKJ"/>
+                        <constraint firstItem="HqB-wR-3dg" firstAttribute="leading" secondItem="k57-sd-78e" secondAttribute="leading" id="Ay0-ZN-Gf8"/>
+                        <constraint firstItem="HqB-wR-3dg" firstAttribute="width" secondItem="k57-sd-78e" secondAttribute="width" id="OBB-Cj-Q3p"/>
+                        <constraint firstAttribute="bottom" secondItem="HqB-wR-3dg" secondAttribute="bottom" id="grv-au-cYi"/>
+                        <constraint firstItem="HqB-wR-3dg" firstAttribute="top" secondItem="k57-sd-78e" secondAttribute="top" id="jB9-4p-pfH"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="k57-sd-78e" secondAttribute="bottom" id="A0U-0n-J1y"/>
+                <constraint firstItem="k57-sd-78e" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="DAQ-GX-1cv"/>
+                <constraint firstItem="zCf-9Q-zFt" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Eeb-7u-oJh"/>
+                <constraint firstItem="zCf-9Q-zFt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GSr-k8-N4O"/>
+                <constraint firstItem="k57-sd-78e" firstAttribute="top" secondItem="zCf-9Q-zFt" secondAttribute="bottom" id="RCV-8v-yk9"/>
+                <constraint firstItem="zCf-9Q-zFt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="afa-3A-Zss"/>
+                <constraint firstItem="k57-sd-78e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vRT-79-JD0"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="78"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KcsClickableIconViewController" customModule="OneApp" customModuleProvider="target">
+            <connections>
+                <outlet property="clickableIconDisable" destination="AU7-DZ-MWR" id="5W3-Qx-r1y"/>
+                <outlet property="clickableIconGhost" destination="3kn-c9-7fV" id="p3L-90-MqV"/>
+                <outlet property="clickableIconGhostWithBadge" destination="5Th-Jz-fig" id="YBi-29-2kv"/>
+                <outlet property="clickableIconNormal" destination="MQ9-qJ-Zuf" id="iRt-He-dqc"/>
+                <outlet property="clickablrIconWithBadge" destination="bdv-OA-wSi" id="qC7-ex-nx3"/>
+                <outlet property="darkBackgroundView" destination="N6X-8z-GQp" id="Ut0-r3-YzZ"/>
+                <outlet property="navigationBar" destination="2AB-vX-56F" id="X9Y-O3-ivk"/>
+                <outlet property="titleLabel" destination="IUZ-sH-Hpu" id="D6u-jB-2Su"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2AB-vX-56F" customClass="KitchenSinkNavigationView" customModule="OneApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="NXw-tc-Cco"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ClickableIcon/ Ghost+Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUZ-sH-Hpu">
+                    <rect key="frame" x="22" y="62" width="215" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CIT-Db-AzR">
+                    <rect key="frame" x="16" y="104.5" width="152" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQ9-qJ-Zuf" customClass="DSClickableIconBadge" customModule="OneApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="jju-Zh-CpA"/>
+                                <constraint firstAttribute="width" constant="40" id="vPI-1j-QXl"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" subtitle="B"/>
+                            <connections>
+                                <action selector="normalIconOnTap:" destination="-1" eventType="touchUpInside" id="w8j-WU-9RI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdv-OA-wSi" customClass="DSClickableIconBadge" customModule="OneApp" customModuleProvider="target">
+                            <rect key="frame" x="56" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="0oV-BV-xVG"/>
+                                <constraint firstAttribute="height" constant="40" id="zHe-mV-PYt"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="B"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AU7-DZ-MWR" customClass="DSClickableIconBadge" customModule="OneApp" customModuleProvider="target">
+                            <rect key="frame" x="112" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="FYu-W7-gxu"/>
+                                <constraint firstAttribute="height" constant="40" id="adv-4p-25X"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="B"/>
+                        </button>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6X-8z-GQp">
+                    <rect key="frame" x="0.0" y="184.5" width="414" height="64"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lAG-DN-WS3">
+                            <rect key="frame" x="16" y="12" width="96" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kn-c9-7fV" customClass="DSClickableIconBadge" customModule="OneApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="Ttu-lc-Mwz"/>
+                                        <constraint firstAttribute="height" constant="40" id="zXH-QH-5Tz"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" subtitle="B"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Th-Jz-fig" customClass="DSClickableIconBadge" customModule="OneApp" customModuleProvider="target">
+                                    <rect key="frame" x="56" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="D4g-VD-K9F"/>
+                                        <constraint firstAttribute="width" constant="40" id="LNB-CC-8h7"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="B"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="lAG-DN-WS3" firstAttribute="leading" secondItem="N6X-8z-GQp" secondAttribute="leading" constant="16" id="71H-EM-yyo"/>
+                        <constraint firstAttribute="height" constant="64" id="FXC-cH-FUM"/>
+                        <constraint firstItem="lAG-DN-WS3" firstAttribute="top" secondItem="N6X-8z-GQp" secondAttribute="top" constant="12" id="NA8-uG-pLB"/>
+                        <constraint firstAttribute="bottom" secondItem="lAG-DN-WS3" secondAttribute="bottom" constant="12" id="bCf-nR-AOy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="CIT-Db-AzR" firstAttribute="top" secondItem="IUZ-sH-Hpu" secondAttribute="bottom" constant="22" id="25t-3k-fPE"/>
+                <constraint firstItem="2AB-vX-56F" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7nQ-Le-6q4"/>
+                <constraint firstItem="CIT-Db-AzR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="CTW-Ys-vO6"/>
+                <constraint firstItem="2AB-vX-56F" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Nrf-GP-Qfx"/>
+                <constraint firstItem="IUZ-sH-Hpu" firstAttribute="top" secondItem="2AB-vX-56F" secondAttribute="bottom" constant="22" id="YrD-yf-Y46"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="N6X-8z-GQp" secondAttribute="trailing" id="dwi-uA-apc"/>
+                <constraint firstItem="IUZ-sH-Hpu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="f5M-lV-3zl"/>
+                <constraint firstItem="N6X-8z-GQp" firstAttribute="top" secondItem="CIT-Db-AzR" secondAttribute="bottom" constant="40" id="p2O-Ui-1qr"/>
+                <constraint firstItem="N6X-8z-GQp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qCC-8f-oCk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2AB-vX-56F" secondAttribute="trailing" id="uGO-jY-u7u"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="61"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
