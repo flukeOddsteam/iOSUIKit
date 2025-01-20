@@ -1,5 +1,5 @@
 //
-//  DSWaitingScreen.swift
+//  POCWaitingScreen.swift
 //  OneAppDesignSystem
 //
 //  Created by TTB on 14/2/2567 BE.
@@ -9,48 +9,48 @@ import UIKit
 import OneAppDesignSystem
 
 /**
- Custom component DSWaitingScreen for Design System
+ Custom component POCWaitingScreen for Design System
 
  ```
     override func viewDidLoad() {
         super.viewDidLoad()
-        let bottomSheetPhrase = DSWaitingScreenViewModel.BottomSheetPhrase(
+        let bottomSheetPhrase = POCWaitingScreenViewModel.BottomSheetPhrase(
             title: "Heading, Keep it short (1 line)",
             description: "Try to keep this short, as much as possible maximum 4 lines ",
             primaryButtonTitle: "Primary",
             ghostButtonTitle: "Ghost"
         )
-        let screenPhrase = DSWaitingScreenViewModel.ScreenPhrase(
+        let screenPhrase = POCWaitingScreenViewModel.ScreenPhrase(
             title: "Title",
             subtitle: "Loading",
             ghostButtonTitle: "Ghost"
         )
 
-        let viewModel = DSWaitingScreenViewModel(
+        let viewModel = POCWaitingScreenViewModel(
                 screenPhrase: screenPhrase,
                 bottomSheetPhrase: bottomSheetPhrase,
                 mediaType: .image(DSIcon.icon48OutlineSomething)
         )
 
-        DSWaitingScreen.show(viewModel: viewModel, delegate: self)
+        POCWaitingScreen.show(viewModel: viewModel, delegate: self)
  }
  ```
  */
 
-public struct DSWaitingScreen {
+public struct POCWaitingScreen {
 
-    private static weak var controller: DSWaitingScreenInterface?
+    private static weak var controller: POCWaitingScreenInterface?
 
-    /// Display DSWaitingScreen
+    /// Display POCWaitingScreen
     ///
-    /// Parameter for show DSWaitingScreen
-    /// - Parameter viewModel: The viewModel of DSWaitingScreen that contains phrase and media type.
-    /// - Parameter delegate: The delegate of DSWaitingScreen for receive event on screen.
+    /// Parameter for show POCWaitingScreen
+    /// - Parameter viewModel: The viewModel of POCWaitingScreen that contains phrase and media type.
+    /// - Parameter delegate: The delegate of POCWaitingScreen for receive event on screen.
     @discardableResult
     public static func show(
-        viewModel: DSWaitingScreenViewModel,
-        delegate: DSWaitingScreenDelegate? = nil
-    ) -> DSWaitingScreenInterface {
+        viewModel: POCWaitingScreenViewModel,
+        delegate: POCWaitingScreenDelegate? = nil
+    ) -> POCWaitingScreenInterface {
         guard let rootViewController = UIApplication.getRootViewController() else {
             fatalError("Could not found root viewController")
         }
@@ -62,22 +62,22 @@ public struct DSWaitingScreen {
         )
     }
 
-    /// Display DSWaitingScreen
+    /// Display POCWaitingScreen
     ///
-    /// Parameter for show DSWaitingScreen
-    /// - Parameter viewModel: The viewModel of DSWaitingScreen that contains phrase and media type.
-    /// - Parameter delegate: The delegate of DSWaitingScreen for receive event on screen.
-    /// - Parameter accessibility: The accessibility of DSWaitingScreen.
-    /// - Parameter viewController: The viewController of DSWaitingScreen for present waiting screen viewcontroller.
+    /// Parameter for show POCWaitingScreen
+    /// - Parameter viewModel: The viewModel of POCWaitingScreen that contains phrase and media type.
+    /// - Parameter delegate: The delegate of POCWaitingScreen for receive event on screen.
+    /// - Parameter accessibility: The accessibility of POCWaitingScreen.
+    /// - Parameter viewController: The viewController of POCWaitingScreen for present waiting screen viewcontroller.
     @discardableResult
     public static func show(
-        viewModel: DSWaitingScreenViewModel,
-        accessibility: DSWaitingScreenAccessibility? = nil,
+        viewModel: POCWaitingScreenViewModel,
+        accessibility: POCWaitingScreenAccessibility? = nil,
         viewController: UIViewController,
-        delegate: DSWaitingScreenDelegate? = nil
-    ) -> DSWaitingScreenInterface {
+        delegate: POCWaitingScreenDelegate? = nil
+    ) -> POCWaitingScreenInterface {
 
-        let scene = DSWaitingScreenViewController()
+        let scene = POCWaitingScreenViewController()
 
         scene.viewModel = viewModel
         scene.accessibility = accessibility
@@ -107,12 +107,12 @@ public struct DSWaitingScreen {
     }
 
     public static func createInstance(
-        viewModel: DSWaitingScreenViewModel,
-        accessibility: DSWaitingScreenAccessibility? = nil,
-        delegate: DSWaitingScreenDelegate? = nil
-    ) -> DSWaitingScreenViewController {
-        let nibName = String(describing: DSWaitingScreenViewController.self)
-        let scene = DSWaitingScreenViewController(
+        viewModel: POCWaitingScreenViewModel,
+        accessibility: POCWaitingScreenAccessibility? = nil,
+        delegate: POCWaitingScreenDelegate? = nil
+    ) -> POCWaitingScreenViewController {
+        let nibName = String(describing: POCWaitingScreenViewController.self)
+        let scene = POCWaitingScreenViewController(
             nibName: nibName,
             bundle: .dsBundle
         )

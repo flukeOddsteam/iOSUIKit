@@ -1,5 +1,5 @@
 //
-//  DSWaitingScreenDelegate.swift
+//  POCWaitingScreenDelegate.swift
 //  OneAppDesignSystem
 //
 //  Created by TTB on 18/4/2567 BE.
@@ -7,14 +7,14 @@
 
 import Foundation
 
-public protocol DSWaitingScreenDelegate: AnyObject {
-    func waitingScreenDidClosed()
-    func waitingScreenBottomSheetPrimaryButtonDidTapped()
-    func waitingScreenBottomSheetGhostButtonDidTapped()
+public protocol POCWaitingScreenDelegate: AnyObject {
+    func pocWaitingScreenDidClosed()
+    func pocWaitingScreenBottomSheetPrimaryButtonDidTapped()
+    func pocWaitingScreenBottomSheetGhostButtonDidTapped()
 }
 
-public extension DSWaitingScreenDelegate {
-    func waitingScreenDidClosed() { }
-    func waitingScreenBottomSheetPrimaryButtonDidTapped() { }
-    func waitingScreenBottomSheetGhostButtonDidTapped() { }
+public extension POCWaitingScreenDelegate {
+    func pocWaitingScreenDidClosed() { }
+    func pocWaitingScreenBottomSheetPrimaryButtonDidTapped() { }
+    func pocWaitingScreenBottomSheetGhostButtonDidTapped() { }
 }

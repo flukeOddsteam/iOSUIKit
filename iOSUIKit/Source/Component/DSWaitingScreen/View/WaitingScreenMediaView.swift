@@ -16,7 +16,7 @@ final class WaitingScreenMediaView: UIView {
         return view
     }()
 
-    public var mediaType: DSWaitingScreenViewModel.ScreenMediaType! {
+    public var mediaType: POCWaitingScreenViewModel.ScreenMediaType! {
         didSet {
             updateLayout()
         }

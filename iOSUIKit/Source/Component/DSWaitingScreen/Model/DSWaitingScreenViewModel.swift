@@ -1,5 +1,5 @@
 //
-//  DSWaitingScreenViewModel.swift
+//  POCWaitingScreenViewModel.swift
 //  OneAppDesignSystem
 //
 //  Created by Taratorn Deachboon on 13/2/2567 BE.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public struct DSWaitingScreenViewModel {
+public struct POCWaitingScreenViewModel {
     public var screenPhrase: ScreenPhrase
     public var bottomSheetPhrase: BottomSheetPhrase
     public var mediaType: ScreenMediaType
@@ -23,7 +23,7 @@ public struct DSWaitingScreenViewModel {
     }
 }
 
-extension DSWaitingScreenViewModel {
+extension POCWaitingScreenViewModel {
 
     public struct ScreenPhrase {
         public var title: String

@@ -1,5 +1,5 @@
 //
-//  DSWaitingScreenAccessibility.swift
+//  POCWaitingScreenAccessibility.swift
 //  OneAppDesignSystem
 //
 //  Created by Taratorn Deachboon on 14/2/2567 BE.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct DSWaitingScreenAccessibility {
+public struct POCWaitingScreenAccessibility {
     public var titleId: String?
     public var descriptionId: String?
     public var ghostButtonId: String?
@@ -30,7 +30,7 @@ public struct DSWaitingScreenAccessibility {
 
 }
 
-extension DSWaitingScreenAccessibility {
+extension POCWaitingScreenAccessibility {
 
     public struct BottomSheetAccessibility {
         public var titleId: String?

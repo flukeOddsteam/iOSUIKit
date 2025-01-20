@@ -30,7 +30,7 @@ enum WaitingScreenMenu: Int, CaseIterable {
         }
     }
 
-    var mediaType: DSWaitingScreenViewModel.ScreenMediaType {
+    var mediaType: POCWaitingScreenViewModel.ScreenMediaType {
         switch self {
         case .default:
             let resource = DSLottie.lottieWaitingScreenInternalDefault.resource
@@ -54,36 +54,36 @@ enum WaitingScreenMenu: Int, CaseIterable {
         }
     }
 
-    var screenPhrase: DSWaitingScreenViewModel.ScreenPhrase {
+    var screenPhrase: POCWaitingScreenViewModel.ScreenPhrase {
         let defaultTitle = "โปรดอยู่ในหน้านี้\nจนกว่าจะทำรายการสำเร็จ"
         let defaultGhostButton = "กลับหน้าหลัก"
         switch self {
         case .default:
-            return DSWaitingScreenViewModel.ScreenPhrase(
+            return POCWaitingScreenViewModel.ScreenPhrase(
                 title: defaultTitle,
                 subtitle: "ระบบกำลังประมวลผลการอนุมัติสินเชื่อ อาจใช้เวลา 1-2 นาที",
                 ghostButtonTitle: defaultGhostButton
             )
         case .external2c2p:
-            return DSWaitingScreenViewModel.ScreenPhrase(
+            return POCWaitingScreenViewModel.ScreenPhrase(
                 title: defaultTitle,
                 subtitle: "ระบบกำลังนำคุณไปหน้าชำระเงินผ่าน 2C2P",
                 ghostButtonTitle: defaultGhostButton
             )
         case .internal2c2p:
-            return DSWaitingScreenViewModel.ScreenPhrase(
+            return POCWaitingScreenViewModel.ScreenPhrase(
                 title: defaultTitle,
                 subtitle: "ระบบกำลังตรวจสอบสถานะการชำระเงิน อาจใช้เวลา 1-2 นาที",
                 ghostButtonTitle: defaultGhostButton
             )
         case .ttbToThirdPartyExternalDefault:
-            return DSWaitingScreenViewModel.ScreenPhrase(
+            return POCWaitingScreenViewModel.ScreenPhrase(
                 title: defaultTitle,
                 subtitle: "ระบบกำลังนำคุณไปหน้าชำระเงินผ่าน  {$Destination}",
                 ghostButtonTitle: defaultGhostButton
             )
         case .thirdPartyToTTBDefault:
-            return DSWaitingScreenViewModel.ScreenPhrase(
+            return POCWaitingScreenViewModel.ScreenPhrase(
                 title: defaultTitle,
                 subtitle: "ระบบกำลังตรวจสอบสถานะการชำระเงิน อาจใช้เวลา 1-2 นาที",
                 ghostButtonTitle: defaultGhostButton
@@ -108,17 +108,17 @@ final class KcsWaitingScreenViewController: UIViewController {
 
 }
 
-extension KcsWaitingScreenViewController: DSWaitingScreenDelegate {
-    func waitingScreenDidClosed() {
+extension KcsWaitingScreenViewController: POCWaitingScreenDelegate {
+    func pocWaitingScreenDidClosed() {
 
     }
 
-    func waitingScreenBottomSheetPrimaryButtonDidTapped() {
+    func pocWaitingScreenBottomSheetPrimaryButtonDidTapped() {
 
     }
 
-    func waitingScreenBottomSheetGhostButtonDidTapped() {
-        DSWaitingScreen.hide()
+    func pocWaitingScreenBottomSheetGhostButtonDidTapped() {
+        POCWaitingScreen.hide()
     }
 }
 
@@ -129,20 +129,20 @@ extension KcsWaitingScreenViewController: ListActionViewDelegate {
         let expectedIndex = entryPointMenu == .internal ? index : index + 1
         let menu = menus[expectedIndex]
 
-        let bottomSheetPhrase = DSWaitingScreenViewModel.BottomSheetPhrase(
+        let bottomSheetPhrase = POCWaitingScreenViewModel.BottomSheetPhrase(
             title: "ต้องการออกจากหน้านี้",
             description: "รายการที่คุณกำลังดำเนินการจะไม่เสร็จสมบูรณ์",
             primaryButtonTitle: "ทำรายการต่อ",
             ghostButtonTitle: "ออกจากหน้านี้"
         )
 
-        let viewModel = DSWaitingScreenViewModel(
+        let viewModel = POCWaitingScreenViewModel(
             screenPhrase: menu.screenPhrase,
             bottomSheetPhrase: bottomSheetPhrase,
             mediaType: menu.mediaType
         )
 
-        DSWaitingScreen.show(viewModel: viewModel, delegate: self)
+        POCWaitingScreen.show(viewModel: viewModel, delegate: self)
     }
 }
 

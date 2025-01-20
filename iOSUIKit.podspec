@@ -14,10 +14,10 @@ Pod::Spec.new do |spec|
   ]
 
   spec.ios.deployment_target = "12.0"
-  spec.static_framework = false
+  spec.static_framework = true
   spec.swift_version = "5.1"
 
   spec.subspec 'Lib' do |lib|
-    lib.dependency 'OneAppDesignSystem', '11.5.0'
+    lib.dependency 'OneAppDesignSystem'
   end
 end

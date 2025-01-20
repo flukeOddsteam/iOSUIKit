@@ -1,5 +1,5 @@
 //
-//  DSWaitingScreen.swift
+//  POCWaitingScreen.swift
 //  OneAppDesignSystem
 //
 //  Created by TTB on 13/2/2567 BE.
@@ -12,7 +12,7 @@ private enum Constants {
     static let loadingSize = CGSize(width: 24, height: 24)
 }
 
-open class DSWaitingScreenViewController: UIViewController {
+open class POCWaitingScreenViewController: UIViewController {
 
     lazy var mediaView: WaitingScreenMediaView = {
         let view = WaitingScreenMediaView()
@@ -81,10 +81,10 @@ open class DSWaitingScreenViewController: UIViewController {
         return button
     }()
 
-    public var viewModel: DSWaitingScreenViewModel?
-    public var accessibility: DSWaitingScreenAccessibility?
+    public var viewModel: POCWaitingScreenViewModel?
+    public var accessibility: POCWaitingScreenAccessibility?
 
-    public weak var delegate: DSWaitingScreenDelegate?
+    public weak var delegate: POCWaitingScreenDelegate?
 
     open override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,8 +94,8 @@ open class DSWaitingScreenViewController: UIViewController {
     }
 
     public func setup(
-        viewModel: DSWaitingScreenViewModel,
-        accessibility: DSWaitingScreenAccessibility?
+        viewModel: POCWaitingScreenViewModel,
+        accessibility: POCWaitingScreenAccessibility?
     ) {
         self.viewModel = viewModel
         self.accessibility = accessibility
@@ -107,23 +107,23 @@ open class DSWaitingScreenViewController: UIViewController {
 }
 
 // MARK: - Action
-extension DSWaitingScreenViewController {
+extension POCWaitingScreenViewController {
     @objc func ghostButtonDidTapped(_ sender: Any) {
         performDisplayBottomSheet()
     }
 }
 
-// MARK: - DSWaitingScreenInterface
-extension DSWaitingScreenViewController: DSWaitingScreenInterface {
+// MARK: - POCWaitingScreenInterface
+extension POCWaitingScreenViewController: POCWaitingScreenInterface {
     public func close() {
         dismiss(animated: true) { [weak self] in
-            self?.delegate?.waitingScreenDidClosed()
+            self?.delegate?.pocWaitingScreenDidClosed()
         }
     }
 }
 
 // MARK: - Private
-private extension DSWaitingScreenViewController {
+private extension POCWaitingScreenViewController {
 
     func initiateSubView() {
         view.backgroundColor = .white
@@ -214,11 +214,11 @@ private extension DSWaitingScreenViewController {
             description: viewModel.bottomSheetPhrase.description,
             buttonTextPrimary: viewModel.bottomSheetPhrase.primaryButtonTitle,
             buttonTextPrimaryAction: ({
-                self.delegate?.waitingScreenBottomSheetPrimaryButtonDidTapped()
+                self.delegate?.pocWaitingScreenBottomSheetPrimaryButtonDidTapped()
             }),
             buttonTextGhost: viewModel.bottomSheetPhrase.ghostButtonTitle,
             buttonTextGhostAction: ({
-                self.delegate?.waitingScreenBottomSheetGhostButtonDidTapped()
+                self.delegate?.pocWaitingScreenBottomSheetGhostButtonDidTapped()
             })
         )
 
